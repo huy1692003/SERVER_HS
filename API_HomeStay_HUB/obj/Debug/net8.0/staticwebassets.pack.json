@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241125_111003.jpg",
+      "PackagePath": "staticwebassets\\Images\\20241125_111003.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241125_111003.png",
+      "PackagePath": "staticwebassets\\Images\\20241125_111003.png"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241125_132356.jpg",
+      "PackagePath": "staticwebassets\\Images\\20241125_132356.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241125_132356.png",
+      "PackagePath": "staticwebassets\\Images\\20241125_132356.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API_HomeStay_HUB.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API_HomeStay_HUB.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.API_HomeStay_HUB.props",
+      "PackagePath": "build\\API_HomeStay_HUB.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.API_HomeStay_HUB.props",
+      "PackagePath": "buildMultiTargeting\\API_HomeStay_HUB.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.API_HomeStay_HUB.props",
+      "PackagePath": "buildTransitive\\API_HomeStay_HUB.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
