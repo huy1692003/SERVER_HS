@@ -1,7 +1,9 @@
-﻿using API_HomeStay_HUB.Model;
+﻿using API_HomeStay_HUB.Data;
+using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Services.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -12,10 +14,12 @@ namespace API_HomeStay_HUB.Controllers
     public class PromotionController : ControllerBase
     {
         private readonly IPromotionService _promotionService;
+        private readonly DBContext dB;
 
-        public PromotionController(IPromotionService promotionService)
+        public PromotionController(IPromotionService promotionService, DBContext db )
         {
             _promotionService = promotionService;
+            dB = db;
         }
 
         // GET: api/promotion/getAll
@@ -26,11 +30,19 @@ namespace API_HomeStay_HUB.Controllers
             return Ok(promotions);
         }
 
-        // GET: api/promotion/getByID/{id}
-        [HttpGet("getByID/{id}")]
-        public async Task<IActionResult> GetPromotionById(int id)
+        [HttpGet("getbyOwnerID")]
+        public async Task<ActionResult<IEnumerable<Promotion>>> GetByOwner(string owner)
         {
-            var promotion = await _promotionService.GetById(id);
+            var promotions = await dB.Promotions.Where(s => s.OwnerID == owner).ToListAsync();
+            return Ok(promotions);
+        }
+
+        //GET: api/promotion/getByID/{id}
+        [HttpGet("getByCode/{code}")]
+        public async Task<IActionResult> GetPromotionById(string code)
+        {
+            var date= DateTime.Now;
+            var promotion = await dB.Promotions.FirstOrDefaultAsync(s=>s.DiscountCode ==code && s.StartDate<=date.Date && s.EndDate>=date );
             return promotion != null ? Ok(promotion) : NotFound();
         }
 

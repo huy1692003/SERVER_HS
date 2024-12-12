@@ -18,9 +18,13 @@ namespace API_HomeStay_HUB.Services
             _configuration = configuration;
             _userRepository = userRepository;
         }
-        public Task<bool> addUser(User user, int typeUser)
+        public Task<bool> addUser(User user, int typeUser, string roleID="")
         {
-            return _userRepository.addUser(user, typeUser);
+            return _userRepository.addUser(user, typeUser ,roleID);
+        } 
+        public Task<bool> addAdmin(RegisterAdminDTO res)
+        {
+            return _userRepository.addAdmin(res);
         }
         public Task<bool> changePassWord(string userID, string passOld, string passNew)
         {
@@ -41,7 +45,7 @@ namespace API_HomeStay_HUB.Services
             {
                 var tokenUser = GenerateJwtToken(user);
 
-                return new LoginUserResDTO { Username = user.Username, idCus = user.Customer.CusID, idOwner = user.OwnerStay !=null? user.OwnerStay.OwnerID:null, TokenUser = tokenUser }; ;
+                return new LoginUserResDTO { Username = user.Username, idCus = user.Customer!.CusID, idOwner = user.OwnerStay !=null? user.OwnerStay.OwnerID:null, TokenUser = tokenUser , Fullname=user.FullName }; 
 
             }
             return null;
@@ -54,8 +58,7 @@ namespace API_HomeStay_HUB.Services
             {
                 var tokenUser = GenerateJwtToken(user);
 
-                return new LoginUserResDTO { Username = user.Username, TokenUser = tokenUser };
-
+                return new LoginUserResDTO { Username = user.Username, TokenUser = tokenUser ,idAdmin=user.Administrator!.AdminID , roleID=user.Administrator.RoleID ,Fullname=user.FullName };
             }
             return null;
         }
@@ -63,14 +66,14 @@ namespace API_HomeStay_HUB.Services
         private string GenerateJwtToken(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
+            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]!);
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                new Claim(ClaimTypes.NameIdentifier, user.UserID.ToString()),
-                new Claim(ClaimTypes.Name, user.Username)
+                new Claim(ClaimTypes.NameIdentifier, user.UserID!.ToString()),
+                new Claim(ClaimTypes.Name, user.Username!)
                 }),
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)

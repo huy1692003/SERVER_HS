@@ -26,7 +26,10 @@ namespace API_HomeStay_HUB.Model
         public string? NotePayment { get; set; }
 
         [Column("amount")]
-        public float? Amount { get; set; }
+        public float? Amount { get; set; } 
+
+        [Column("advertisementID")]
+        public int? AdvertisementID { get; set; }
 
         [Column("paymentStatus")]
         public int? PaymentStatus { get; set; }

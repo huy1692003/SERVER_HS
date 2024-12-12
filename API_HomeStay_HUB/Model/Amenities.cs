@@ -11,7 +11,9 @@ namespace API_HomeStay_HUB.Model
         public int? AmenityID { get; set; }
 
         [Column("name")]
-        public string? Name { get; set; }
+        public string? Name { get; set; } 
+        [Column("icon")]
+        public string? icon { get; set; }
 
        
     }

@@ -25,17 +25,29 @@ namespace API_HomeStay_HUB.Model
         [Column("urlClick")]
         public string? UrlClick { get; set; }
 
+        [Column("reasonReject")]
+        public string? ReasonReject { get; set; }
+
         [Column("startDate")]
-        public DateTime? StartDate { get; set; }
+        public DateTime StartDate { get; set; }
 
         [Column("endDate")]
-        public DateTime? EndDate { get; set; }
+        public DateTime EndDate { get; set; }
+
+        [Column("timePayment")]
+        public DateTime? TimePayment { get; set; }
 
         [Column("statusAd")]
         public int? StatusAd { get; set; }
 
         [Column("totalClick")]
         public int? TotalClick { get; set; }
+
+        [Column("cost")]
+        public double? Cost { get; set; }
+
+        [Column("placement")]
+        public int? Placement { get; set; }
 
         [Column("createdDate")]
         public DateTime? CreatedDate { get; set; }

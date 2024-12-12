@@ -20,7 +20,7 @@ namespace API_HomeStay_HUB.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> registerCus([FromBody] RegisterCusDTO reg)
         {
-            if (await _userService.addUser(new Model.User { Username = reg.Username, Password = reg.Password, FullName = reg.Fullname, Gender = reg.Gender }, 0))
+            if (await _userService.addUser(new Model.User { Username = reg.Username, Password = reg.Password, FullName = reg.Fullname, Gender = reg.Gender , Email=reg.Email }, 2))
             {
                 return Ok("Đăng kí thành công");
             }

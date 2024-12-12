@@ -28,16 +28,16 @@ namespace API_HomeStay_HUB.Repositories
 
         public async Task<IEnumerable<HomeStayResDTO?>> getHomeStayViewHight()
         {
-            var data = await(from HomeStay in _dBContext.HomeStays
-                             join DetailHomeStay in _dBContext.DetailHomeStays
-                             on HomeStay.HomestayID equals DetailHomeStay.HomestayID
-                             where HomeStay.ApprovalStatus==1
-                             orderby HomeStay.TotalView descending
-                             select new HomeStayResDTO
-                             {
-                                 HomeStay = HomeStay,
-                                 DetailHomeStay = DetailHomeStay,
-                             }).Take(20).ToListAsync();
+            var data = await (from HomeStay in _dBContext.HomeStays
+                              join DetailHomeStay in _dBContext.DetailHomeStays
+                              on HomeStay.HomestayID equals DetailHomeStay.HomestayID
+                              where HomeStay.ApprovalStatus == 1
+                              orderby HomeStay.TotalView descending
+                              select new HomeStayResDTO
+                              {
+                                  HomeStay = HomeStay,
+                                  DetailHomeStay = DetailHomeStay,
+                              }).Take(20).ToListAsync();
             return data;
         }
         public async Task<PagedResultDTO<HomeStayResDTO?>> searchHomeStayByCustomer(SearchHomeStayDTO search, PaginateDTO paginate)
@@ -50,12 +50,12 @@ namespace API_HomeStay_HUB.Repositories
                         join DetailHomeStay in _dBContext.DetailHomeStays
                         on HomeStay.HomestayID equals DetailHomeStay.HomestayID
                         where availableHomeStayIds.Contains(HomeStay.HomestayID)
-                        && (HomeStay.AddressDetail!.Contains(search.Location!) ||
+                        && (search.Location == null ||
+                        (HomeStay.AddressDetail!.Contains(search.Location!) ||
                             HomeStay.Country!.Contains(search.Location!) ||
                             HomeStay.Province!.Contains(search.Location!) ||
-                            HomeStay.District!.Contains(search.Location!))
-                        && (search.NumberofGuest >= HomeStay.MinPerson
-                        && search.NumberofGuest <= HomeStay.MaxPerson)
+                            HomeStay.District!.Contains(search.Location!)))
+                        && (search.NumberofGuest == null || (search.NumberofGuest >= HomeStay.MinPerson && search.NumberofGuest <= HomeStay.MaxPerson))
                         select new HomeStayResDTO
                         {
                             HomeStay = HomeStay,
@@ -84,6 +84,7 @@ namespace API_HomeStay_HUB.Repositories
 
         public async Task<IEnumerable<int?>> GetAvailableHomeStays(DateTime? dateIn, DateTime? dateOut)
         {
+            if (dateIn == null || dateOut == null) return await _dBContext.HomeStays.Select(h => h.HomestayID).ToListAsync();
             // Lấy danh sách ID của các homestay không bị trùng lịch đặt
             var availableHomeStayIds = await _dBContext.HomeStays
                 .Where(hs => !_dBContext.Bookings.Any(bk =>
@@ -120,6 +121,11 @@ namespace API_HomeStay_HUB.Repositories
                                                select amen).ToList()
                               }).FirstOrDefaultAsync();
 
+            if(data!=null)
+            {
+                data.HomeStay!.TotalView += 1;
+                _dBContext.SaveChanges();
+            }    
             return data;
         }
 
@@ -151,7 +157,7 @@ namespace API_HomeStay_HUB.Repositories
                         HomestayID = hsCreated.Entity.HomestayID,
                         AmenityID = idAmen
                     };
-                    
+
                     await _dBContext.HomeStayAmenities.AddAsync(homeStayAmenity);
                 }
                 return await _dBContext.SaveChangesAsync() > 0;
@@ -172,7 +178,7 @@ namespace API_HomeStay_HUB.Repositories
             try
             {
                 // Tìm đối tượng HomeStay trong cơ sở dữ liệu
-                
+
                 var existingHomeStay = await _dBContext.HomeStays.FindAsync(req.HomeStay!.HomestayID);
                 req.HomeStay.ApprovalStatus = 0;
                 _dBContext.Entry(existingHomeStay!).CurrentValues.SetValues(req.HomeStay);

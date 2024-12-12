@@ -28,7 +28,16 @@ namespace API_HomeStay_HUB.Model
         public int? NumberOfKitchens { get; set; }
 
         [Column("note")]
-        public string? Note { get; set; }
+        public string? Note { get; set; } 
+
+        [Column("rules")]
+        public string? Rules { get; set; }
+
+        [Column("utilities")]
+        public string? Utilities { get; set; }
+
+        [Column("regulation")]
+        public string? Regulation { get; set; }
 
         // Navigation property liên kết ngược về bảng HomeStay
         //public virtual HomeStay? HomeStay { get; set; }

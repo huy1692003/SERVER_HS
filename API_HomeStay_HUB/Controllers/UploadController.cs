@@ -76,9 +76,11 @@ namespace API_HomeStay_HUB.Controllers
                 // Tạo tên file mới bằng cách sử dụng thời gian hiện tại
                 var timeStamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
                 var fileExtension = Path.GetExtension(file.FileName);
-                var fileName = $"{timeStamp}{fileExtension}";
+                var random = new Random();
+                var randomNumber = random.Next(1, 9999999); // Tạo số ngẫu nhiên từ 1000 đến 9999
+                var fileName = $"{timeStamp}_{randomNumber}_{fileExtension}";
                 var filePath = Path.Combine(_imagePath, fileName);
-
+                // Tạo số ngẫu nhiên
                 // Kiểm tra loại file (có thể điều chỉnh theo nhu cầu)
                 var validFileTypes = new[] { ".jpg", ".jpeg", ".png", ".gif" };
                 if (!validFileTypes.Contains(fileExtension.ToLowerInvariant()))

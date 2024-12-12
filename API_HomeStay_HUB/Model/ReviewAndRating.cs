@@ -13,7 +13,10 @@ namespace API_HomeStay_HUB.Model
         [Column("homestayID")]
         public int? HomestayID { get; set; }
 
-        [Column("customerID")]
+         [Column("bookingID")]
+        public int? BookingID { get; set; }
+
+        [Column("cusID")]
         public string? CustomerID { get; set; }
 
         [Column("rating")]
@@ -22,7 +25,9 @@ namespace API_HomeStay_HUB.Model
         [Column("comment")]
         public string? Comment { get; set; }
 
-        [Column("createdAt")]
-        public DateTime? CreatedAt { get; set; }
+        [Column("reviewDate")]
+        public DateTime? ReviewDate { get; set; }
+
+
     }
 }

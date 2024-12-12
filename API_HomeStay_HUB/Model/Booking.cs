@@ -30,10 +30,10 @@ namespace API_HomeStay_HUB.Model
         public int? HomeStayID { get; set; }
 
         [Column("checkInDate")]
-        public DateTime? CheckInDate { get; set; }
+        public DateTime CheckInDate { get; set; }
 
         [Column("checkOutDate")]
-        public DateTime? CheckOutDate { get; set; }
+        public DateTime CheckOutDate { get; set; }
 
         [Column("numberOfGuests")]
         public int? NumberOfGuests { get; set; }
@@ -63,11 +63,24 @@ namespace API_HomeStay_HUB.Model
         public int? IsConfirm { get; set; }
 
         [Column("isCancel")]
-        public int? IsCancel { get; set; }
+        public int? IsCancel { get; set; } 
+        [Column("isSuccess")]
+        public int? IsSuccess { get; set; } 
+
+        [Column("statusBK")]
+        public int? status { get; set; }
         [Column("reasonCancel")]
         public string? ReasonCancel { get; set; }
 
         [Column("bookingTime")]
-        public DateTime? BookingTime { get; set; } = DateTime.Now;
+        public DateTime? BookingTime { get; set; } 
+
+        [Column("timeConfirm")]
+        public DateTime? TimeConfirm { get; set; }
+
+        [Column("timeReviewRating")]
+        public DateTime? timeReviewRating { get; set; }
+
+        public BookingProcess? bookingProcess { get; set; }
     }
 }

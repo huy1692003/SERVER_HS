@@ -1,4 +1,5 @@
 ﻿using API_HomeStay_HUB.Data;
+using API_HomeStay_HUB.DTOs;
 using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Repositories.Intefaces;
 using Microsoft.EntityFrameworkCore;
@@ -18,7 +19,7 @@ namespace API_HomeStay_HUB.Repositories
         }
         public async Task<User?> loginUser(string username, string password)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(s => s.Username == username && s.TypeUser < 2);
+            var user = await _context.Users.FirstOrDefaultAsync(s => s.Username == username && s.TypeUser>0);
             if (user != null && BCrypt.Net.BCrypt.Verify(password, user.Password))
             {
                 var cus=_context.Customers.FirstOrDefault(c=>c.UserID==user.UserID);
@@ -35,7 +36,7 @@ namespace API_HomeStay_HUB.Repositories
         }
         public async Task<User?> loginAdmin(string username, string password)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(s => s.Username == username && s.TypeUser == 2);
+            var user = await _context.Users.FirstOrDefaultAsync(s => s.Username == username && s.TypeUser == 0);
             if (user != null && BCrypt.Net.BCrypt.Verify(password, user.Password))
             {
                 var admin = await _context.Administrators.FirstOrDefaultAsync(a => a.UserID == user.UserID);
@@ -45,7 +46,7 @@ namespace API_HomeStay_HUB.Repositories
             return null;
         }
 
-        public async Task<bool> addUser(User user, int typeUser)
+        public async Task<bool> addUser(User user, int typeUser , string roleID )
         {
             var userDB = await _context.Users.SingleOrDefaultAsync(u => u.Username == user.Username);
             if (userDB == null)
@@ -61,15 +62,41 @@ namespace API_HomeStay_HUB.Repositories
 
                 if (isCreated)
                 {
+                    string guid = Guid.NewGuid().ToString();                   
+                    await _context.Customers.AddAsync(new Customer { CusID = guid, UserID = userID_guid });
+                    
+
+                    // Lưu các thay đổi vào cơ sở dữ liệu
+                    return await _context.SaveChangesAsync() > 0;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            return false;
+
+
+        }
+        public async Task<bool> addAdmin(RegisterAdminDTO res)
+        {
+            var userDB = await _context.Users.SingleOrDefaultAsync(u => u.Username == res!.Username);
+            if (userDB == null)
+            {
+
+                string userID_guid = Guid.NewGuid().ToString();
+                res!.UserID = userID_guid;
+                res.Status = 1;
+                res.TypeUser = res.TypeUser;
+                res.Password = BCrypt.Net.BCrypt.HashPassword(res.Password);
+                await _context.Users.AddAsync(res);
+                bool isCreated = await _context.SaveChangesAsync() > 0;
+
+                if (isCreated)
+                {
                     string guid = Guid.NewGuid().ToString();
-                    if (typeUser == 2)
-                    {
-                        await _context.Administrators.AddAsync(new Administrator { AdminID = guid, UserID = userID_guid });
-                    }
-                    else
-                    {
-                        await _context.Customers.AddAsync(new Customer { CusID = guid, UserID = userID_guid });
-                    }
+                   
+                    await _context.Administrators.AddAsync(new Administrator { AdminID = guid, UserID = userID_guid, RoleID = res.roleID });                   
 
                     // Lưu các thay đổi vào cơ sở dữ liệu
                     return await _context.SaveChangesAsync() > 0;

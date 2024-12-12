@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API_HomeStay_HUB.Repositories
 {
-    public class ReviewAndRatingRepository:IReviewAndRatingRepository
+    public class ReviewAndRatingRepository : IReviewAndRatingRepository
     {
         private readonly DBContext _dBContext;
         public ReviewAndRatingRepository(DBContext dbContext)
@@ -15,11 +15,16 @@ namespace API_HomeStay_HUB.Repositories
         public async Task<bool> addReview(ReviewAndRating reviewAndRating)
         {
             await _dBContext.ReviewAndRatings.AddAsync(reviewAndRating);
-            return await _dBContext.SaveChangesAsync()>0;
+
+
+            var booking = await _dBContext.Bookings.FirstOrDefaultAsync(s => s.BookingID == reviewAndRating.BookingID);
+            booking!.timeReviewRating = DateTime.Now;
+
+            return await _dBContext.SaveChangesAsync() > 0;
         }
         public async Task<IEnumerable<ReviewAndRating?>> getReviews_ByHomeStay(int idHomeStay)
         {
-            return await _dBContext.ReviewAndRatings.Where(r=>r.HomestayID==idHomeStay).ToListAsync();
+            return await _dBContext.ReviewAndRatings.Where(r => r.HomestayID == idHomeStay).ToListAsync();
         }
     }
 }

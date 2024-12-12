@@ -1,7 +1,10 @@
-﻿using API_HomeStay_HUB.Model;
+﻿using API_HomeStay_HUB.Data;
+using API_HomeStay_HUB.DTOs;
+using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Services.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API_HomeStay_HUB.Controllers
 {
@@ -10,19 +13,40 @@ namespace API_HomeStay_HUB.Controllers
     public class ReviewAndRatingController : ControllerBase
     {
         private readonly IReviewAndRatingService _reviewAndRatingService;
-        public ReviewAndRatingController(IReviewAndRatingService reviewAndRatingService)
+        private readonly DBContext dBContext;
+        public ReviewAndRatingController(IReviewAndRatingService reviewAndRatingService , DBContext db)
         {
             _reviewAndRatingService = reviewAndRatingService;
+            this.dBContext = db;
         }
         [HttpGet("getReviewByHomeStay/{id}")]
         public async Task<IActionResult> getReviewByHomeStay(int id)
         {
             return Ok(await _reviewAndRatingService.getReviews_ByHomeStay(id));
+        } 
+
+
+        [HttpGet("getReviewByOwner/{idOwner}")]
+        public async Task<IActionResult> getReviewByOwner(string idOwner  )
+        {
+            var result = await (from rv in dBContext.ReviewAndRatings
+                          join h in dBContext.HomeStays
+                          on rv.HomestayID equals h.HomestayID
+                          join owner in dBContext.OwnerStays
+                          on h.OwnerID equals owner.OwnerID
+                          where owner.OwnerID == idOwner
+                          orderby rv.ReviewDate descending
+                          select rv                           
+                          ).ToListAsync();
+
+            return Ok(result);
         }
 
         [HttpPost("add")]
         public async Task<IActionResult> addReviewAndRating([FromBody] ReviewAndRating rv)
         {
+            int id = new Random().Next(1000000000);
+            rv.ReviewID = id;
             if (await _reviewAndRatingService.addReview(rv))
             {
                 return Ok("Thêm đánh giá thành công");

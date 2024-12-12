@@ -4,7 +4,7 @@
     {
         public string? Location { get; set; } = "";
         public int? NumberofGuest { get; set; } = 1;
-        public DateTime? DateIn { get; set; }=DateTime.Now;
-        public DateTime? DateOut { get; set; } = DateTime.Now.AddDays(1);
+        public DateTime? DateIn { get; set; }
+        public DateTime? DateOut { get; set; }
     }
 }

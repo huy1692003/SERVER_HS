@@ -76,3 +76,5 @@ D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\obj\Debug\net8.0\staticwebassets\msbuild.API_HomeStay_HUB.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\RestSharp.dll

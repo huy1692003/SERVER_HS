@@ -46,6 +46,7 @@ namespace API_HomeStay_HUB.Repositories
 
         public async Task<bool> UpdateArticle(Article article)
         {
+            article.PublishDate= DateTime.Now;
             try
             {
                 _context.Entry(article).State = EntityState.Modified;

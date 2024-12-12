@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 namespace API_HomeStay_HUB.Model
 {
     [Table("Users")]
@@ -51,9 +52,12 @@ namespace API_HomeStay_HUB.Model
 
         [Column("gender")]
         public int? Gender { get; set; }
-        public Customer Customer { get; set; }
-        public OwnerStay OwnerStay { get; set; }
-        public Administrator Administrator { get; set; }
+        [JsonIgnore]
+        public Customer? Customer { get; set; }
+        [JsonIgnore]
+        public OwnerStay? OwnerStay { get; set; }
+        [JsonIgnore]
+        public Administrator? Administrator { get; set; }
 
     }
 }

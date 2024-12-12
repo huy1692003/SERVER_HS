@@ -1,4 +1,5 @@
 ﻿using API_HomeStay_HUB.Data;
+using API_HomeStay_HUB.Model.Momo;
 using API_HomeStay_HUB.Repositories;
 using API_HomeStay_HUB.Repositories.Intefaces;
 using API_HomeStay_HUB.Repositories.Interfaces;
@@ -13,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Sử dụng file tĩnh từ thư mục wwwroot
+builder.Services.Configure<MomoOptionModel>(builder.Configuration.GetSection("MomoAPI"));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -65,6 +67,8 @@ builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddScoped<IBookingRepository, BookingRepository>();
 builder.Services.AddScoped<IBookingService, BookingService>();
+builder.Services.AddScoped<ISendMaillService, SendMaillService>();
+builder.Services.AddScoped<PaymentMomoService>();
 
 
 // Cấu hình CORS

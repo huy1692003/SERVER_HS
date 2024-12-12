@@ -45,7 +45,7 @@ namespace API_HomeStay_HUB.Controllers
                 }
                 else
                 {
-                    return BadRequest("Chỉ được gửi phiếu đăng ký 1 lần trên 1 tài khoản");
+                    return BadRequest("Đơn đăng ký của bạn đang được chờ xét duyệt hoặc bạn đã là đối tác của chúng tôi");
                 }
 
 
@@ -76,7 +76,7 @@ namespace API_HomeStay_HUB.Controllers
         }
         private bool checkExistedPartnerShip(string idCus)
         {
-            return _db.PartnershipRegs.Any(p => p.CustomerID == idCus);
+            return _db.PartnershipRegs.Any(p => p.CustomerID == idCus &&( p.Status==0 || p.Status==1));
         }
 
     }

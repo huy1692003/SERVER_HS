@@ -147,7 +147,7 @@ namespace API_HomeStay_HUB.Controllers
                         join DetailHomeStay in _dBContext.DetailHomeStays
                         on HomeStay.HomestayID equals DetailHomeStay.HomestayID
                         where HomeStay.OwnerID == idOwner && HomeStay.ApprovalStatus == status
-
+                        orderby HomeStay.HomestayID descending
                         select new HomeStayResDTO
                         {
                             HomeStay = HomeStay,
