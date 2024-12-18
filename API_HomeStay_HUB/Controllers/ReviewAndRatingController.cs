@@ -22,7 +22,17 @@ namespace API_HomeStay_HUB.Controllers
         [HttpGet("getReviewByHomeStay/{id}")]
         public async Task<IActionResult> getReviewByHomeStay(int id)
         {
-            return Ok(await _reviewAndRatingService.getReviews_ByHomeStay(id));
+
+            var result = await (from rv in dBContext.ReviewAndRatings
+                                join h in dBContext.HomeStays on rv.HomestayID equals h.HomestayID
+                                join c in dBContext.Customers on rv.CustomerID equals c.CusID
+                                join u in dBContext.Users on c.UserID equals u.UserID
+                                where rv.HomestayID == id
+                                orderby rv.ReviewDate descending
+                                select new { rv,u.FullName,u.Gender }
+                          ).ToListAsync();
+
+            return Ok(result);
         } 
 
 

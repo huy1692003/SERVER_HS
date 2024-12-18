@@ -6,5 +6,7 @@ namespace API_HomeStay_HUB.DTOs
     {
         public HomeStay? HomeStay { get; set; }
         public DetailHomeStay? DetailHomeStay { get; set; }
+
+        public User? Owner { get; set; }
     }
 }

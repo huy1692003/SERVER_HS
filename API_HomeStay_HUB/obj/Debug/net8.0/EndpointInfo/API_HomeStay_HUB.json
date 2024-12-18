@@ -160,6 +160,29 @@
         }
       }
     },
+    "/api/Advertisement/updateView/{id}": {
+      "get": {
+        "tags": [
+          "Advertisement"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Advertisement/getAdvertisementManager": {
       "post": {
         "tags": [
@@ -547,6 +570,44 @@
         }
       }
     },
+    "/api/Article/getNew": {
+      "get": {
+        "tags": [
+          "Article"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Article"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Article"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Article"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Article/getByID{id}": {
       "get": {
         "tags": [
@@ -731,6 +792,22 @@
           },
           {
             "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -1361,47 +1438,6 @@
         }
       }
     },
-    "/api/HomeStay/getAll_ByStatus": {
-      "post": {
-        "tags": [
-          "HomeStay"
-        ],
-        "parameters": [
-          {
-            "name": "status",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PaginateDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PaginateDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/PaginateDTO"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
     "/api/HomeStay/getTop20ViewHight": {
       "get": {
         "tags": [
@@ -1594,7 +1630,7 @@
         }
       }
     },
-    "/api/HomeStay/getBy_idOwner": {
+    "/api/HomeStay/getHomeStayByAdminOrOwner": {
       "post": {
         "tags": [
           "HomeStay"
@@ -1614,23 +1650,39 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/PaginateDTO"
+                "$ref": "#/components/schemas/SearchHomeStayAdminDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/PaginateDTO"
+                "$ref": "#/components/schemas/SearchHomeStayAdminDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/PaginateDTO"
+                "$ref": "#/components/schemas/SearchHomeStayAdminDTO"
               }
             }
           }
@@ -1826,11 +1878,122 @@
         }
       }
     },
-    "/api/Payment/getAll": {
-      "get": {
+    "/api/Payment/getPayment": {
+      "post": {
         "tags": [
           "Payment"
         ],
+        "parameters": [
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchPaymentDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchPaymentDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchPaymentDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Payment/getPaymentbyOwner": {
+      "post": {
+        "tags": [
+          "Payment"
+        ],
+        "parameters": [
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "idOwner",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchPaymentDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchPaymentDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchPaymentDTO"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "Success"
@@ -2572,6 +2735,10 @@
             "type": "string",
             "nullable": true
           },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
           "content": {
             "type": "string",
             "nullable": true
@@ -3008,20 +3175,6 @@
         },
         "additionalProperties": false
       },
-      "PaginateDTO": {
-        "type": "object",
-        "properties": {
-          "page": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "pageSize": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
       "PartnershipReg": {
         "type": "object",
         "properties": {
@@ -3120,6 +3273,10 @@
             "type": "string",
             "nullable": true
           },
+          "userID": {
+            "type": "string",
+            "nullable": true
+          },
           "paymentType": {
             "type": "integer",
             "format": "int32",
@@ -3131,7 +3288,7 @@
           },
           "amount": {
             "type": "number",
-            "format": "float",
+            "format": "double",
             "nullable": true
           },
           "advertisementID": {
@@ -3418,11 +3575,107 @@
         },
         "additionalProperties": false
       },
+      "SearchHomeStayAdminDTO": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "priceRange": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "numberOfBedrooms": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberOfLivingRooms": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberOfBathrooms": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberOfKitchens": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberofGuest": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "SearchHomeStayDTO": {
         "type": "object",
         "properties": {
           "location": {
             "type": "string",
+            "nullable": true
+          },
+          "priceRange": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "numberOfBedrooms": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberOfLivingRooms": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "amenties": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "numberOfBathrooms": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberOfKitchens": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           },
           "numberofGuest": {
@@ -3436,6 +3689,48 @@
             "nullable": true
           },
           "dateOut": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SearchPaymentDTO": {
+        "type": "object",
+        "properties": {
+          "bookingID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "advertisementID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "contentPayment": {
+            "type": "string",
+            "nullable": true
+          },
+          "paymentMethod": {
+            "type": "string",
+            "nullable": true
+          },
+          "dateStart": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dateEnd": {
             "type": "string",
             "format": "date-time",
             "nullable": true

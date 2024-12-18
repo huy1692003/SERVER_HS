@@ -46,6 +46,11 @@ namespace API_HomeStay_HUB.Repositories
                     var idUser = (await _dbContext.Customers.FirstOrDefaultAsync(s => s.CusID == PartnerShip.CustomerID))!.UserID;
                     var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.UserID == idUser);
                     user!.TypeUser = 1;
+                    user.FullName=PartnerShip.FullName;
+                    user.Email = PartnerShip.Email;
+                    user.PhoneNumber = PartnerShip.PhoneNumber;
+                    user.Address = PartnerShip.Address;
+                    
                     await _dbContext.OwnerStays.AddAsync(new OwnerStay { OwnerID = guid, UserID = idUser });
 
                     // Gửi email thông báo về việc xét duyệt

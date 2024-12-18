@@ -13,6 +13,9 @@ namespace API_HomeStay_HUB.Model
         [Column("title")]
         public string? Title { get; set; }
 
+        [Column("description")]
+        public string? Description { get; set; }
+
         [Column("content")]
         public string? Content { get; set; }
 

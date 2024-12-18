@@ -1,4 +1,5 @@
 ﻿using API_HomeStay_HUB.Data;
+using API_HomeStay_HUB.Helpers;
 using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Repositories.Interfaces;
 using API_HomeStay_HUB.Services;
@@ -18,7 +19,7 @@ namespace API_HomeStay_HUB.Repositories
         }
         private int GenerateRandomId()
         {
-            DateTime now = DateTime.Now;
+            DateTime now = TimeHelper.GetDateTimeVietnam();
             // Lấy mili giây từ thời gian hiện tại và chuyển đổi nó thành số nguyên
             return (int)(now.Ticks % int.MaxValue); // Sử dụng modulo để đảm bảo trong giới hạn int
         }
@@ -54,7 +55,7 @@ namespace API_HomeStay_HUB.Repositories
                 {
                     booking.IsConfirm = 1;
                     booking.status = 2;
-                    booking.TimeConfirm = DateTime.Now;
+                    booking.TimeConfirm = TimeHelper.GetDateTimeVietnam();
                     await _dbContext.BookingProcesses.AddAsync
                         (
                             new BookingProcess

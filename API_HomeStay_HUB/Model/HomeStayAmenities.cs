@@ -15,7 +15,7 @@ namespace API_HomeStay_HUB.Model
 
         
         [Column("amenityID")]
-        public int? AmenityID { get; set; }
+        public int AmenityID { get; set; }
     }
 
 }

@@ -1,4 +1,5 @@
 ﻿using API_HomeStay_HUB.Data;
+using API_HomeStay_HUB.Helpers;
 using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -34,7 +35,7 @@ namespace API_HomeStay_HUB.Repositories
             try
             {
                 article.ArticleID = null;
-                article.PublishDate = DateTime.Now;
+                article.PublishDate = TimeHelper.GetDateTimeVietnam();
                 _context.Articles.Add(article);
                 return await _context.SaveChangesAsync() > 0; // Trả về true nếu có thay đổi
             }
@@ -46,7 +47,7 @@ namespace API_HomeStay_HUB.Repositories
 
         public async Task<bool> UpdateArticle(Article article)
         {
-            article.PublishDate= DateTime.Now;
+            article.PublishDate= TimeHelper.GetDateTimeVietnam();
             try
             {
                 _context.Entry(article).State = EntityState.Modified;

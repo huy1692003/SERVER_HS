@@ -1,4 +1,5 @@
-﻿using API_HomeStay_HUB.Model;
+﻿using API_HomeStay_HUB.DTOs;
+using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Repositories.Interfaces;
 using API_HomeStay_HUB.Services.Interface;
 
@@ -11,10 +12,15 @@ namespace API_HomeStay_HUB.Services
         {
             _paymentRepository = paymentRepository;
         }
-        public async Task<IEnumerable<Payment>> GetAllPayments()
+        public async Task<PagedResultDTO<dynamic>?> GetPayments(PaginateDTO paginate, int type, SearchPaymentDTO search)
         {
 
-            return await _paymentRepository.GetAllPayments();
+            return await _paymentRepository.GetPayments(paginate,type,search);
+        }   
+        public async Task<PagedResultDTO<dynamic>?> GetPaymentsByOwner(PaginateDTO paginate, int type, string idOwner, SearchPaymentDTO search)
+        {
+
+            return await _paymentRepository.GetPaymentsByOwner(paginate,type,idOwner,search);
         }
         public async Task<Payment?> GetPaymentById(int paymentID)
         {

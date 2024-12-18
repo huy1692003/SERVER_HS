@@ -1,4 +1,5 @@
-﻿using API_HomeStay_HUB.Model;
+﻿using API_HomeStay_HUB.DTOs;
+using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,12 +17,21 @@ namespace API_HomeStay_HUB.Controllers
         }
 
         // GET: api/payment
-        [HttpGet ("getAll")]
-        public async Task<IActionResult> GetAllPayments()
+        [HttpPost ("getPayment")]
+        public async Task<IActionResult> GetAllPayments([FromQuery]PaginateDTO paginate, [FromBody] SearchPaymentDTO search, [FromQuery] int type =1)
         {
-            var payments = await _paymentService.GetAllPayments();
+            var payments = await _paymentService.GetPayments(paginate,type,search);
+            return Ok(payments); // Trả về danh sách thanh toán
+        } 
+        // GET: api/payment
+        [HttpPost ("getPaymentbyOwner")]
+        public async Task<IActionResult> getPaymentbyOwner([FromQuery]PaginateDTO paginate, [FromBody] SearchPaymentDTO search, [FromQuery] string idOwner ,[FromQuery] int type =1)
+        {
+            var payments = await _paymentService.GetPaymentsByOwner(paginate,type,idOwner,search);
             return Ok(payments); // Trả về danh sách thanh toán
         }
+
+
 
         // GET: api/payment/{id}
         [HttpGet("getByID/{id}")]

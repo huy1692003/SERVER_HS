@@ -1,4 +1,5 @@
 ﻿using API_HomeStay_HUB.Data;
+using API_HomeStay_HUB.Helpers;
 using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -18,7 +19,7 @@ namespace API_HomeStay_HUB.Repositories
 
 
             var booking = await _dBContext.Bookings.FirstOrDefaultAsync(s => s.BookingID == reviewAndRating.BookingID);
-            booking!.timeReviewRating = DateTime.Now;
+            booking!.timeReviewRating = TimeHelper.GetDateTimeVietnam();
 
             return await _dBContext.SaveChangesAsync() > 0;
         }

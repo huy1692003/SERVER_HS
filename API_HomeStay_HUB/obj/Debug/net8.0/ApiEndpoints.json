@@ -205,6 +205,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_HomeStay_HUB.Controllers.AdvertisementController",
+    "Method": "updateView",
+    "RelativePath": "api/Advertisement/updateView/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_HomeStay_HUB.Controllers.AmenitiesController",
     "Method": "GetAmenities",
     "RelativePath": "api/Amenities",
@@ -394,6 +410,26 @@
   },
   {
     "ContainingType": "API_HomeStay_HUB.Controllers.ArticleController",
+    "Method": "getNew",
+    "RelativePath": "api/Article/getNew",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[API_HomeStay_HUB.Model.Article, API_HomeStay_HUB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_HomeStay_HUB.Controllers.ArticleController",
     "Method": "SearchArticles",
     "RelativePath": "api/Article/search",
     "HttpMethod": "GET",
@@ -524,6 +560,16 @@
       },
       {
         "Name": "status",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
         "Type": "System.Int32",
         "IsRequired": false
       },
@@ -869,20 +915,15 @@
   },
   {
     "ContainingType": "API_HomeStay_HUB.Controllers.HomeStayController",
-    "Method": "GetHomeStay",
-    "RelativePath": "api/HomeStay/getAll_ByStatus",
-    "HttpMethod": "POST",
+    "Method": "GetHomeStayByID",
+    "RelativePath": "api/HomeStay/getByID/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "status",
+        "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "paginate",
-        "Type": "API_HomeStay_HUB.DTOs.PaginateDTO",
         "IsRequired": true
       }
     ],
@@ -890,8 +931,8 @@
   },
   {
     "ContainingType": "API_HomeStay_HUB.Controllers.HomeStayController",
-    "Method": "getBy_idOwner",
-    "RelativePath": "api/HomeStay/getBy_idOwner",
+    "Method": "getHomeStay",
+    "RelativePath": "api/HomeStay/getHomeStayByAdminOrOwner",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -907,24 +948,18 @@
         "IsRequired": false
       },
       {
-        "Name": "paginate",
-        "Type": "API_HomeStay_HUB.DTOs.PaginateDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_HomeStay_HUB.Controllers.HomeStayController",
-    "Method": "GetHomeStayByID",
-    "RelativePath": "api/HomeStay/getByID/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
+        "Name": "Page",
         "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "search",
+        "Type": "API_HomeStay_HUB.DTOs.SearchHomeStayAdminDTO",
         "IsRequired": true
       }
     ],
@@ -1138,16 +1173,6 @@
   },
   {
     "ContainingType": "API_HomeStay_HUB.Controllers.PaymentController",
-    "Method": "GetAllPayments",
-    "RelativePath": "api/Payment/getAll",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_HomeStay_HUB.Controllers.PaymentController",
     "Method": "GetPaymentById",
     "RelativePath": "api/Payment/getByID/{id}",
     "HttpMethod": "GET",
@@ -1158,6 +1183,73 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_HomeStay_HUB.Controllers.PaymentController",
+    "Method": "GetAllPayments",
+    "RelativePath": "api/Payment/getPayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "search",
+        "Type": "API_HomeStay_HUB.DTOs.SearchPaymentDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_HomeStay_HUB.Controllers.PaymentController",
+    "Method": "getPaymentbyOwner",
+    "RelativePath": "api/Payment/getPaymentbyOwner",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "search",
+        "Type": "API_HomeStay_HUB.DTOs.SearchPaymentDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "idOwner",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "type",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

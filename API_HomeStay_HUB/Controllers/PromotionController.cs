@@ -38,6 +38,8 @@ namespace API_HomeStay_HUB.Controllers
         }
 
         //GET: api/promotion/getByID/{id}
+
+        //checked voucher hợp lệ 
         [HttpGet("getByCode/{code}")]
         public async Task<IActionResult> GetPromotionById(string code)
         {

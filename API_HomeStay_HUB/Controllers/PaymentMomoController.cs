@@ -1,4 +1,6 @@
-﻿using API_HomeStay_HUB.Data;
+﻿using System.Globalization;
+using API_HomeStay_HUB.Data;
+using API_HomeStay_HUB.Helpers;
 using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Model.Momo;
 using API_HomeStay_HUB.Services;
@@ -47,6 +49,7 @@ namespace API_HomeStay_HUB.Controllers
                     var parts = orderId.Split('-');
                     string code = parts[1];
                     string type = parts.Length > 1 ? parts[2] : string.Empty;
+
                     if (type == "tp")
                     {
                         var bookprocess = db.BookingProcesses.FirstOrDefault(s => s.BookingID == int.Parse(code));
@@ -54,8 +57,9 @@ namespace API_HomeStay_HUB.Controllers
                         book!.status = 3;
                         //Chuyển sang chờ nhận phòng
                         bookprocess!.StepOrder = 1;
-                        bookprocess!.PaymentTime = DateTime.Now;
-                        createPayment(type, float.Parse(amount), int.Parse(code), book.CustomerID, "");
+                        var cus = db.Customers.FirstOrDefault(s => s.CusID == book.CustomerID);
+                        bookprocess!.PaymentTime = TimeHelper.GetDateTimeVietnam();
+                        createPayment(type, float.Parse(amount), int.Parse(code), book.CustomerID, "" ,cus.UserID);
                         db.SaveChanges();
                         return Redirect(returnUrl_Customer);
                     }
@@ -64,12 +68,14 @@ namespace API_HomeStay_HUB.Controllers
                     {
                         var Advertisement = db.Advertisements.FirstOrDefault(s => s.AdID == int.Parse(code));
                         Advertisement!.StatusAd = 2;
-                        Advertisement!.TimePayment = DateTime.Now;
-                        createPayment(type, float.Parse(amount), int.Parse(code), "", Advertisement.OwnerID);
+                        Advertisement!.TimePayment = TimeHelper.GetDateTimeVietnam();
+                        var cus = db.OwnerStays.FirstOrDefault(s => s.OwnerID == Advertisement.OwnerID);
+                        createPayment(type, float.Parse(amount), int.Parse(code), "", Advertisement.OwnerID,cus.UserID);
                         return Redirect(returnUrl_Owner);
 
                     }
                 }
+
 
                 return Ok("success transection");
             }
@@ -82,7 +88,7 @@ namespace API_HomeStay_HUB.Controllers
         }
 
 
-        private void createPayment(string type, float amount, int? code, string? cusID, string? OwnerID)
+        private void createPayment(string type, float amount, int? code, string? cusID, string? OwnerID,string userID)
         {
             Payment payment;
             //Thanh toán tiền phòng 
@@ -93,12 +99,13 @@ namespace API_HomeStay_HUB.Controllers
                 {
                     BookingID = code,
                     CusID = cusID,
+                    UserID=userID,
                     Amount = amount,
                     PaymentType = 1,
                     PaymentStatus = 1,
                     NotePayment = "Thanh toán tiền phòng cho Booking #" + code,
                     PaymentMethod = "Thanh toán qua Momo",
-                    PaymentDate = DateTime.Now,
+                    PaymentDate = TimeHelper.GetDateTimeVietnam(),
 
                 };
                 db.Payments.Add(payment);
@@ -110,12 +117,13 @@ namespace API_HomeStay_HUB.Controllers
                 {
                     AdvertisementID = code,
                     OwnerID = OwnerID,
+                    UserID = userID,
                     Amount = amount,
                     PaymentType = 1,
                     PaymentStatus = 1,
                     NotePayment = "Thanh toán tiền quảng cáo cho mã #" + code,
                     PaymentMethod = "Thanh toán qua Momo",
-                    PaymentDate = DateTime.Now,
+                    PaymentDate = TimeHelper.GetDateTimeVietnam(),
 
                 };
                 db.Payments.Add(payment);

@@ -1,5 +1,6 @@
 ﻿using API_HomeStay_HUB.Data;
 using API_HomeStay_HUB.DTOs;
+using API_HomeStay_HUB.Helpers;
 using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Services;
 using API_HomeStay_HUB.Services.Interface;
@@ -34,6 +35,20 @@ namespace API_HomeStay_HUB.Controllers
                 .ToListAsync();
 
             return Ok(ads);
+        }
+
+
+        [HttpGet("updateView/{id}")]
+        public async Task<IActionResult> updateView(int id)
+        {
+            var ads = _db.Advertisements.FirstOrDefault(s => s.AdID == id);
+            if(ads!=null)
+            {
+                ads.TotalClick += 1;
+                _db.SaveChanges();
+            }
+            return NoContent();
+            
         }
 
 
@@ -156,7 +171,7 @@ namespace API_HomeStay_HUB.Controllers
             try
             {
                 advertisement.AdID = null;
-                advertisement.CreatedDate = DateTime.Now;
+                advertisement.CreatedDate = TimeHelper.GetDateTimeVietnam();
                 advertisement.TotalClick = 0;
                 advertisement.StatusAd = 0;
 

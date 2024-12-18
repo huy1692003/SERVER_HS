@@ -2,6 +2,7 @@
 using System.Data;
 using API_HomeStay_HUB.Data;
 using API_HomeStay_HUB.DTOs;
+using API_HomeStay_HUB.Helpers;
 using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Services.Interface;
 using Microsoft.AspNetCore.Http;
@@ -26,7 +27,7 @@ namespace API_HomeStay_HUB.Controllers
 
 
         [HttpPost("getBooking")]
-        public async Task<IActionResult> getBookingByOwner_Pending([FromQuery] string idOwner, [FromQuery] int status, [FromBody] SearchBookingDTO req)
+        public async Task<IActionResult> getBookingByOwner_Pending([FromQuery] string idOwner, [FromQuery] int status, [FromQuery] PaginateDTO paginate, [FromBody] SearchBookingDTO req)
         {
             DateTime dateStartSearch = new DateTime();
             DateTime dateEndSearch = new DateTime();
@@ -35,34 +36,47 @@ namespace API_HomeStay_HUB.Controllers
                 dateStartSearch = Convert.ToDateTime(req.StartDate);
                 dateEndSearch = Convert.ToDateTime(req.EndDate);
             }
+
             try
             {
                 refeshStatusBookingProcess();
 
-                List<Booking> data = new List<Booking>();
-
-                data = await _dbContext.Bookings.Where(
+                // Xây dựng câu truy vấn tìm kiếm
+                var query = _dbContext.Bookings.Where(
                     b => (status == 10 || b.status == status) && b.OwnerID == idOwner
                     && (string.IsNullOrEmpty(req.Name) || b.Name!.Contains(req.Name))
                     && (string.IsNullOrEmpty(req.Phone) || b.Phone!.Contains(req.Phone))
                     && (string.IsNullOrEmpty(req.Email) || b.Email!.Contains(req.Email))
                     && (req.StartDate == null || b.CheckInDate.Date == dateStartSearch.Date)
                     && (req.EndDate == null || b.CheckOutDate.Date == dateEndSearch.Date)
-                    )
-                    .OrderByDescending(s => s.BookingTime).ToListAsync();
+                )
+                .OrderByDescending(s => s.BookingTime);
 
-                if (data.Count > 0)
+                // Tính toán phân trang
+                var totalRecords = await query.CountAsync();  // Lấy tổng số bản ghi
+                var bookings = await query
+                    .Skip((paginate.Page - 1) * paginate.PageSize)  // Bỏ qua các bản ghi trước trang hiện tại
+                    .Take(paginate.PageSize)  // Lấy số lượng phần tử trong trang
+                    .ToListAsync();
+
+                // Thêm thông tin bookingProcess vào từng booking
+                foreach (var book in bookings)
                 {
-                    foreach (var book in data)
-                    {
-                        book.bookingProcess = _dbContext.BookingProcesses.FirstOrDefault(s => s.BookingID == book.BookingID);
-                    }
+                    book.bookingProcess = _dbContext.BookingProcesses.FirstOrDefault(s => s.BookingID == book.BookingID);
                 }
-                return Ok(data);
+
+                return Ok(new
+                {
+                    TotalRecords = totalRecords,
+                    TotalPages = (int)Math.Ceiling((double)totalRecords / paginate.PageSize),  // Tổng số trang
+                    CurrentPage = paginate.Page,
+                    PageSize = paginate.PageSize,
+                    Items = bookings
+                });
             }
             catch (Exception ex)
             {
-                return Ok(new List<Booking>());
+                return StatusCode(500, "Internal server error: " + ex.Message);
             }
         }
 
@@ -147,7 +161,7 @@ namespace API_HomeStay_HUB.Controllers
             var booking = _dbContext.Bookings.FirstOrDefault(s => s.BookingID == bookingID);
             if (bookingPrs != null && booking != null)
             {
-                bookingPrs.CheckInTime = DateTime.Now;
+                bookingPrs.CheckInTime = TimeHelper.GetDateTimeVietnam();
                 bookingPrs.StepOrder = 3;
                 booking.status = 5;
                 _dbContext.SaveChanges();
@@ -162,7 +176,7 @@ namespace API_HomeStay_HUB.Controllers
             var booking = _dbContext.Bookings.FirstOrDefault(s => s.BookingID == bookingID);
             if (bookingPrs != null && booking != null)
             {
-                bookingPrs.CheckOutTime = DateTime.Now;
+                bookingPrs.CheckOutTime = TimeHelper.GetDateTimeVietnam();
                 bookingPrs.StepOrder = 4;
                 booking.IsSuccess = 1;
                 booking.status = 6; //hoàn thành
@@ -173,7 +187,7 @@ namespace API_HomeStay_HUB.Controllers
 
         private void refeshStatusBookingProcess()
         {
-            var datenow = DateTime.Now.Date;
+            var datenow = TimeHelper.GetDateTimeVietnam().Date;
             var listBookinh = (from bk in _dbContext.Bookings
                                join prs in _dbContext.BookingProcesses
                                on bk.BookingID equals prs.BookingID

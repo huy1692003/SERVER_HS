@@ -1,4 +1,5 @@
-﻿using API_HomeStay_HUB.Model;
+﻿using API_HomeStay_HUB.Data;
+using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,10 +10,12 @@ namespace API_HomeStay_HUB.Controllers
     public class ArticleController : ControllerBase
     {
         private readonly IArticleService _service;
+        private readonly DBContext db;
 
-        public ArticleController(IArticleService service)
+        public ArticleController(IArticleService service , DBContext db)
         {
             _service = service;
+            this.db = db;
         }
 
         // GET: api/Article
@@ -21,7 +24,14 @@ namespace API_HomeStay_HUB.Controllers
         {
             return Ok(await _service.GetAllArticles());
         }
-       
+
+        // GET: api/Article
+        [HttpGet("getNew")]
+        public async Task<ActionResult<IEnumerable<Article>>> getNew()
+        {
+            return Ok(db.Articles.Take(8).ToList().OrderByDescending(s=>s.PublishDate));
+        }
+
 
         // GET: api/Article/5
         [HttpGet("getByID{id}")]
@@ -34,6 +44,8 @@ namespace API_HomeStay_HUB.Controllers
             }
             return Ok(article);
         }
+
+
         [HttpGet("getByCateArticle/{id}")]
         public async Task<IActionResult> getArticle_ByCate(int id)
         {

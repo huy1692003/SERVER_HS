@@ -17,6 +17,7 @@ namespace API_HomeStay_HUB.Model
         public int? BookingID { get; set; }
 
         [Column("cusID")]
+
         public string? CustomerID { get; set; }
 
         [Column("rating")]
