@@ -1,22 +1,26 @@
 ﻿using API_HomeStay_HUB.Data;
 using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace API_HomeStay_HUB.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class RoleController : ControllerBase
     {
         private readonly IRoleService _roleService;
-
-        public RoleController(IRoleService roleService)
+        private readonly DBContext dB;
+        public RoleController(IRoleService roleService,DBContext db)
         {
             _roleService = roleService;
+            this.dB = db;
         }
 
         // GET: api/role/getAll
@@ -61,12 +65,25 @@ namespace API_HomeStay_HUB.Controllers
             return state ? NoContent() : BadRequest("Dữ liệu Role không hợp lệ");
         }
 
+        // PUT: api/role/update
+        [HttpPut("grandMenu/{idRole}")]
+        public async Task<IActionResult> grandMenu(string idRole,[FromBody] List<int> listMenus)
+        {
+            string menustring = JsonSerializer.Serialize(listMenus);
+            var role = dB.Roles.FirstOrDefault(s=>s.RoleID==idRole);
+            role.Permission = menustring;
+            var check = dB.SaveChanges() > 0;
+            return check ? Ok(role) : BadRequest();
+
+        }
+
         // DELETE: api/role/delete/{roleId}
         [HttpDelete("delete/{roleId}")]
         public async Task<IActionResult> DeleteRole(string roleId)
         {
             bool state = await _roleService.DeleteRole(roleId);
             return state ? NoContent() : NotFound();
+
         }
     }
 }

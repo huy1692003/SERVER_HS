@@ -8,5 +8,8 @@ namespace API_HomeStay_HUB.DTOs
         public DetailHomeStay? DetailHomeStay { get; set; }
         public List<HomeStayAmenities>? HomeStayAmenities { get; set; }
         public List<Amenities>? Amenities { get; set; }
+
+        public string? UserNameOwner { get; set; } 
+        public string? idUserOwner { get; set; }
     }
 }

@@ -11,5 +11,11 @@ namespace API_HomeStay_HUB.Model
 
         [Column("nameRole")]
         public string? NameRole { get; set; }
+        
+        [Column("permission")]
+        public string? Permission { get; set; }
+
+        [NotMapped]
+        public List<int>? listMenus { get; set; }
     }
 }

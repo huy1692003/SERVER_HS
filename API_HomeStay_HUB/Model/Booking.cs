@@ -80,7 +80,13 @@ namespace API_HomeStay_HUB.Model
 
         [Column("timeReviewRating")]
         public DateTime? timeReviewRating { get; set; }
-
+        [NotMapped]
         public BookingProcess? bookingProcess { get; set; }
+        [NotMapped]
+
+        public string? nameOwner { get; set; }
+        [NotMapped]
+
+        public string? phoneOwner { get; set; }
     }
 }

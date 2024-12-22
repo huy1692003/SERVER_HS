@@ -68,7 +68,7 @@ namespace API_HomeStay_HUB.Repositories
                             HomeStay.Province!.Contains(search.Location!) ||
                             HomeStay.District!.Contains(search.Location!)
                         )
-                        && (search.Location == null ||
+                        && (search.Name == null ||
                             HomeStay.HomestayName!.Contains(search.Name!))
                         && (search.NumberofGuest == null ||
                             (search.NumberofGuest >= HomeStay.MinPerson && search.NumberofGuest <= HomeStay.MaxPerson)
@@ -123,17 +123,35 @@ namespace API_HomeStay_HUB.Repositories
 
         public async Task<IEnumerable<int?>> GetAvailableHomeStays(DateTime? dateIn, DateTime? dateOut)
         {
+            // Trả về tất cả HomeStays nếu không có ngày vào hoặc ngày ra
+            if (dateIn == null || dateOut == null)
+            {
+                return await _dBContext.HomeStays.Select(h => h.HomestayID).ToListAsync();
+            }
 
-            if (dateIn == null || dateOut == null) return await _dBContext.HomeStays.Select(h => h.HomestayID).ToListAsync();
-            // Lấy danh sách ID của các homestay không bị trùng lịch đặt
-            var availableHomeStayIds = await _dBContext.HomeStays
-                .Where(hs => !_dBContext.Bookings.Any(bk =>bk.HomeStayID == hs.HomestayID &&
-                    dateIn.Value < bk.CheckOutDate.Date && dateOut > bk.CheckInDate.Date))
-                .Select(hs => hs.HomestayID)
-                .ToListAsync();
+            // Tạo một truy vấn cho các booking bị trùng lịch
+            var homestayIdsQuery = _dBContext.HomeStays.AsQueryable();
+
+            // Truy vấn Bookings không bị hủy
+            var filteredBookingsQuery = _dBContext.Bookings
+                .Where(bk => bk.IsCancel != 1);  // Không cần gọi ToList(), giữ lại IQueryable
+
+            // Lọc các booking trùng lịch với dateIn và dateOut
+            filteredBookingsQuery = filteredBookingsQuery
+                .Where(bk => dateIn.Value.Date < bk.CheckOutDate.Date &&
+                             dateOut.Value.Date.AddDays(1) > bk.CheckInDate.Date);
+
+            // Lọc HomeStays không bị trùng lịch
+            homestayIdsQuery = homestayIdsQuery
+                .Where(hs => !filteredBookingsQuery.Any(bk => bk.HomeStayID == hs.HomestayID));
+
+            // Lấy danh sách các HomeStayID có sẵn
+            var availableHomeStayIds = await homestayIdsQuery.Select(hs => hs.HomestayID).ToListAsync();
 
             return availableHomeStayIds;
         }
+
+
 
 
         public async Task<HomeStayDetailDTO?> getHomeStayByID(int ID)
@@ -159,6 +177,13 @@ namespace API_HomeStay_HUB.Repositories
                                                where hsA.HomestayID == hs.HomestayID
                                                select amen).ToList()
                               }).FirstOrDefaultAsync();
+            var owner = await _dBContext.OwnerStays.FirstOrDefaultAsync(s => s.OwnerID == data.HomeStay.OwnerID);
+            if(owner != null)
+            {
+                var user =await _dBContext.Users.FirstOrDefaultAsync(s => s.UserID == owner.UserID);
+                data.idUserOwner = user.UserID;
+                data.UserNameOwner = user.Username;
+            }    
 
             return data;
         }

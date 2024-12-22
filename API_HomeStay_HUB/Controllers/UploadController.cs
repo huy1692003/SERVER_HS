@@ -38,7 +38,7 @@ namespace API_HomeStay_HUB.Controllers
             var filePath = Path.Combine(_imagePath, fileName);
 
             // Kiểm tra loại file (có thể điều chỉnh theo nhu cầu)
-            var validFileTypes = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+            var validFileTypes = new[] { ".jpg", ".jpeg", ".webp", ".png", ".gif" };
             if (!validFileTypes.Contains(fileExtension.ToLowerInvariant()))
             {
                 return BadRequest("Invalid file type. Only .jpg, .jpeg, .png, and .gif are allowed.");
@@ -82,7 +82,7 @@ namespace API_HomeStay_HUB.Controllers
                 var filePath = Path.Combine(_imagePath, fileName);
                 // Tạo số ngẫu nhiên
                 // Kiểm tra loại file (có thể điều chỉnh theo nhu cầu)
-                var validFileTypes = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+                var validFileTypes = new[] { ".jpg", ".jpeg", ".webp", ".png", ".gif" };
                 if (!validFileTypes.Contains(fileExtension.ToLowerInvariant()))
                 {
                     return BadRequest($"Invalid file type for {file.FileName}. Only .jpg, .jpeg, .png, and .gif are allowed.");

@@ -17,6 +17,7 @@ namespace API_HomeStay_HUB.Data
         public DbSet<Conversation> Conversations { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<FAQ> FAQs { get; set; }
+        public DbSet<Menu> Menus { get; set; }
         public DbSet<Favorites> Favorites { get; set; }
         public DbSet<HomeStay> HomeStays { get; set; }
         public DbSet<PartnershipReg> PartnershipRegs { get; set; }
@@ -25,8 +26,8 @@ namespace API_HomeStay_HUB.Data
         public DbSet<Message> Messages { get; set; }
         public DbSet<OwnerStay> OwnerStays { get; set; }
         public DbSet<Payment> Payments { get; set; }
-        public DbSet<Payout> Payouts { get; set; }
         public DbSet<Promotion> Promotions { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
         public DbSet<ReviewAndRating> ReviewAndRatings { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }

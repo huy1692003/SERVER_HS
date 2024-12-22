@@ -3,6 +3,7 @@ using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Repositories.Intefaces;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace API_HomeStay_HUB.Repositories
@@ -18,12 +19,34 @@ namespace API_HomeStay_HUB.Repositories
 
         public async Task<IEnumerable<Role>> GetAllRole()
         {
-            return await _context.Roles.ToListAsync();
+            var roles = await _context.Roles
+                .Select(role => new Role
+                {
+                    RoleID = role.RoleID,
+                    NameRole = role.NameRole,
+                    Permission = role.Permission,
+                    listMenus =
+                         new List<int>()
+                })
+                .ToListAsync();
+
+            foreach (var role in roles)
+            {
+                role.listMenus = string.IsNullOrEmpty(role.Permission)
+                    ? new List<int>() // Nếu Permission là null hoặc rỗng, tạo list rỗng
+                    : JsonSerializer.Deserialize<List<int>>(role.Permission); // Chuyển chuỗi JSON thành List<int>
+            }
+            return roles;
         }
 
         public async Task<Role?> GetRoleById(string roleId)
         {
-            return await _context.Roles.FindAsync(roleId);
+            var role= await _context.Roles.FindAsync(roleId);
+            role.listMenus= string.IsNullOrEmpty(role.Permission)
+                    ? new List<int>() // Nếu Permission là null hoặc rỗng, tạo list rỗng
+                    : JsonSerializer.Deserialize<List<int>>(role.Permission); // Chuyển chuỗi JSON thành List<int>
+
+            return role;
         }
 
         public async Task<bool> AddRole(Role role)

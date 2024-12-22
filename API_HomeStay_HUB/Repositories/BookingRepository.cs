@@ -1,9 +1,11 @@
-﻿using API_HomeStay_HUB.Data;
+﻿using API_HomeStay_HUB.Realtime;
+using API_HomeStay_HUB.Data;
 using API_HomeStay_HUB.Helpers;
 using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Repositories.Interfaces;
 using API_HomeStay_HUB.Services;
 using API_HomeStay_HUB.Services.Interface;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 
 namespace API_HomeStay_HUB.Repositories
@@ -12,10 +14,12 @@ namespace API_HomeStay_HUB.Repositories
     {
         private readonly DBContext _dbContext;
         private readonly ISendMaillService _sendM;
-        public BookingRepository(DBContext dBContext, ISendMaillService sendMaill)
+        private readonly IHubContext<MyHub> _hub;
+        public BookingRepository(DBContext dBContext, ISendMaillService sendMaill , IHubContext<MyHub> hub)
         {
             _dbContext = dBContext;
             _sendM = sendMaill;
+            this._hub = hub;
         }
         private int GenerateRandomId()
         {
@@ -30,8 +34,30 @@ namespace API_HomeStay_HUB.Repositories
             if (!await checkDateExitedBooking(booking.HomeStayID!, booking.CheckInDate!, booking.CheckOutDate!))
             {
                 booking.status = 1;
-                await _dbContext.AddAsync(booking);
-                return await _dbContext.SaveChangesAsync() > 0;
+                booking.BookingTime = TimeHelper.GetDateTimeVietnam();
+                var entity= await _dbContext.AddAsync(booking);
+                var check = await _dbContext.SaveChangesAsync() > 0;
+                if (check)
+                {
+                    var owner = await _dbContext.OwnerStays.FirstOrDefaultAsync(s => s.OwnerID == booking.OwnerID);
+                    await _hub.Clients.All.SendAsync("RefeshDateHomeStay", entity.Entity.HomeStayID);
+                    var notification = new Notification {
+                        UserID = owner.UserID,
+                        Title = "Thông báo đơn đặt phòng mới",
+                        Message = $"Homestay có mã #{booking.HomeStayID} vừa có khách hàng mới đã đặt phòng vào " + TimeHelper.formatDateVN(booking.BookingTime),
+                        CreatedAt = TimeHelper.GetDateTimeVietnam(),
+                        IsRead =false,
+                        Type="success"
+
+
+                    };
+                    _dbContext.Notifications.Add(notification); 
+                    _dbContext.SaveChanges();   
+                    await _hub.Clients.All.SendAsync("ReseiverBookingNew", booking.OwnerID ,notification );
+                    
+                    return true;
+                }
+                return false;
             }
             else
             {
@@ -42,9 +68,10 @@ namespace API_HomeStay_HUB.Repositories
         public async Task<IEnumerable<dynamic>> getBookingDates(int idHomeStay)
         {
             return await _dbContext.Bookings.
-                Where(b => b.HomeStayID == idHomeStay).
+                Where(b => b.HomeStayID == idHomeStay && b.IsCancel!=1).
                 Select(b => new { b.CheckInDate, b.CheckOutDate }).ToListAsync();
         }
+        
 
         public async Task<bool> confirmBooking(int idBooking)
         {
@@ -99,7 +126,12 @@ namespace API_HomeStay_HUB.Repositories
 
             // Tiêu đề email
             string titleSendMail = "Thông báo đơn đặt phòng đã được xác nhận";
-
+            var inforOwner = await _dbContext.OwnerStays.
+                Join(_dbContext.Users ,
+                owner=>owner.UserID , 
+                user=>user.UserID ,
+                (owner, user) => new{ Owner=owner, User=user }).FirstOrDefaultAsync(s => s.Owner.OwnerID == booking.OwnerID);
+            
             // Nội dung email
             var content = $@"
                     <h2>Xin chào {nameUser},</h2>
@@ -114,6 +146,7 @@ namespace API_HomeStay_HUB.Repositories
                         <li><b>Phương thức thanh toán:</b> {booking.PaymentMethod}</li>
                     </ul>
                     <p>Địa chỉ Homestay trên bản đồ: <a href='{homeStay.LinkGoogleMap}'>Xem trên Google Maps</a></p>
+                    <p>Đây là thông tin của gia chủ bạn hãy liên hệ khi cần thiết :<span>{inforOwner.User.FullName}</span> - Số điện thoại :<span>{inforOwner.User.PhoneNumber}</span> </p>
                     <p>Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi!</p>
                     <p>Trân trọng,</p>
                     <p><b>Đội ngũ hỗ trợ HomeStay HUB</b></p>

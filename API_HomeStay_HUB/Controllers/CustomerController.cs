@@ -37,7 +37,7 @@ namespace API_HomeStay_HUB.Controllers
                 return Ok(LoginRes);
             }
 
-            return NotFound("Đăng nhập thất bại thông tin tài khoản hoặc mật khẩu không chính xác");
+            return NotFound("Đăng nhập thất bại thông tin tài khoản hoặc mật khẩu không chính xác hoặc tài khoản của bạn đã bị khóa");
 
         }
         //public async Task<IActionResult> GetAllUsersWithCustomers()

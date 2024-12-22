@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Services.Interface;
+using API_HomeStay_HUB.Helpers;
 
 namespace API_HomeStay_HUB.Controllers
 {
@@ -19,6 +20,7 @@ namespace API_HomeStay_HUB.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAmenities()
         {
+            
             var amenities = await _service.GetAllAmenitiesAsync();
             return Ok(amenities);
         }

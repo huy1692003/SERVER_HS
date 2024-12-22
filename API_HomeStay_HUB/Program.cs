@@ -1,11 +1,14 @@
 ﻿using API_HomeStay_HUB.Data;
+using API_HomeStay_HUB.Helpers;
 using API_HomeStay_HUB.Model.Momo;
+using API_HomeStay_HUB.Realtime;
 using API_HomeStay_HUB.Repositories;
 using API_HomeStay_HUB.Repositories.Intefaces;
 using API_HomeStay_HUB.Repositories.Interfaces;
 using API_HomeStay_HUB.Services;
 using API_HomeStay_HUB.Services.Interface;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -69,19 +72,28 @@ builder.Services.AddScoped<IBookingRepository, BookingRepository>();
 builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddScoped<ISendMaillService, SendMaillService>();
 builder.Services.AddScoped<PaymentMomoService>();
+builder.Services.AddScoped<ExportExcel>();
+
 
 
 // Cấu hình CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAllOrigins",
-       policy => policy
-            .AllowAnyOrigin()  // Cho phép tất cả các nguồn (origins)
-            .AllowAnyMethod()  // Cho phép tất cả các phương thức HTTP (GET, POST, PUT, DELETE...)
-            .AllowAnyHeader()); // Cho phép tất cả các headers
+    options.AddPolicy("AllowSpecificOrigins",
+        policy => policy
+            .WithOrigins("http://localhost:3000") // URL của client
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials()); // Dùng AllowCredentials nếu client sử dụng cookie hoặc thông tin xác thực
 });
 
+builder.Services.AddSignalR();
 var app = builder.Build();
+
+
+//Endpoint realtime
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -94,10 +106,11 @@ app.UseStaticFiles();
 app.UseHttpsRedirection();
 
 // Sử dụng CORS
-app.UseCors("AllowAllOrigins"); // Đảm bảo middleware này được sử dụng
+app.UseCors("AllowSpecificOrigins"); ; // Đảm bảo middleware này được sử dụng
 
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.MapHub<MyHub>("/realtime");
+app.MapHub<ChatHub>("/chathub");
 app.Run();

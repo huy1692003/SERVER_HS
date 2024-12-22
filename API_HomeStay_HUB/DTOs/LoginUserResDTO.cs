@@ -1,4 +1,6 @@
-﻿namespace API_HomeStay_HUB.DTOs
+﻿using API_HomeStay_HUB.Model;
+
+namespace API_HomeStay_HUB.DTOs
 {
     public class LoginUserResDTO
     {
@@ -8,7 +10,9 @@
         public string? idCus {  get; set; }
         public string? idOwner { get; set; }
         public string? idAdmin { get; set; }
+        public string? idUser { get; set; }
 
         public string? roleID { get; set; }
+        public List<Menu>? menus { get; set; }
     }
 }

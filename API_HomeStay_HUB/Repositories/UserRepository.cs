@@ -19,7 +19,7 @@ namespace API_HomeStay_HUB.Repositories
         }
         public async Task<User?> loginUser(string username, string password)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(s => s.Username == username && s.TypeUser>0);
+            var user = await _context.Users.FirstOrDefaultAsync(s => s.Username == username && s.TypeUser>0 && s.Status==1);
             if (user != null && BCrypt.Net.BCrypt.Verify(password, user.Password))
             {
                 var cus=_context.Customers.FirstOrDefault(c=>c.UserID==user.UserID);
@@ -36,7 +36,7 @@ namespace API_HomeStay_HUB.Repositories
         }
         public async Task<User?> loginAdmin(string username, string password)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(s => s.Username == username && s.TypeUser == 0);
+            var user = await _context.Users.FirstOrDefaultAsync(s => s.Username == username && s.TypeUser == 0 && s.Status==1);
             if (user != null && BCrypt.Net.BCrypt.Verify(password, user.Password))
             {
                 var admin = await _context.Administrators.FirstOrDefaultAsync(a => a.UserID == user.UserID);
@@ -86,8 +86,9 @@ namespace API_HomeStay_HUB.Repositories
 
                 string userID_guid = Guid.NewGuid().ToString();
                 res!.UserID = userID_guid;
+
                 res.Status = 1;
-                res.TypeUser = res.TypeUser;
+                res.TypeUser = 0;
                 res.Password = BCrypt.Net.BCrypt.HashPassword(res.Password);
                 await _context.Users.AddAsync(res);
                 bool isCreated = await _context.SaveChangesAsync() > 0;

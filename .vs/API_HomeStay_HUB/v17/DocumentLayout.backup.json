@@ -3,284 +3,86 @@
   "WorkspaceRootPath": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\services\\partnershipregservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\services\\partnershipregservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\services\\paymentmomoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\services\\paymentmomoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\services\\interface\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\services\\interface\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\services\\interface\\ipartnershipregservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\services\\interface\\ipartnershipregservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\interfaces\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\interfaces\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\searchadvertisementdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\searchadvertisementdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\searchpaymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\searchpaymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\registercusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\registercusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\registeradmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\registeradmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\paymentresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\paymentresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\pagedresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\pagedresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\paginatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\paginatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\paymentmomocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\paymentmomocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\services\\sendmaillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\services\\sendmaillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\model\\reviewandrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\model\\reviewandrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\model\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\model\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\reviewandratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\reviewandratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\promotionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\promotionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\searchhomestaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\searchhomestaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\partnershipregcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\partnershipregcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\promotioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\promotioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\interfaces\\ipromotionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\interfaces\\ipromotionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\services\\interface\\ifavoritesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\services\\interface\\ifavoritesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\services\\interface\\ihomestayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\services\\interface\\ihomestayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\partnershipregrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\partnershipregrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\homestayrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\homestayrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\interfaces\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\interfaces\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\interfaces\\ireviewandratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\interfaces\\ireviewandratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\services\\promotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\services\\promotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\services\\reviewandratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\services\\reviewandratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Payments.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\reviewandratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\reviewandratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\homestaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\homestaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\favoritescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\favoritescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\faqcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\faqcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\categoryarticlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\categoryarticlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\amentitescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\amentitescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\advertisementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\advertisementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\administratorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\administratorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.OwnerStays.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Customers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\favoritesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\favoritesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\faqrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\faqrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\categoryarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\categoryarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\articlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\articlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\amenitiesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\amenitiesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\administratorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\administratorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\helpers\\timehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\helpers\\timehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\model\\homestay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\model\\homestay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\searchhomestayadmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\searchhomestayadmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Bookings.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\homestayresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\homestayresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\model\\faq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\model\\faq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\searchbookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\searchbookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\administratorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\administratorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Bookings.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\model\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\model\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\loginuserresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\loginuserresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\reviewandratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\reviewandratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\revenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\revenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\promotioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\promotioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\faqcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\faqcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\advertisementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\advertisementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\searchhomestaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\searchhomestaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\dtos\\searchpaymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\dtos\\searchpaymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|d:\\danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0111\u1ED3 \u00E1n 4\\backend-homestay-hub\\api_homestay_hub\\api_homestay_hub\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286C4ACB-0C00-4A7B-ABE4-778DA9F2621F}|API_HomeStay_HUB\\API_HomeStay_HUB.csproj|solutionrelative:api_homestay_hub\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -290,7 +92,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -310,876 +112,257 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PartnershipRegService.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\PartnershipRegService.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Services\\PartnershipRegService.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\PartnershipRegService.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Services\\PartnershipRegService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T04:09:47.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IPaymentService.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\Interface\\IPaymentService.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Services\\Interface\\IPaymentService.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\Interface\\IPaymentService.cs*",
-              "RelativeToolTip": "API_HomeStay_HUB\\Services\\Interface\\IPaymentService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:18:13.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PaymentMomoService.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\PaymentMomoService.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Services\\PaymentMomoService.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\PaymentMomoService.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Services\\PaymentMomoService.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:06:08.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PaymentService.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\PaymentService.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Services\\PaymentService.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\PaymentService.cs*",
-              "RelativeToolTip": "API_HomeStay_HUB\\Services\\PaymentService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:37:31.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PaymentController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\PaymentController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\PaymentController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\PaymentController.cs*",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\PaymentController.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:34:39.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IPartnershipRegService.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\Interface\\IPartnershipRegService.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Services\\Interface\\IPartnershipRegService.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\Interface\\IPartnershipRegService.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Services\\Interface\\IPartnershipRegService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:56:59.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IPaymentRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\Interfaces\\IPaymentRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\Interfaces\\IPaymentRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\Interfaces\\IPaymentRepository.cs*",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\Interfaces\\IPaymentRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:07:08.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PaymentRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\PaymentRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\PaymentRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\PaymentRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\PaymentRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwEYAAACPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T00:58:58.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SearchPaymentDTO.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchPaymentDTO.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\SearchPaymentDTO.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchPaymentDTO.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\SearchPaymentDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:50:03.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SearchAdvertisementDTO.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchAdvertisementDTO.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\SearchAdvertisementDTO.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchAdvertisementDTO.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\SearchAdvertisementDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T03:24:18.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PaginateDTO.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\PaginateDTO.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\PaginateDTO.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\PaginateDTO.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\PaginateDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T03:24:15.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RegisterAdminDTO.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\RegisterAdminDTO.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\RegisterAdminDTO.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\RegisterAdminDTO.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\RegisterAdminDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T03:24:17.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RegisterCusDTO.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\RegisterCusDTO.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\RegisterCusDTO.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\RegisterCusDTO.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\RegisterCusDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T03:24:17.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PagedResultDTO.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\PagedResultDTO.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\PagedResultDTO.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\PagedResultDTO.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\PagedResultDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:45:10.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PaymentResDTO.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\PaymentResDTO.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\PaymentResDTO.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\PaymentResDTO.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\PaymentResDTO.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T00:53:18.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PaymentMomoController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\PaymentMomoController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\PaymentMomoController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\PaymentMomoController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\PaymentMomoController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwDcAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:06:08.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SendMaillService.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\SendMaillService.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Services\\SendMaillService.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\SendMaillService.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Services\\SendMaillService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:17:19.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Services\\UserService.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\UserService.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:47:47.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ReviewAndRating.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Model\\ReviewAndRating.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Model\\ReviewAndRating.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Model\\ReviewAndRating.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Model\\ReviewAndRating.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T00:54:27.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Model\\User.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Model\\User.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Model\\User.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Model\\User.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:43:13.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RoleService.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\RoleService.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Services\\RoleService.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\RoleService.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Services\\RoleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:47:49.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Model\\Payment.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Model\\Payment.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Model\\Payment.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Model\\Payment.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAkwDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:37:42.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "RoleRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\RoleRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\RoleRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\RoleRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\RoleRepository.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:07:05.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ReviewAndRatingRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\ReviewAndRatingRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\ReviewAndRatingRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\ReviewAndRatingRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\ReviewAndRatingRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBUAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:47:24.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "PromotionRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\PromotionRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\PromotionRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\PromotionRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\PromotionRepository.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:47:22.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\UserRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:06:08.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "SearchHomeStayDTO.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchHomeStayDTO.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\SearchHomeStayDTO.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchHomeStayDTO.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\SearchHomeStayDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T14:23:19.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PromotionController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\PromotionController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\PromotionController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\PromotionController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\PromotionController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:35:26.274Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "PartnershipRegController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\PartnershipRegController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\PartnershipRegController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\PartnershipRegController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\PartnershipRegController.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:45:04.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IPromotionRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\Interfaces\\IPromotionRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\Interfaces\\IPromotionRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\Interfaces\\IPromotionRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\Interfaces\\IPromotionRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:19:06.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "IFavoritesService.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\Interface\\IFavoritesService.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Services\\Interface\\IFavoritesService.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\Interface\\IFavoritesService.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Services\\Interface\\IFavoritesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:57:02.057Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IHomeStayService.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\Interface\\IHomeStayService.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Services\\Interface\\IHomeStayService.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\Interface\\IHomeStayService.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Services\\Interface\\IHomeStayService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:57:01.369Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "PartnershipRegRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\PartnershipRegRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\PartnershipRegRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\PartnershipRegRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\PartnershipRegRepository.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAkwDQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:07:19.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "HomeStayRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\HomeStayRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\HomeStayRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\HomeStayRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\HomeStayRepository.cs",
-              "ViewState": "AgIAABMBAAAAAAAAAAAcwKoAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T13:27:47.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:19:24.074Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "IRoleRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\Interfaces\\IRoleRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\Interfaces\\IRoleRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\Interfaces\\IRoleRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\Interfaces\\IRoleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:19:23.265Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "IReviewAndRatingRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\Interfaces\\IReviewAndRatingRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\Interfaces\\IReviewAndRatingRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\Interfaces\\IReviewAndRatingRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\Interfaces\\IReviewAndRatingRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:07:08.07Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "PromotionService.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\PromotionService.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Services\\PromotionService.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\PromotionService.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Services\\PromotionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:47:49.859Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "ReviewAndRatingService.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\ReviewAndRatingService.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Services\\ReviewAndRatingService.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\ReviewAndRatingService.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Services\\ReviewAndRatingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:17:32.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "UploadController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\UploadController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\UploadController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\UploadController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\UploadController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:45:38.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "dbo.Payments.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Payments.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Payments.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-17T16:04:43.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "RoleController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\RoleController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\RoleController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\RoleController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\RoleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:45:37.444Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\UserController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\UserController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:45:48.647Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "ReviewAndRatingController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\ReviewAndRatingController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\ReviewAndRatingController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\ReviewAndRatingController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\ReviewAndRatingController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:45:34.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "HomeStayController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\HomeStayController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\HomeStayController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\HomeStayController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\HomeStayController.cs",
-              "ViewState": "AgIAAM8AAAAAAAAAAAAQwHAAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T13:41:19.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "FavoritesController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\FavoritesController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\FavoritesController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\FavoritesController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\FavoritesController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:44:56.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "FAQController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\FAQController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\FAQController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\FAQController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\FAQController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:44:51.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\CustomerController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:44:49.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "CategoryArticleController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\CategoryArticleController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\CategoryArticleController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\CategoryArticleController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\CategoryArticleController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T13:40:38.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "BookingController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\BookingController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\BookingController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\BookingController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAALcAAAAAAAAAAAAcwLwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T13:27:47.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "ArticleController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\ArticleController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\ArticleController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\ArticleController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\ArticleController.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:06:08.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "AmentitesController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\AmentitesController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\AmentitesController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\AmentitesController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\AmentitesController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAowA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:44:03.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "AdvertisementController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\AdvertisementController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\AdvertisementController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\AdvertisementController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\AdvertisementController.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAwwK0AAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T13:27:47.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "AdministratorController.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\AdministratorController.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\AdministratorController.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\AdministratorController.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\AdministratorController.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:43:43.825Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\Interface\\IUserService.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Services\\Interface\\IUserService.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Services\\Interface\\IUserService.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Services\\Interface\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:06:28.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "dbo.OwnerStays.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.OwnerStays.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.OwnerStays.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-17T16:05:42.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "dbo.Customers.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Customers.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Customers.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-17T16:05:09.562Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "FavoritesRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\FavoritesRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\FavoritesRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\FavoritesRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\FavoritesRepository.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:46:35.004Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "FAQRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\FAQRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\FAQRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\FAQRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\FAQRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:46:33.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "CategoryArticleRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\CategoryArticleRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\CategoryArticleRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\CategoryArticleRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\CategoryArticleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:46:32.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "ArticleRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\ArticleRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\ArticleRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\ArticleRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\ArticleRepository.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAwwDEAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:06:08.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "AdministratorRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\AdministratorRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\AdministratorRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\AdministratorRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\AdministratorRepository.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:43:37.703Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
               "Title": "BookingRepository.cs",
               "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\BookingRepository.cs",
               "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\BookingRepository.cs",
               "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\BookingRepository.cs",
               "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\BookingRepository.cs",
-              "ViewState": "AgIAALkAAAAAAAAAAADwvxUAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAqwEwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T13:27:47.767Z",
+              "WhenOpened": "2024-12-22T02:14:46.725Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "AmenitiesRepository.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\AmenitiesRepository.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\AmenitiesRepository.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\AmenitiesRepository.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\AmenitiesRepository.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\BookingController.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:43:40.773Z"
+              "WhenOpened": "2024-12-22T02:09:36.798Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "TimeHelper.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Helpers\\TimeHelper.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Helpers\\TimeHelper.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Helpers\\TimeHelper.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Helpers\\TimeHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:40:46.77Z"
+              "DocumentIndex": 2,
+              "Title": "dbo.Bookings [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Bookings.sql",
+              "ToolTip": "dbo.Bookings [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-22T02:07:06.083Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "HomeStay.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Model\\HomeStay.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Model\\HomeStay.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Model\\HomeStay.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Model\\HomeStay.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAIAwwCgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T16:25:29.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "SearchHomeStayAdminDTO.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchHomeStayAdminDTO.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\SearchHomeStayAdminDTO.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchHomeStayAdminDTO.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\SearchHomeStayAdminDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T14:23:21.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 3,
               "Title": "HomeStayResDTO.cs",
               "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\HomeStayResDTO.cs",
               "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\HomeStayResDTO.cs",
               "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\HomeStayResDTO.cs",
               "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\HomeStayResDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:31:28.43Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "FAQ.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Model\\FAQ.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Model\\FAQ.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Model\\FAQ.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\Model\\FAQ.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T13:26:13.032Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "SearchBookingDTO.cs",
-              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchBookingDTO.cs",
-              "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\SearchBookingDTO.cs",
-              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchBookingDTO.cs",
-              "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\SearchBookingDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T16:34:52.952Z"
+              "WhenOpened": "2024-12-21T04:31:31.165Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "dbo.Bookings.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Bookings.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Bookings.sql",
+              "DocumentIndex": 4,
+              "Title": "dbo.Users.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Users.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-16T13:26:59.04Z"
+              "WhenOpened": "2024-12-21T04:24:50.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAACoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T04:18:14.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\MenuController.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\MenuController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T04:09:07.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Model\\Menu.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Model\\Menu.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Model\\Menu.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Model\\Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T04:01:48.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PromotionController.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\PromotionController.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\PromotionController.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\PromotionController.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\PromotionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T04:01:38.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RevenueController.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\RevenueController.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\RevenueController.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\RevenueController.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\RevenueController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T04:01:37.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ReviewAndRatingController.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\ReviewAndRatingController.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\ReviewAndRatingController.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\ReviewAndRatingController.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\ReviewAndRatingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T04:01:36.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UploadController.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\UploadController.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\UploadController.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\UploadController.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\UploadController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T04:01:35.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\UserController.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T04:01:34.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SearchHomeStayDTO.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchHomeStayDTO.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\SearchHomeStayDTO.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchHomeStayDTO.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\SearchHomeStayDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T04:01:28.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SearchPaymentDTO.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchPaymentDTO.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\SearchPaymentDTO.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\SearchPaymentDTO.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\SearchPaymentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T04:01:27.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginUserResDTO.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\LoginUserResDTO.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\DTOs\\LoginUserResDTO.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\DTOs\\LoginUserResDTO.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\LoginUserResDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T03:58:55.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\RoleController.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T03:57:34.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\RoleRepository.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\RoleRepository.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\RoleRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T03:56:33.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdministratorController.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\AdministratorController.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\AdministratorController.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\AdministratorController.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\AdministratorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T03:55:31.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FAQController.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\FAQController.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\FAQController.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\FAQController.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\FAQController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T03:55:29.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AdvertisementController.cs",
+              "DocumentMoniker": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\AdvertisementController.cs",
+              "RelativeDocumentMoniker": "API_HomeStay_HUB\\Controllers\\AdvertisementController.cs",
+              "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Controllers\\AdvertisementController.cs",
+              "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\AdvertisementController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T03:55:23.153Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -23,6 +23,30 @@ namespace API_HomeStay_HUB.Controllers
         }
 
 
+
+        [HttpGet("getAutocompleteLocation")]
+        public IActionResult getAutocompleteLocation(string? par)
+        {
+            if (string.IsNullOrEmpty(par))
+            {
+                return Ok(new List<string>());
+            }
+            var dataProvince = _dBContext.HomeStays.Select(s => s.Province).Distinct().ToList();
+            var dataDistric = _dBContext.HomeStays.Select(s => s.District).Distinct().ToList();
+            var dataWard = _dBContext.HomeStays.Select(s => s.WardOrCommune).Distinct().ToList();
+            var list = dataProvince.Concat(dataDistric).Concat(dataWard).ToList();
+
+            if (list.Count == 0)
+            {
+                return Ok(new List<string>());
+            }
+            else
+            {
+
+                return Ok(list.Where(s => s!.Contains(par)).ToList());
+            }
+        }
+
         [HttpGet("getTop20ViewHight")]
         public async Task<IActionResult?> getHomeStayViewHight()
         {
@@ -154,12 +178,12 @@ namespace API_HomeStay_HUB.Controllers
                         && (string.IsNullOrEmpty(search.FullName) ||
                         user.FullName!.Contains(search.FullName!))
                         && (string.IsNullOrEmpty(search.UserName) ||
-                        user.Username!.Contains(search.UserName!)) 
+                        user.Username!.Contains(search.UserName!))
                         && (string.IsNullOrEmpty(search.Email) ||
-                        user.Email!.Contains(search.Email!)) 
+                        user.Email!.Contains(search.Email!))
                         && (string.IsNullOrEmpty(search.Phone) ||
                         user.PhoneNumber!.Contains(search.Phone!))
-                       
+
 
 
                         orderby HomeStay.HomestayID descending

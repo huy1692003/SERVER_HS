@@ -45,7 +45,7 @@ namespace API_HomeStay_HUB.Services
             {
                 var tokenUser = GenerateJwtToken(user);
 
-                return new LoginUserResDTO { Username = user.Username, idCus = user.Customer!.CusID, idOwner = user.OwnerStay !=null? user.OwnerStay.OwnerID:null, TokenUser = tokenUser , Fullname=user.FullName }; 
+                return new LoginUserResDTO { Username = user.Username, idCus = user.Customer!.CusID, idOwner = user.OwnerStay !=null? user.OwnerStay.OwnerID:null, TokenUser = tokenUser , Fullname=user.FullName , idUser=user.UserID }; 
 
             }
             return null;
@@ -58,7 +58,7 @@ namespace API_HomeStay_HUB.Services
             {
                 var tokenUser = GenerateJwtToken(user);
 
-                return new LoginUserResDTO { Username = user.Username, TokenUser = tokenUser ,idAdmin=user.Administrator!.AdminID , roleID=user.Administrator.RoleID ,Fullname=user.FullName };
+                return new LoginUserResDTO { Username = user.Username, TokenUser = tokenUser ,idAdmin=user.Administrator!.AdminID , roleID=user.Administrator.RoleID ,Fullname=user.FullName ,idUser =user.UserID};
             }
             return null;
         }

@@ -16,8 +16,8 @@ namespace API_HomeStay_HUB.Model
         [Column("content")]
         public string? Content { get; set; }
 
-        [Column("senderID")]
-        public int? SenderID { get; set; }
+        [Column("idUserSend")]
+        public string? IdUserSend { get; set; }
 
         [Column("isView")]
         public int? IsView { get; set; }

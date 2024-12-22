@@ -3,8 +3,10 @@ using API_HomeStay_HUB.Data;
 using API_HomeStay_HUB.Helpers;
 using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Model.Momo;
+using API_HomeStay_HUB.Realtime;
 using API_HomeStay_HUB.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 
 namespace API_HomeStay_HUB.Controllers
 {
@@ -18,10 +20,12 @@ namespace API_HomeStay_HUB.Controllers
 
         private readonly PaymentMomoService paymentMomoService;
         private readonly DBContext db;
-        public PaymentMomoController(PaymentMomoService paymentMomoService, DBContext db)
+        private readonly IHubContext<MyHub> _hub;
+        public PaymentMomoController(PaymentMomoService paymentMomoService, DBContext db , IHubContext<MyHub> hub)
         {
             this.paymentMomoService = paymentMomoService;
             this.db = db;
+            this._hub = hub;
         }
         [HttpPost]
         public async Task<IActionResult> CreatePaymentMomo(BookingInfor booking)
@@ -31,7 +35,7 @@ namespace API_HomeStay_HUB.Controllers
         }
 
         [HttpGet]
-        public IActionResult PaymentCallBack()
+        public async Task<IActionResult> PaymentCallBack()
         {
             try
             {
@@ -60,7 +64,22 @@ namespace API_HomeStay_HUB.Controllers
                         var cus = db.Customers.FirstOrDefault(s => s.CusID == book.CustomerID);
                         bookprocess!.PaymentTime = TimeHelper.GetDateTimeVietnam();
                         createPayment(type, float.Parse(amount), int.Parse(code), book.CustomerID, "" ,cus.UserID);
-                        db.SaveChanges();
+                        var notification = new Notification
+                        {
+                            UserID = db.OwnerStays.FirstOrDefault(s => s.OwnerID == book.OwnerID).UserID ?? "",
+                            Title = "Thông báo đơn đặt phòng #" + book.BookingID + " đã được thanh toán",
+                            Message = $"Khách hàng có tên {book.Name} với số điện thoại {book.Phone} đã thanh toán tiền phòng ",
+                            CreatedAt = TimeHelper.GetDateTimeVietnam(),
+                            IsRead = false,
+                            Type = "success"
+
+
+                        };
+                         db.Notifications.Add(notification);
+                        var check = db.SaveChanges() > 0;
+
+                        await _hub.Clients.All.SendAsync("ReseiverPaymentNew",book.OwnerID,notification,book.CustomerID);
+
                         return Redirect(returnUrl_Customer);
                     }
 

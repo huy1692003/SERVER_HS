@@ -149,7 +149,16 @@ namespace API_HomeStay_HUB.Controllers
                 foreach (var book in listBookinh)
                 {
                     book.bookingProcess = _dbContext.BookingProcesses.FirstOrDefault(s => s.BookingID == book.BookingID);
+                    var user = _dbContext.OwnerStays.Join(
+                        _dbContext.Users,
+                        owner => owner.UserID,
+                        user => user.UserID, 
+                        (owner,user) => new
+                        { owner,inforOwner = user }).FirstOrDefault(s=>s.owner.OwnerID==book.OwnerID);
+                    book.phoneOwner = user.inforOwner.PhoneNumber;
+                    book.nameOwner = user.inforOwner.FullName;
                 }
+
             }
             return Ok(listBookinh);
         }
@@ -180,6 +189,7 @@ namespace API_HomeStay_HUB.Controllers
                 bookingPrs.StepOrder = 4;
                 booking.IsSuccess = 1;
                 booking.status = 6; //hoàn thành
+                
                 _dbContext.SaveChanges();
             }
             return Ok();
@@ -191,7 +201,7 @@ namespace API_HomeStay_HUB.Controllers
             var listBookinh = (from bk in _dbContext.Bookings
                                join prs in _dbContext.BookingProcesses
                                on bk.BookingID equals prs.BookingID
-                               where datenow >= bk.CheckInDate.Date && datenow < bk.CheckOutDate.Date
+                               where datenow.Date >= bk.CheckInDate.Date && datenow.Date < bk.CheckOutDate.Date
                                && bk.status == 3
                                select new { prs, bk }).ToList();
             if (listBookinh.Count > 0)
