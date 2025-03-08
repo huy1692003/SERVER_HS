@@ -118,7 +118,7 @@
               "RelativeDocumentMoniker": "API_HomeStay_HUB\\Repositories\\BookingRepository.cs",
               "ToolTip": "D:\\Danh s\u00E1ch b\u00E0i t\u1EADp l\u1EDBn , \u0111\u1ED3 \u00E1n\\\u0110\u1ED3 \u00C1n 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\Repositories\\BookingRepository.cs",
               "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\BookingRepository.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAqwEwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T02:14:46.725Z",
               "EditorCaption": ""
@@ -133,18 +133,16 @@
               "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\BookingController.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAQwCcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T02:09:36.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T02:09:36.798Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "dbo.Bookings [Data]",
+              "Title": "dbo.Bookings.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Bookings.sql",
-              "ToolTip": "dbo.Bookings [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/HUY/HomeStay_HUB/True/SqlTable/dbo.Bookings.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-22T02:07:06.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T02:07:06.083Z"
             },
             {
               "$type": "Document",
@@ -156,8 +154,7 @@
               "RelativeToolTip": "API_HomeStay_HUB\\DTOs\\HomeStayResDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T04:31:31.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T04:31:31.165Z"
             },
             {
               "$type": "Document",
@@ -178,8 +175,7 @@
               "RelativeToolTip": "API_HomeStay_HUB\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAACoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T04:18:14.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T04:18:14.957Z"
             },
             {
               "$type": "Document",
@@ -227,8 +223,7 @@
               "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\RevenueController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T04:01:37.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T04:01:37.622Z"
             },
             {
               "$type": "Document",
@@ -336,8 +331,7 @@
               "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\AdministratorController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T03:55:31.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T03:55:31.863Z"
             },
             {
               "$type": "Document",
@@ -361,8 +355,7 @@
               "RelativeToolTip": "API_HomeStay_HUB\\Controllers\\AdvertisementController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T03:55:23.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T03:55:23.153Z"
             }
           ]
         }
