@@ -12,7 +12,7 @@ namespace API_HomeStay_HUB.Services.Interface
         Task<bool> lockUser(User user);
         Task<LoginUserResDTO?> loginUser(string username, string password);
         Task<LoginUserResDTO?> loginAdmin(string username, string password);
-
+        Task<OwnerStay> GetDetailOwnerStay(string ownerID);
         //private string GenerateJwtToken(User user);
     }
 }

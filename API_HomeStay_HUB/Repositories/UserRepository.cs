@@ -132,6 +132,28 @@ namespace API_HomeStay_HUB.Repositories
 
 
         }
+
+        public async Task<OwnerStay> GetDetailOwnerStay(string ownerID)
+        {
+            var ownerStay = await _context.OwnerStays.FirstOrDefaultAsync(s => s.OwnerID == ownerID);
+            if (ownerStay != null)
+            {
+                ownerStay.User = await getProfileByIDUser(ownerStay.UserID!);
+                return ownerStay;
+            }
+            return null;
+        }
+        public async Task<User?> getProfileByIDUser(string userID)
+        {
+            var user =  await _context.Users.FirstOrDefaultAsync(s => s.UserID == userID);
+            if (user != null)
+            {
+                var admin = _context.Administrators.FirstOrDefault(a => a.UserID == user.UserID);
+                user.Administrator = admin!;
+                return user;
+            }
+            return null;
+        }
         public async Task<bool> updateProfile(User user)
         {
             var _user = await _context.Users.FindAsync(user.UserID);

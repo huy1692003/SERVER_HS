@@ -83,3 +83,4 @@ D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

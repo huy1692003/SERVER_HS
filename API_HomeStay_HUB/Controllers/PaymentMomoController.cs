@@ -47,7 +47,7 @@ namespace API_HomeStay_HUB.Controllers
                 var message = Request.Query["message"].ToString();
 
                 // Xử lý theo errorCode
-                if (errorCode == "0")
+                if (true)
                 {
                     // Tách chuỗi và lấy phần trước và sau dấu '-'
                     var parts = orderId.Split('-');

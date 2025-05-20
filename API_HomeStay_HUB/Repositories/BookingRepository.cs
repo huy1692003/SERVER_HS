@@ -13,51 +13,22 @@ namespace API_HomeStay_HUB.Repositories
     public class BookingRepository : IBookingRepository
     {
         private readonly DBContext _dbContext;
-        private readonly ISendMaillService _sendM;
-        private readonly IHubContext<MyHub> _hub;
-        public BookingRepository(DBContext dBContext, ISendMaillService sendMaill , IHubContext<MyHub> hub)
+        public BookingRepository(DBContext dBContext)
         {
             _dbContext = dBContext;
-            _sendM = sendMaill;
-            this._hub = hub;
+          
         }
-        private int GenerateRandomId()
-        {
-            DateTime now = TimeHelper.GetDateTimeVietnam();
-            // Lấy mili giây từ thời gian hiện tại và chuyển đổi nó thành số nguyên
-            return (int)(now.Ticks % int.MaxValue); // Sử dụng modulo để đảm bảo trong giới hạn int
-        }
+        
         public async Task<bool> createBooking(Booking booking)
         {
-           
-            booking.BookingID = GenerateRandomId();
+
+            
             if (!await checkDateExitedBooking(booking.HomeStayID!, booking.CheckInDate!, booking.CheckOutDate!))
             {
                 booking.status = 1;
                 booking.BookingTime = TimeHelper.GetDateTimeVietnam();
-                var entity= await _dbContext.AddAsync(booking);
-                var check = await _dbContext.SaveChangesAsync() > 0;
-                if (check)
-                {
-                    var owner = await _dbContext.OwnerStays.FirstOrDefaultAsync(s => s.OwnerID == booking.OwnerID);
-                    await _hub.Clients.All.SendAsync("RefeshDateHomeStay", entity.Entity.HomeStayID);
-                    var notification = new Notification {
-                        UserID = owner.UserID,
-                        Title = "Thông báo đơn đặt phòng mới",
-                        Message = $"Homestay có mã #{booking.HomeStayID} vừa có khách hàng mới đã đặt phòng vào " + TimeHelper.formatDateVN(booking.BookingTime),
-                        CreatedAt = TimeHelper.GetDateTimeVietnam(),
-                        IsRead =false,
-                        Type="success"
-
-
-                    };
-                    _dbContext.Notifications.Add(notification); 
-                    _dbContext.SaveChanges();   
-                    await _hub.Clients.All.SendAsync("ReseiverBookingNew", booking.OwnerID ,notification );
-                    
-                    return true;
-                }
-                return false;
+                var entity = await _dbContext.AddAsync(booking);
+                return await _dbContext.SaveChangesAsync() > 0;              
             }
             else
             {
@@ -68,10 +39,10 @@ namespace API_HomeStay_HUB.Repositories
         public async Task<IEnumerable<dynamic>> getBookingDates(int idHomeStay)
         {
             return await _dbContext.Bookings.
-                Where(b => b.HomeStayID == idHomeStay && b.IsCancel!=1).
+                Where(b => b.HomeStayID == idHomeStay && b.IsCancel != 1).
                 Select(b => new { b.CheckInDate, b.CheckOutDate }).ToListAsync();
         }
-        
+
 
         public async Task<bool> confirmBooking(int idBooking)
         {
@@ -97,7 +68,8 @@ namespace API_HomeStay_HUB.Repositories
                     bool checkConfirm = await _dbContext.SaveChangesAsync() > 0;
                     if (checkConfirm)
                     {
-                       return await sendMaill_ConfirmBK(booking);
+                        return await sendMaill_ConfirmBK(booking);
+
                     }
                 }
                 return false;
@@ -127,11 +99,11 @@ namespace API_HomeStay_HUB.Repositories
             // Tiêu đề email
             string titleSendMail = "Thông báo đơn đặt phòng đã được xác nhận";
             var inforOwner = await _dbContext.OwnerStays.
-                Join(_dbContext.Users ,
-                owner=>owner.UserID , 
-                user=>user.UserID ,
-                (owner, user) => new{ Owner=owner, User=user }).FirstOrDefaultAsync(s => s.Owner.OwnerID == booking.OwnerID);
-            
+                Join(_dbContext.Users,
+                owner => owner.UserID,
+                user => user.UserID,
+                (owner, user) => new { Owner = owner, User = user }).FirstOrDefaultAsync(s => s.Owner.OwnerID == booking.OwnerID);
+
             // Nội dung email
             var content = $@"
                     <h2>Xin chào {nameUser},</h2>
@@ -156,7 +128,7 @@ namespace API_HomeStay_HUB.Repositories
             try
             {
                 var sendMailService = new SendMaillService();
-                await sendMailService.SendMaill(emailUser, titleSendMail, content);
+                _= sendMailService.SendMaill(emailUser!, titleSendMail, content);
                 return true;
             }
             catch (Exception ex)
@@ -204,7 +176,7 @@ namespace API_HomeStay_HUB.Repositories
             try
             {
                 var sendMailService = new SendMaillService();
-                await sendMailService.SendMaill(emailUser, titleSendMail, content);
+                _ = sendMailService.SendMaill(emailUser!, titleSendMail, content);
                 return true;
             }
             catch (Exception ex)
@@ -226,6 +198,7 @@ namespace API_HomeStay_HUB.Repositories
                 if (checkCancel)
                 {
                     return await sendMaill_CancelBK(booking);
+
                 }
             }
             return false;

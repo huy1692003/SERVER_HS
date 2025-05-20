@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Data;
+using System.Text;
 using API_HomeStay_HUB.Data;
 using API_HomeStay_HUB.DTOs;
 using API_HomeStay_HUB.Helpers;
 using API_HomeStay_HUB.Model;
+using API_HomeStay_HUB.Services;
 using API_HomeStay_HUB.Services.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -18,11 +20,14 @@ namespace API_HomeStay_HUB.Controllers
     {
         private readonly IBookingService _bookingService;
         private readonly DBContext _dbContext;
-
-        public BookingController(IBookingService bookingService, DBContext dBContext)
+        private readonly IHomeStayService _homestayRepository;
+        private readonly ISendMaillService _sendMaillService;
+        public BookingController(IBookingService bookingService, DBContext dBContext, IHomeStayService homestayRepository, ISendMaillService sendMaillService)
         {
             _bookingService = bookingService;
             _dbContext = dBContext;
+            _homestayRepository = homestayRepository;
+            _sendMaillService = sendMaillService;
         }
 
 
@@ -92,6 +97,7 @@ namespace API_HomeStay_HUB.Controllers
         [HttpPost("create")]
         public async Task<IActionResult> CreateBooking([FromBody] Booking booking)
         {
+            booking.BookingID = GenerateRandomId();
             if (booking == null)
             {
                 return BadRequest("Dữ liệu đặt phòng là bắt buộc.");
@@ -104,6 +110,7 @@ namespace API_HomeStay_HUB.Controllers
             }
             return BadRequest("Không thể tạo đặt phòng.");
         }
+
 
 
         [HttpPut("confirm/{idBooking}")]
@@ -152,9 +159,9 @@ namespace API_HomeStay_HUB.Controllers
                     var user = _dbContext.OwnerStays.Join(
                         _dbContext.Users,
                         owner => owner.UserID,
-                        user => user.UserID, 
-                        (owner,user) => new
-                        { owner,inforOwner = user }).FirstOrDefault(s=>s.owner.OwnerID==book.OwnerID);
+                        user => user.UserID,
+                        (owner, user) => new
+                        { owner, inforOwner = user }).FirstOrDefault(s => s.owner.OwnerID == book.OwnerID);
                     book.phoneOwner = user.inforOwner.PhoneNumber;
                     book.nameOwner = user.inforOwner.FullName;
                 }
@@ -189,7 +196,7 @@ namespace API_HomeStay_HUB.Controllers
                 bookingPrs.StepOrder = 4;
                 booking.IsSuccess = 1;
                 booking.status = 6; //hoàn thành
-                
+
                 _dbContext.SaveChanges();
             }
             return Ok();
@@ -214,6 +221,14 @@ namespace API_HomeStay_HUB.Controllers
             }
             _dbContext.SaveChanges();
 
+        }
+
+
+    
+        private int GenerateRandomId()
+        {
+            DateTime now = TimeHelper.GetDateTimeVietnam();
+            return (int)(now.Ticks % int.MaxValue); // Sử dụng modulo để đảm bảo trong giới hạn int
         }
     }
 }

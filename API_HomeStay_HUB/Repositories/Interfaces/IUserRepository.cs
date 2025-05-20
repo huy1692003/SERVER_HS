@@ -12,7 +12,7 @@ namespace API_HomeStay_HUB.Repositories.Intefaces
         Task<bool> lockUser(User user);
         Task<User?> loginUser(string username, string password);
         Task<User?> loginAdmin(string username, string password);
-
+        Task<OwnerStay> GetDetailOwnerStay(string ownerID);
 
     }
 }

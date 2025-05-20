@@ -13,5 +13,10 @@ namespace API_HomeStay_HUB.Services.Interface
         Task<bool> updateHomeStay(HomeStayReqDTO homeStay);
         Task<bool> deleteHomeStay(int ID);
         Task<bool> lockHomeStay(int ID);
+        Task<IEnumerable<Service>> GetAllServices();
+        Task<Service?> GetServiceById(int id);
+        Task<bool> AddService(Service service);
+        Task<bool> UpdateService(Service service);
+        Task<bool> DeleteService(int id);
     }
 }

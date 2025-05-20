@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BDUsUz8LzWBA7ahMRc497X5C7SJdqB4jf4V3oV0XMzs=",
+  "Hash": "hMj39czWldpQlGTSDQjwn+GVW3brGuKLlFtKyOlqN4k=",
   "Source": "API_HomeStay_HUB",
   "BasePath": "_content/API_HomeStay_HUB",
   "Mode": "Default",
@@ -6651,6 +6651,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\20241221_170836_933682_.webp"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250505_203948_9211553_.png",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250505_203948_9211553_#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nvd0d62h0k",
+      "Integrity": "vVTyomCCb/yVa6Xlmknr/qOnMBviokG7H7C6i/ydaTQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250505_203948_9211553_.png"
     }
   ],
   "Endpoints": [
@@ -32563,6 +32584,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-F6L0dzD85F58t2+PykbGWRzjX+hZDW3MTmjMJxGA2zg="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250505_203948_9211553_.nvd0d62h0k.png",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250505_203948_9211553_.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1364231"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vVTyomCCb/yVa6Xlmknr/qOnMBviokG7H7C6i/ydaTQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 13:39:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nvd0d62h0k"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250505_203948_9211553_.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vVTyomCCb/yVa6Xlmknr/qOnMBviokG7H7C6i/ydaTQ="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250505_203948_9211553_.png",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250505_203948_9211553_.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1364231"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vVTyomCCb/yVa6Xlmknr/qOnMBviokG7H7C6i/ydaTQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 13:39:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vVTyomCCb/yVa6Xlmknr/qOnMBviokG7H7C6i/ydaTQ="
         }
       ]
     }

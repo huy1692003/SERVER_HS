@@ -1,6 +1,5 @@
 ﻿using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Services.Interface;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API_HomeStay_HUB.Controllers

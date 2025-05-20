@@ -242,6 +242,73 @@ namespace API_HomeStay_HUB.Controllers
             return Ok(result);
         }
 
+        [HttpGet("services")]
+        public async Task<IActionResult> GetAllServices()
+        {
+            var services = await _homeStayService.GetAllServices();
+            return Ok(services);
+        }
+
+        [HttpGet("services/{id}")]
+        public async Task<IActionResult> GetServiceById(int id)
+        {
+            var service = await _homeStayService.GetServiceById(id);
+            if (service == null)
+            {
+                return NotFound();
+            }
+            return Ok(service);
+        }
+
+
+        //Thao tac với dịch vụ
+        [HttpPost("services")]
+        public async Task<IActionResult> AddService([FromBody] Service service)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var result = await _homeStayService.AddService(service);
+            if (result)
+            {
+                return CreatedAtAction(nameof(GetServiceById), new { id = service.ServiceID }, service);
+            }
+            return BadRequest("Failed to add service");
+        }
+
+        [HttpPut("services/{id}")]
+        public async Task<IActionResult> UpdateService(int id, [FromBody] Service service)
+        {
+            if (id != service.ServiceID)
+            {
+                return BadRequest("Service ID mismatch");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var result = await _homeStayService.UpdateService(service);
+            if (result)
+            {
+                return NoContent();
+            }
+            return NotFound();
+        }
+
+        [HttpDelete("services/{id}")]
+        public async Task<IActionResult> DeleteService(int id)
+        {
+            var result = await _homeStayService.DeleteService(id);
+            if (result)
+            {
+                return NoContent();
+            }
+            return NotFound();
+        }
 
 
 

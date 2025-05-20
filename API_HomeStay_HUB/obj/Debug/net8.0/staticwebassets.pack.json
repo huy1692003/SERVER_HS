@@ -1265,6 +1265,10 @@
       "PackagePath": "staticwebassets\\Images\\20241221_170836_933682_.webp"
     },
     {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250505_203948_9211553_.png",
+      "PackagePath": "staticwebassets\\Images\\20250505_203948_9211553_.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API_HomeStay_HUB.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

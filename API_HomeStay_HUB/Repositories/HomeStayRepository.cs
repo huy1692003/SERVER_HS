@@ -306,5 +306,37 @@ namespace API_HomeStay_HUB.Repositories
             return false;
 
         }
+        public async Task<IEnumerable<Service>> GetAllServices()
+        {
+            return await _dBContext.Services.ToListAsync();
+        }
+
+        public async Task<Service?> GetServiceById(int id)
+        {
+            return await _dBContext.Services.FindAsync(id);
+        }
+
+        public async Task<bool> AddService(Service service)
+        {
+            await _dBContext.Services.AddAsync(service);
+            return await _dBContext.SaveChangesAsync() > 0;
+        }
+
+        public async Task<bool> UpdateService(Service service)
+        {
+            _dBContext.Services.Update(service);
+            return await _dBContext.SaveChangesAsync() > 0;
+        }
+
+        public async Task<bool> DeleteService(int id)
+        {
+            var service = await _dBContext.Services.FindAsync(id);
+            if (service != null)
+            {
+                _dBContext.Services.Remove(service);
+                return await _dBContext.SaveChangesAsync() > 0;
+            }
+            return false;
+        }
     }
 }

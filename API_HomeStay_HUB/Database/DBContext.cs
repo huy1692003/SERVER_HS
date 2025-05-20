@@ -30,6 +30,7 @@ namespace API_HomeStay_HUB.Data
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<ReviewAndRating> ReviewAndRatings { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<Service> Services { get; set; }
         public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

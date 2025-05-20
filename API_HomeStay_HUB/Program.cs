@@ -65,6 +65,8 @@ builder.Services.AddScoped<IFavoritesService, FavoritesService>();
 builder.Services.AddScoped<IReviewAndRatingRepository, ReviewAndRatingRepository>();
 builder.Services.AddScoped<IReviewAndRatingService, ReviewAndRatingService>();
 builder.Services.AddScoped<IFAQRepository, FAQRepository>();
+builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
+
 builder.Services.AddScoped<IFAQService, FAQService>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();

@@ -18,25 +18,29 @@ namespace API_HomeStay_HUB.Services
             _configuration = configuration;
             _userRepository = userRepository;
         }
-        public Task<bool> addUser(User user, int typeUser, string roleID="")
+        public async Task<bool> addUser(User user, int typeUser, string roleID="")
         {
-            return _userRepository.addUser(user, typeUser ,roleID);
+            return await _userRepository.addUser(user, typeUser ,roleID);
         } 
-        public Task<bool> addAdmin(RegisterAdminDTO res)
+        public async Task<bool> addAdmin(RegisterAdminDTO res)
         {
-            return _userRepository.addAdmin(res);
+            return await _userRepository.addAdmin(res);
         }
-        public Task<bool> changePassWord(string userID, string passOld, string passNew)
+        public async Task<bool> changePassWord(string userID, string passOld, string passNew)
         {
-            return _userRepository.changePassWord(userID, passOld, passNew);
+            return await _userRepository.changePassWord(userID, passOld, passNew);
         }
-        public Task<bool> updateProfile(User user)
+        public async Task<bool> updateProfile(User user)
         {
-            return _userRepository.updateProfile(user);
+            return  await _userRepository.updateProfile(user);
         }
-        public Task<bool> lockUser(User user)
+        public async Task<OwnerStay> GetDetailOwnerStay(string ownerID)
         {
-            return _userRepository.lockUser(user);
+            return await _userRepository.GetDetailOwnerStay(ownerID);
+        }
+        public async Task<bool> lockUser(User user)
+        {
+            return await _userRepository.lockUser(user);
         }
         public async Task<LoginUserResDTO?> loginUser(string username, string password)
         {
