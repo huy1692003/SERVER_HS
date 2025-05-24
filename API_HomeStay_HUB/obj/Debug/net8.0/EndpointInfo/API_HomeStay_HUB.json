@@ -1928,6 +1928,131 @@
         }
       }
     },
+    "/api/HomeStay/services": {
+      "get": {
+        "tags": [
+          "HomeStay"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HomeStay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Service"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Service"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Service"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/HomeStay/services/{id}": {
+      "get": {
+        "tags": [
+          "HomeStay"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "HomeStay"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Service"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Service"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Service"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HomeStay"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Menu": {
       "get": {
         "tags": [
@@ -3075,6 +3200,223 @@
         }
       }
     },
+    "/api/Room": {
+      "get": {
+        "tags": [
+          "Room"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Room"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Room"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Room"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Room"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Room"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Room"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Room"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Room/{id}": {
+      "get": {
+        "tags": [
+          "Room"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Room"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Room"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Room"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Room"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Room"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Room"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Room"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Room"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Room/homestay/{homestayId}": {
+      "get": {
+        "tags": [
+          "Room"
+        ],
+        "parameters": [
+          {
+            "name": "homestayId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Room"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Room"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Room"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Upload/uploadFile": {
       "post": {
         "tags": [
@@ -3455,6 +3797,11 @@
             "format": "int32",
             "nullable": true
           },
+          "roomID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
           "checkInDate": {
             "type": "string",
             "format": "date-time"
@@ -3463,7 +3810,17 @@
             "type": "string",
             "format": "date-time"
           },
-          "numberOfGuests": {
+          "numberAdults": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberChildren": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberBaby": {
             "type": "integer",
             "format": "int32",
             "nullable": true
@@ -3500,19 +3857,13 @@
             "nullable": true
           },
           "isConfirm": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "type": "boolean"
           },
           "isCancel": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "type": "boolean"
           },
           "isSuccess": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "type": "boolean"
           },
           "status": {
             "type": "integer",
@@ -3697,39 +4048,47 @@
             "format": "int32",
             "nullable": true
           },
-          "numberOfBedrooms": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "numberOfLivingRooms": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "numberOfBathrooms": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "numberOfKitchens": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "note": {
+          "noteHomestay": {
             "type": "string",
             "nullable": true
           },
-          "rules": {
+          "stayRules": {
             "type": "string",
             "nullable": true
           },
-          "utilities": {
-            "type": "string",
+          "hasSwimmingPool": {
+            "type": "boolean",
             "nullable": true
           },
-          "regulation": {
+          "hasBilliardTable": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "manyActivities": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "spaciousGarden": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "lakeView": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "mountainView": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "seaView": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "riceFieldView": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "policies": {
             "type": "string",
             "nullable": true
           }
@@ -3770,6 +4129,12 @@
         "additionalProperties": false
       },
       "HomeStay": {
+        "required": [
+          "addressDetail",
+          "country",
+          "homestayName",
+          "ownerID"
+        ],
         "type": "object",
         "properties": {
           "homestayID": {
@@ -3777,17 +4142,17 @@
             "format": "int32",
             "nullable": true
           },
-          "homestayName": {
-            "type": "string",
-            "nullable": true
-          },
           "ownerID": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
+          },
+          "homestayName": {
+            "minLength": 1,
+            "type": "string"
           },
           "country": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "province": {
             "type": "string",
@@ -3802,6 +4167,10 @@
             "nullable": true
           },
           "addressDetail": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "imageHomestay": {
             "type": "string",
             "nullable": true
           },
@@ -3809,47 +4178,41 @@
             "type": "string",
             "nullable": true
           },
-          "imagePreview": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
+          "timeCheckIn": {
+            "type": "string",
             "nullable": true
           },
-          "pricePerNight": {
-            "type": "number",
-            "format": "double",
+          "timeCheckOut": {
+            "type": "string",
             "nullable": true
           },
-          "discountSecondNight": {
-            "type": "number",
-            "format": "double",
-            "nullable": true
-          },
-          "minPerson": {
+          "totalScore": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "maxPerson": {
+          "viewCount": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "totalView": {
+          "reviewCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "averageRating": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "statusHomestay": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
           "isLocked": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "approvalStatus": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "type": "boolean"
           },
           "createdAt": {
             "type": "string",
@@ -3859,6 +4222,13 @@
           "updatedAt": {
             "type": "string",
             "format": "date-time",
+            "nullable": true
+          },
+          "listImage": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
             "nullable": true
           }
         },
@@ -3880,6 +4250,13 @@
           },
           "detailHomeStay": {
             "$ref": "#/components/schemas/DetailHomeStay"
+          },
+          "rooms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Room"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -4354,6 +4731,128 @@
         },
         "additionalProperties": false
       },
+      "Room": {
+        "type": "object",
+        "properties": {
+          "roomId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "homestayId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roomName": {
+            "type": "string",
+            "nullable": true
+          },
+          "roomType": {
+            "type": "string",
+            "nullable": true
+          },
+          "roomSize": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "maxAdults": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maxChildren": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "maxBaby": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "bathroomCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "bedCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "pricePerNight": {
+            "type": "number",
+            "format": "double"
+          },
+          "priceFromSecondNight": {
+            "type": "number",
+            "format": "double"
+          },
+          "extraFeePerChild": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "extraFeePerAdult": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "extraFeePerBaby": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "hasBalcony": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasTv": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasAirConditioner": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasRefrigerator": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasWifi": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasHotWater": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "roomImage": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "SearchAdvertisementDTO": {
         "type": "object",
         "properties": {
@@ -4422,29 +4921,17 @@
             "type": "string",
             "nullable": true
           },
-          "numberOfBedrooms": {
+          "idHomeStay": {
+            "type": "string",
+            "nullable": true
+          },
+          "roomCount": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "numberOfLivingRooms": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "numberOfBathrooms": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "numberOfKitchens": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "numberofGuest": {
-            "type": "integer",
-            "format": "int32",
+          "averageRating": {
+            "type": "string",
             "nullable": true
           },
           "userName": {
@@ -4481,15 +4968,17 @@
             "type": "string",
             "nullable": true
           },
-          "numberOfBedrooms": {
+          "numberAdult": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
-          "numberOfLivingRooms": {
+          "numberChild": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
+          },
+          "numberBaby": {
+            "type": "integer",
+            "format": "int32"
           },
           "amenties": {
             "uniqueItems": true,
@@ -4498,21 +4987,6 @@
               "type": "integer",
               "format": "int32"
             },
-            "nullable": true
-          },
-          "numberOfBathrooms": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "numberOfKitchens": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "numberofGuest": {
-            "type": "integer",
-            "format": "int32",
             "nullable": true
           },
           "dateIn": {
@@ -4563,6 +5037,57 @@
             "nullable": true
           },
           "dateEnd": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Service": {
+        "required": [
+          "ownerID",
+          "price",
+          "serviceName",
+          "unit"
+        ],
+        "type": "object",
+        "properties": {
+          "serviceID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ownerID": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "serviceName": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "unit": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedAt": {
             "type": "string",
             "format": "date-time",
             "nullable": true

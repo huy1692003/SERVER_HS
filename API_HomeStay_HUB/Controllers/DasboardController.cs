@@ -72,7 +72,7 @@ namespace API_HomeStay_HUB.Controllers
             var totalOwner= db.OwnerStays.Count();
             var totalPartnership=db.PartnershipRegs.Count(s=>s.Status==0);
             var totalAdsWaiting = db.Advertisements.Count(s => s.StatusAd == 0);
-            var homestayWaiting=db.HomeStays.Count(s=>s.ApprovalStatus == 0);
+            var homestayWaiting=db.HomeStays.Count(s=>s.StatusHomestay == 0);
             var totalUser = db.Users.Count();
             var revenueAds = db.Advertisements.Where(s=>s.StatusAd>=2).Sum(s => s.Cost);
 

@@ -4,12 +4,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_HomeStay_HUB.Model
 {
-    [Table("Services")]
+    [Table("Homestay_Services")]
     public class Service
     {
         [Key]
         [Column("serviceID")]
-        public int ServiceID { get; set; }
+        public int? ServiceID { get; set; }
 
         [Required]
         [Column("ownerID")]
@@ -24,7 +24,7 @@ namespace API_HomeStay_HUB.Model
 
         [Required]
         [Column("price")]
-        public decimal Price { get; set; }
+        public double Price { get; set; }
 
         [Required]
         [Column("unit")]
@@ -39,7 +39,6 @@ namespace API_HomeStay_HUB.Model
         [Column("updatedAt")]
         public DateTime? UpdatedAt { get; set; } = DateTime.Now;
 
-        [ForeignKey("OwnerID")]
-        public virtual OwnerStay? Owner { get; set; }
+        
     }
 }

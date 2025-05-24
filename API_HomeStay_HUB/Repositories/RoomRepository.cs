@@ -19,22 +19,20 @@ namespace API_HomeStay_HUB.Repositories
         public async Task<IEnumerable<Room>> GetAllRooms()
         {
             return await _context.Rooms
-                .Include(r => r.HomeStay)
                 .ToListAsync();
         }
 
         public async Task<Room> GetRoomById(int roomId)
         {
-            return await _context.Rooms
-                .Include(r => r.HomeStay)
+            var res = await _context.Rooms
                 .FirstOrDefaultAsync(r => r.RoomId == roomId);
+            return res;
         }
 
         public async Task<IEnumerable<Room>> GetRoomsByHomestayId(int homestayId)
         {
             return await _context.Rooms
                 .Where(r => r.HomestayId == homestayId)
-                .Include(r => r.HomeStay)
                 .ToListAsync();
         }
 
@@ -51,7 +49,7 @@ namespace API_HomeStay_HUB.Repositories
             var existingRoom = await _context.Rooms.FindAsync(room.RoomId);
             if (existingRoom == null)
                 return false;
-
+            room.CreatedAt = existingRoom.CreatedAt; // Preserve the original CreatedAt value
             room.UpdatedAt = DateTime.Now;
             _context.Entry(existingRoom).CurrentValues.SetValues(room);
             return await _context.SaveChangesAsync() > 0;

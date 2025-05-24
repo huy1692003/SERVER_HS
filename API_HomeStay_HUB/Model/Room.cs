@@ -1,32 +1,91 @@
-﻿namespace API_HomeStay_HUB.Model
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace API_HomeStay_HUB.Model
 {
+    [Table("Rooms")]
     public class Room
     {
-        public int RoomId { get; set; }
-        public int HomestayId { get; set; }
-        public string RoomName { get; set; }
-        public string RoomType { get; set; }
-        public decimal? RoomSize { get; set; }
-        public int MaxAdults { get; set; } = 0;
-        public int? MaxChildren { get; set; } = 0;
-        public int? BathroomCount { get; set; } = 0;
-        public int? BedCount { get; set; } = 0;
-        public double PricePerNight { get; set; } = 0;
-        public double? ExtraFeePerChild { get; set; } = 0;
-        public double? ExtraFeePerAdult { get; set; } = 0;
-        public string? Description { get; set; }
-        public bool? HasBalcony { get; set; } = false;
-        public bool? HasTv { get; set; } = false;
-        public bool? HasAirConditioner { get; set; } = true;
-        public bool? HasRefrigerator { get; set; } = false;
-        public bool? HasWifi { get; set; } = true;
-        public bool? HasHotWater { get; set; } = true;
-        public string? RoomImage { get; set; }
-        public int? Status { get; set; }
-        public DateTime? CreatedAt { get; set; } = DateTime.Now;
-        public DateTime? UpdatedAt { get; set; } = DateTime.Now;
+        [Key]
+        [Column("roomId")]
+        public int? RoomId { get; set; }
 
-        // Navigation property
-        public virtual HomeStay HomeStay { get; set; }
+        [Column("homestayId")]
+        public int HomestayId { get; set; }
+
+        [Column("roomName")]
+        public string RoomName { get; set; }
+
+        [Column("roomType")]
+        public string RoomType { get; set; }
+
+        [Column("roomSize")]
+        public double? RoomSize { get; set; }
+
+        [Column("maxAdults")]
+        public int MaxAdults { get; set; }
+
+        [Column("maxChildren")]
+        public int? MaxChildren { get; set; }
+
+        [Column("maxBaby")]
+        public int? MaxBaby { get; set; }
+
+        [Column("bathroomCount")]
+        public int? BathroomCount { get; set; }
+
+        [Column("bedCount")]
+        public int? BedCount { get; set; }
+
+        [Column("pricePerNight")]
+        public double PricePerNight { get; set; }
+
+        [Column("priceFromSecondNight")]
+        public double PriceFromSecondNight { get; set; }
+
+        [Column("extraFeePerChild")]
+        public double? ExtraFeePerChild { get; set; }
+
+        [Column("extraFeePerAdult")]
+        public double? ExtraFeePerAdult { get; set; }
+
+        [Column("extraFeePerBaby")]
+        public double? ExtraFeePerBaby { get; set; }
+
+        [Column("description")]
+        public string? Description { get; set; }
+
+        [Column("hasBalcony")]
+        public bool? HasBalcony { get; set; }
+
+        [Column("hasTv")]
+        public bool? HasTv { get; set; }
+
+        [Column("hasAirConditioner")]
+        public bool? HasAirConditioner { get; set; }
+
+        [Column("hasRefrigerator")]
+        public bool? HasRefrigerator { get; set; }
+
+        [Column("hasWifi")]
+        public bool? HasWifi { get; set; }
+
+        [Column("hasHotWater")]
+        public bool? HasHotWater { get; set; }
+
+        [Column("roomImage")]
+        public string? RoomImage { get; set; }
+
+        [Column("status")]
+        public int? Status { get; set; }
+
+        [Column("createdAt")]
+        public DateTime? CreatedAt { get; set; }
+
+        [Column("updatedAt")]
+        public DateTime? UpdatedAt { get; set; }
+        //public HomeStay? HomeStay { get; set; }  // navigation property
+
     }
 }

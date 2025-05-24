@@ -39,7 +39,7 @@ namespace API_HomeStay_HUB.Repositories
         public async Task<IEnumerable<dynamic>> getBookingDates(int idHomeStay)
         {
             return await _dbContext.Bookings.
-                Where(b => b.HomeStayID == idHomeStay && b.IsCancel != 1).
+                Where(b => b.HomeStayID == idHomeStay && (!b.IsCancel || b.IsConfirm)).
                 Select(b => new { b.CheckInDate, b.CheckOutDate }).ToListAsync();
         }
 
@@ -51,7 +51,7 @@ namespace API_HomeStay_HUB.Repositories
                 var booking = await _dbContext.Bookings.FirstOrDefaultAsync(s => s.BookingID == idBooking);
                 if (booking != null)
                 {
-                    booking.IsConfirm = 1;
+                    booking.IsConfirm = true;
                     booking.status = 2;
                     booking.TimeConfirm = TimeHelper.GetDateTimeVietnam();
                     await _dbContext.BookingProcesses.AddAsync
@@ -113,7 +113,9 @@ namespace API_HomeStay_HUB.Repositories
                         <li><b>Địa chỉ Homestay:</b> {homeStay.AddressDetail}, {homeStay.WardOrCommune}, {homeStay.District}, {homeStay.Province}, {homeStay.Country}</li>
                         <li><b>Ngày nhận phòng:</b> {booking.CheckInDate.ToString("dd/MM/yyyy")}</li>
                         <li><b>Ngày trả phòng:</b> {booking.CheckOutDate.ToString("dd/MM/yyyy")}</li>
-                        <li><b>Số lượng khách:</b> {booking.NumberOfGuests} người</li>
+                        <li><b>Số lượng người lớn:</b> {booking.NumberAdults} người</li>
+                        <li><b>Số lượng trẻ em:</b> {booking.NumberChildren} người</li>
+                        <li><b>Số lượng em bé:</b> {booking.NumberBaby} người</li>
                         <li><b>Tổng giá trị:</b> {booking.TotalPrice:C}</li>
                         <li><b>Phương thức thanh toán:</b> {booking.PaymentMethod}</li>
                     </ul>
@@ -164,7 +166,9 @@ namespace API_HomeStay_HUB.Repositories
                         <li><b>Địa chỉ Homestay:</b> {homeStay.AddressDetail}, {homeStay.WardOrCommune}, {homeStay.District}, {homeStay.Province}, {homeStay.Country}</li>
                         <li><b>Ngày nhận phòng:</b> {booking.CheckInDate.ToString("dd/MM/yyyy")}</li>
                         <li><b>Ngày trả phòng:</b> {booking.CheckOutDate.ToString("dd/MM/yyyy")}</li>
-                        <li><b>Số lượng khách:</b> {booking.NumberOfGuests} người</li>
+                        <li><b>Số lượng người lớn:</b> {booking.NumberAdults} người</li>
+                        <li><b>Số lượng trẻ em:</b> {booking.NumberChildren} người</li>
+                        <li><b>Số lượng em bé:</b> {booking.NumberBaby} người</li>
                         <li><b>Lý do hủy:</b> {booking.ReasonCancel}</li>
                     </ul>
                     <p>Nếu bạn có bất kỳ thắc mắc nào, vui lòng liên hệ với chúng tôi.</p>
@@ -191,7 +195,7 @@ namespace API_HomeStay_HUB.Repositories
             var booking = await _dbContext.Bookings.FirstOrDefaultAsync(s => s.BookingID == idBooking);
             if (booking != null)
             {
-                booking.IsCancel = 1;
+                booking.IsCancel = true;
                 booking.status = -1;
                 booking.ReasonCancel = reasonCancel;
                 bool checkCancel = await _dbContext.SaveChangesAsync() > 0;

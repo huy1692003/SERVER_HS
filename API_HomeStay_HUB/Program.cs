@@ -26,6 +26,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// Cấu hình CORS cho Development - Cho phép tất cả
+builder.Services.AddCors();
+
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
 builder.Services.AddAuthentication(x =>
 {
@@ -44,6 +47,7 @@ builder.Services.AddAuthentication(x =>
         ValidateAudience = false
     };
 });
+
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IPromotionRepository, PromotionRepository>();
@@ -66,7 +70,8 @@ builder.Services.AddScoped<IReviewAndRatingRepository, ReviewAndRatingRepository
 builder.Services.AddScoped<IReviewAndRatingService, ReviewAndRatingService>();
 builder.Services.AddScoped<IFAQRepository, FAQRepository>();
 builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
-
+builder.Services.AddScoped<IRoomService, RoomService>();
+builder.Services.AddScoped<IRoomRepository, RoomRepository>();
 builder.Services.AddScoped<IFAQService, FAQService>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
@@ -76,26 +81,10 @@ builder.Services.AddScoped<ISendMaillService, SendMaillService>();
 builder.Services.AddScoped<PaymentMomoService>();
 builder.Services.AddScoped<ExportExcel>();
 
-
-
-// Cấu hình CORS
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowSpecificOrigins",
-        policy => policy
-            .WithOrigins("http://localhost:3000") // URL của client
-            .AllowAnyMethod()
-            .AllowAnyHeader()
-            .AllowCredentials()); // Dùng AllowCredentials nếu client sử dụng cookie hoặc thông tin xác thực
-});
-
 builder.Services.AddSignalR();
 var app = builder.Build();
 
-
 //Endpoint realtime
-
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -103,13 +92,18 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 app.UseStaticFiles();
 
 app.UseHttpsRedirection();
 
-// Sử dụng CORS
-app.UseCors("AllowSpecificOrigins"); ; // Đảm bảo middleware này được sử dụng
+// Sử dụng CORS - Cho phép tất cả trong development
+app.UseCors(builder => builder
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
 
+app.UseAuthentication(); // THÊM DÒNG NÀY
 app.UseAuthorization();
 
 app.MapControllers();

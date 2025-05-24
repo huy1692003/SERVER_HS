@@ -20,6 +20,6 @@ namespace API_HomeStay_HUB.DTOs
         public int? Gender { get; set; }
         public string? CusID { get; set; }
         public int? RentedRoomsTotal { get; set; }
-        public decimal? TotalAmountPaid { get; set; }
+        public double? TotalAmountPaid { get; set; }
     }
 }

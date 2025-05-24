@@ -7,12 +7,11 @@ namespace API_HomeStay_HUB.DTOs
         public string? Location { get; set; } = "";
         public string? PriceRange { get; set; } = "";
         public string? Name { get; set; } = "";
-        public int? NumberOfBedrooms { get; set; }
-        public int? NumberOfLivingRooms { get; set; }
+        public int numberAdult { get; set; }
+        public int numberChild { get; set; }
+        public int numberBaby { get; set; }
         public HashSet<int>? Amenties { get; set; }
-        public int? NumberOfBathrooms { get; set; }
-        public int? NumberOfKitchens { get; set; }
-        public int? NumberofGuest { get; set; }
+        
         public DateTime? DateIn { get; set; }
         public DateTime? DateOut { get; set; }
     }

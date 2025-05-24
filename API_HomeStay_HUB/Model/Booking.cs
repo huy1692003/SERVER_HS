@@ -29,14 +29,23 @@ namespace API_HomeStay_HUB.Model
         [Column("homestayID")]
         public int? HomeStayID { get; set; }
 
+        [Column("roomID")]
+        public int? RoomID { get; set; }
+
         [Column("checkInDate")]
         public DateTime CheckInDate { get; set; }
 
         [Column("checkOutDate")]
         public DateTime CheckOutDate { get; set; }
 
-        [Column("numberOfGuests")]
-        public int? NumberOfGuests { get; set; }
+        [Column("numberAdults")]
+        public int? NumberAdults { get; set; }
+
+        [Column("numberChildren")]
+        public int? NumberChildren { get; set; }
+
+        [Column("numberBaby")]
+        public int? NumberBaby { get; set; }
 
         [Column("totalPrice")]
         public double? TotalPrice { get; set; }
@@ -60,12 +69,12 @@ namespace API_HomeStay_HUB.Model
         public string? Description { get; set; }
 
         [Column("isConfirm")]
-        public int? IsConfirm { get; set; }
+        public bool IsConfirm { get; set; } = false;
 
         [Column("isCancel")]
-        public int? IsCancel { get; set; } 
+        public bool IsCancel { get; set; } = false;
         [Column("isSuccess")]
-        public int? IsSuccess { get; set; } 
+        public bool IsSuccess { get; set; }
 
         [Column("statusBK")]
         public int? status { get; set; }
@@ -73,7 +82,7 @@ namespace API_HomeStay_HUB.Model
         public string? ReasonCancel { get; set; }
 
         [Column("bookingTime")]
-        public DateTime? BookingTime { get; set; } 
+        public DateTime? BookingTime { get; set; }
 
         [Column("timeConfirm")]
         public DateTime? TimeConfirm { get; set; }

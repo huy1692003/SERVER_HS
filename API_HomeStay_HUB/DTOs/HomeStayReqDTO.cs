@@ -7,5 +7,6 @@ namespace API_HomeStay_HUB.DTOs
         public HomeStay? HomeStay { get; set; }
         public int[]? ListAmenities { get; set; }
         public DetailHomeStay? DetailHomeStay { get; set; }
+        public List<Room>? Rooms { get; set; }
     }
 }

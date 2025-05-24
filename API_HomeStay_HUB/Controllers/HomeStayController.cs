@@ -71,6 +71,10 @@ namespace API_HomeStay_HUB.Controllers
         [HttpGet("getByID/{id}")]
         public async Task<IActionResult> GetHomeStayByID(int id)
         {
+            if(_dBContext.HomeStays.Find(id)==null)
+            {
+                return NotFound();
+            }    
             var result = await _homeStayService.getHomeStayByID(id);
             if (result == null)
             {
@@ -137,6 +141,15 @@ namespace API_HomeStay_HUB.Controllers
                 PriceStart = double.Parse(PriceString[0]);
                 PriceEnd = double.Parse(PriceString[1]);
             }
+            
+            double RatingStart = 0, RatingEnd = 0;
+            if (!string.IsNullOrEmpty(search.AverageRating))
+            {
+                string[] RatingString = search.AverageRating.Split("-");
+                RatingStart = double.Parse(RatingString[0]);
+                RatingEnd = double.Parse(RatingString[1]);
+            }
+            
             // Truy vấn tổng hợp để lấy cả tổng số bản ghi và dữ liệu phân trang
             var query = from HomeStay in _dBContext.HomeStays
                         join DetailHomeStay in _dBContext.DetailHomeStays
@@ -145,36 +158,27 @@ namespace API_HomeStay_HUB.Controllers
                         on HomeStay.OwnerID equals owner.OwnerID
                         join user in _dBContext.Users
                         on owner.UserID equals user.UserID
-                        where (string.IsNullOrEmpty(idOwner) || HomeStay.OwnerID == idOwner) && HomeStay.ApprovalStatus == status
+                        where (string.IsNullOrEmpty(idOwner) || HomeStay.OwnerID == idOwner) && HomeStay.StatusHomestay == status
                         &&
-                        (search.Location == null ||
+                        (string.IsNullOrEmpty(search.Location) ||
                             HomeStay.AddressDetail!.Contains(search.Location!) ||
                             HomeStay.Country!.Contains(search.Location!) ||
                             HomeStay.Province!.Contains(search.Location!) ||
                             HomeStay.District!.Contains(search.Location!)
                         )
-                        && (search.Location == null ||
+                        && (string.IsNullOrEmpty(search.Name) ||
                             HomeStay.HomestayName!.Contains(search.Name!))
-                        && (search.NumberofGuest == null ||
-                            (search.NumberofGuest >= HomeStay.MinPerson && search.NumberofGuest <= HomeStay.MaxPerson)
-                        )
+                        && (string.IsNullOrEmpty(search.IdHomeStay) ||
+                            HomeStay.HomestayID.ToString().Contains(search.IdHomeStay!))
                         && (string.IsNullOrEmpty(search.PriceRange) ||
-                            (HomeStay.PricePerNight >= PriceStart && HomeStay.PricePerNight <= PriceEnd)
-                        )
-                        && (search.NumberOfBathrooms == null ||
-                            DetailHomeStay.NumberOfBathrooms == search.NumberOfBathrooms
-                        )
-                        && (search.NumberOfLivingRooms == null ||
-                            DetailHomeStay.NumberOfLivingRooms == search.NumberOfLivingRooms
-                        )
-                        && (search.NumberOfBedrooms == null ||
-                            DetailHomeStay.NumberOfBedrooms == search.NumberOfBedrooms
-                        )
-                        && (search.NumberOfKitchens == null ||
-                            DetailHomeStay.NumberOfKitchens == search.NumberOfKitchens
-                        )
+                            _dBContext.Rooms.Any(r => r.HomestayId == HomeStay.HomestayID && 
+                                r.PricePerNight >= PriceStart && r.PricePerNight <= PriceEnd))
+                        && (search.RoomCount == null ||
+                            _dBContext.Rooms.Count(r => r.HomestayId == HomeStay.HomestayID) >= search.RoomCount)
+                        && (string.IsNullOrEmpty(search.AverageRating) ||
+                            (HomeStay.AverageRating >= RatingStart && HomeStay.AverageRating <= RatingEnd))
 
-                        //Tìm kiếm phía admin 
+                        // Tìm kiếm phía admin 
                         && (string.IsNullOrEmpty(search.FullName) ||
                         user.FullName!.Contains(search.FullName!))
                         && (string.IsNullOrEmpty(search.UserName) ||
@@ -184,12 +188,11 @@ namespace API_HomeStay_HUB.Controllers
                         && (string.IsNullOrEmpty(search.Phone) ||
                         user.PhoneNumber!.Contains(search.Phone!))
 
-
-
                         orderby HomeStay.HomestayID descending
                         select new HomeStayResDTO
                         {
-                            HomeStay = HomeStay,
+                            HomeStay = HomeStay,                            
+                            Rooms = _dBContext.Rooms.Where(s => s.HomestayId == HomeStay.HomestayID).OrderBy(s=>s.PricePerNight).ToList(),
                             DetailHomeStay = DetailHomeStay,
                             Owner = user
                         };
@@ -211,8 +214,6 @@ namespace API_HomeStay_HUB.Controllers
                 Items = data,
                 TotalCount = totalRecords
             });
-
-
         }
         [HttpPut("updateStatusApproval")]
         public async Task<IActionResult> updateStatusApproval([FromQuery] int idHomestay, int status)
@@ -222,7 +223,7 @@ namespace API_HomeStay_HUB.Controllers
             {
                 return NotFound();
             }
-            homestay.ApprovalStatus = status;
+            homestay.StatusHomestay = status;
             await _dBContext.SaveChangesAsync();
             return NoContent();
         }
@@ -237,7 +238,7 @@ namespace API_HomeStay_HUB.Controllers
             {
                 return NotFound();
             }
-            _dBContext.HomeStays.FirstOrDefault(s => s.HomestayID == id)!.TotalView += 1;
+            _dBContext.HomeStays.FirstOrDefault(s => s.HomestayID == id)!.ViewCount += 1;
             _dBContext.SaveChanges();
             return Ok(result);
         }
@@ -269,6 +270,7 @@ namespace API_HomeStay_HUB.Controllers
             {
                 return BadRequest(ModelState);
             }
+            service.ServiceID = null;
 
             var result = await _homeStayService.AddService(service);
             if (result)

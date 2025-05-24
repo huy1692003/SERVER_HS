@@ -21,7 +21,7 @@ namespace API_HomeStay_HUB.Model
         public string? CustomerID { get; set; }
 
         [Column("rating")]
-        public decimal? Rating { get; set; }
+        public double? Rating { get; set; }
 
         [Column("comment")]
         public string? Comment { get; set; }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_HomeStay_HUB.Model
@@ -8,38 +7,45 @@ namespace API_HomeStay_HUB.Model
     public class DetailHomeStay
     {
         [Key]
-        [Column("id")] // Thêm ID mới cho DetailHomeStay
-        public int? ID { get; set; }
+        [Column("id")]
+        public int? ID { get; set; } // KHÔNG nullable vì là khóa chính có IDENTITY
 
-        [ForeignKey("HomeStay")]
         [Column("homestayID")]
-        public int? HomestayID { get; set; }
+        public int? HomestayID { get; set; } // có thể null đúng như trong DB
 
-        [Column("numberOfBedrooms")]
-        public int? NumberOfBedrooms { get; set; }
+        
 
-        [Column("numberOfLivingRooms")]
-        public int? NumberOfLivingRooms { get; set; }
+        [Column("noteHomestay")]
+        public string? NoteHomestay { get; set; }
 
-        [Column("numberOfBathrooms")]
-        public int? NumberOfBathrooms { get; set; }
+        [Column("stayRules")]
+        public string? StayRules { get; set; }
 
-        [Column("numberOfKitchens")]
-        public int? NumberOfKitchens { get; set; }
+        [Column("hasSwimmingPool")]
+        public bool? HasSwimmingPool { get; set; }
 
-        [Column("note")]
-        public string? Note { get; set; } 
+        [Column("hasBilliardTable")]
+        public bool? HasBilliardTable { get; set; }
 
-        [Column("rules")]
-        public string? Rules { get; set; }
+        [Column("manyActivities")]
+        public bool? ManyActivities { get; set; }
 
-        [Column("utilities")]
-        public string? Utilities { get; set; }
+        [Column("spaciousGarden")]
+        public bool? SpaciousGarden { get; set; }
 
-        [Column("regulation")]
-        public string? Regulation { get; set; }
+        [Column("lakeView")]
+        public bool? LakeView { get; set; }
 
-        // Navigation property liên kết ngược về bảng HomeStay
-        //public virtual HomeStay? HomeStay { get; set; }
+        [Column("mountainView")]
+        public bool? MountainView { get; set; }
+
+        [Column("seaView")]
+        public bool? SeaView { get; set; }
+
+        [Column("riceFieldView")]
+        public bool? RiceFieldView { get; set; }
+
+        [Column("policies")]
+        public string? Policies { get; set; }
     }
 }

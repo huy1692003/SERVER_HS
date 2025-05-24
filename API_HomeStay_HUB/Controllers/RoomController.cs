@@ -46,10 +46,11 @@ namespace API_HomeStay_HUB.Controllers
         [HttpPost]
         public async Task<ActionResult> AddRoom(Room room)
         {
+            room.RoomId = null; // Ensure RoomId is null for new room creation
             var result = await _roomService.AddRoom(room);
             if (result)
             {
-                return CreatedAtAction(nameof(GetRoomById), new { id = room.RoomId }, room);
+                return Ok("success add");
             }
             return BadRequest();
         }
@@ -78,7 +79,7 @@ namespace API_HomeStay_HUB.Controllers
             {
                 return NotFound();
             }
-            return NoContent();
+            return Ok("success");
         }
     }
 }

@@ -168,8 +168,16 @@ namespace API_HomeStay_HUB.Services
             sb.AppendLine($"                <div class='booking-value'>{stayDays}</div>");
             sb.AppendLine("            </div>");
             sb.AppendLine("            <div class='booking-row'>");
-            sb.AppendLine("                <div class='booking-label'>Số lượng khách:</div>");
-            sb.AppendLine($"                <div class='booking-value'>{booking.NumberOfGuests}</div>");
+            sb.AppendLine("                <div class='booking-label'>Số lượng người lớn:</div>");
+            sb.AppendLine($"                <div class='booking-value'>{booking.NumberAdults}</div>");
+            sb.AppendLine("            </div>");
+            sb.AppendLine("            <div class='booking-row'>");
+            sb.AppendLine("                <div class='booking-label'>Số lượng trẻ em:</div>");
+            sb.AppendLine($"                <div class='booking-value'>{booking.NumberChildren}</div>");
+            sb.AppendLine("            </div>");
+            sb.AppendLine("            <div class='booking-row'>");
+            sb.AppendLine("                <div class='booking-label'>Số lượng em bé:</div>");
+            sb.AppendLine($"                <div class='booking-value'>{booking.NumberBaby}</div>");
             sb.AppendLine("            </div>");
 
             // Hiển thị thông tin giá nếu có

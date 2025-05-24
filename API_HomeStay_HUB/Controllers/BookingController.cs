@@ -20,14 +20,12 @@ namespace API_HomeStay_HUB.Controllers
     {
         private readonly IBookingService _bookingService;
         private readonly DBContext _dbContext;
-        private readonly IHomeStayService _homestayRepository;
-        private readonly ISendMaillService _sendMaillService;
-        public BookingController(IBookingService bookingService, DBContext dBContext, IHomeStayService homestayRepository, ISendMaillService sendMaillService)
+  
+        public BookingController(IBookingService bookingService, DBContext dBContext )
         {
             _bookingService = bookingService;
             _dbContext = dBContext;
-            _homestayRepository = homestayRepository;
-            _sendMaillService = sendMaillService;
+        
         }
 
 
@@ -89,10 +87,10 @@ namespace API_HomeStay_HUB.Controllers
         [HttpGet("getBookingDateExisted")]
         public async Task<IActionResult> getBookingDates(int idHomeStay)
         {
-            refeshStatusBookingProcess();
 
             return Ok(await _bookingService.getBookingDates(idHomeStay));
         }
+       
 
         [HttpPost("create")]
         public async Task<IActionResult> CreateBooking([FromBody] Booking booking)
@@ -194,7 +192,7 @@ namespace API_HomeStay_HUB.Controllers
             {
                 bookingPrs.CheckOutTime = TimeHelper.GetDateTimeVietnam();
                 bookingPrs.StepOrder = 4;
-                booking.IsSuccess = 1;
+                booking.IsSuccess = true;
                 booking.status = 6; //hoàn thành
 
                 _dbContext.SaveChanges();

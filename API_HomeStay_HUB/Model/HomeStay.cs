@@ -11,53 +11,61 @@ namespace API_HomeStay_HUB.Model
         [Column("homestayID")]
         public int? HomestayID { get; set; }
 
-        [Column("homestayName")]
-        public string? HomestayName { get; set; }
-
+        [Required]
         [Column("ownerID")]
-        public string? OwnerID { get; set; }
+        public string OwnerID { get; set; }
 
+        [Required]
+        [Column("homestayName")]
+        public string HomestayName { get; set; }
+
+        [Required]
         [Column("country")]
-        public string? Country { get; set; }
+        public string Country { get; set; }
 
-        [Column("province")]  // Thêm trường tỉnh thành
+        [Column("province")]
         public string? Province { get; set; }
 
-        [Column("district")]  // Thêm quận huyện
+        [Column("district")]
         public string? District { get; set; }
-        //Phường hoặc xã
+
         [Column("wardOrCommune")]
         public string? WardOrCommune { get; set; }
 
+        [Required]
         [Column("addressDetail")]
-        public string? AddressDetail { get; set; }
+        public string AddressDetail { get; set; }
+
+        [Column("imageHomestay")]
+        public string? ImageHomestay { get; set; }
 
         [Column("linkGoogleMap")]
         public string? LinkGoogleMap { get; set; }
 
-        [Column("imagePreview")]
-        public List<string>? ImagePreview { get; set; }
+        [Column("timeCheckIn")]
+        public string? TimeCheckIn { get; set; }
 
-        [Column("pricePerNight")]
-        public double? PricePerNight { get; set; }
+        [Column("timeCheckOut")]
+        public string? TimeCheckOut { get; set; }
 
-        [Column("discountSecondNight")]  // Trường mới cho giảm giá từ đêm thứ 2
-        public double? DiscountSecondNight { get; set; }
+        [Column("totalScore")]
+        public int? TotalScore { get; set; }
 
-        [Column("minPerson")]
-        public int? MinPerson { get; set; }
+        [Column("viewCount")]
+        public int? ViewCount { get; set; }
 
-        [Column("maxPerson")]
-        public int? MaxPerson { get; set; }
+        [Column("reviewCount")]
+        public int? ReviewCount { get; set; }
 
-        [Column("totalView")]
-        public int? TotalView { get; set; }
+
+        [Column("averageRating")]
+        public double? AverageRating { get; set; }
+
+        [Column("statusHomestay")]
+        public int? StatusHomestay { get; set; }
 
         [Column("isLocked")]
-        public int? IsLocked { get; set; }
-
-        [Column("approvalStatus")]
-        public int? ApprovalStatus { get; set; }
+        public bool IsLocked { get; set; }
 
         [Column("createdAt")]
         public DateTime? CreatedAt { get; set; }
@@ -65,6 +73,9 @@ namespace API_HomeStay_HUB.Model
         [Column("updatedAt")]
         public DateTime? UpdatedAt { get; set; }
 
+        //public List<Room>? Rooms { get; set; }
+        [NotMapped]
+        public List<string> listImage { get; set; } = new List<string>();
 
     }
 }

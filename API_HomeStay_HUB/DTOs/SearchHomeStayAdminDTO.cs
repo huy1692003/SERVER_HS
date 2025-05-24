@@ -6,11 +6,9 @@
         public string? Location { get; set; } = "";
         public string? PriceRange { get; set; } = "";
         public string? Name { get; set; } = "";
-        public int? NumberOfBedrooms { get; set; }
-        public int? NumberOfLivingRooms { get; set; }
-        public int? NumberOfBathrooms { get; set; }
-        public int? NumberOfKitchens { get; set; }
-        public int? NumberofGuest { get; set; }  
+        public string? IdHomeStay { get; set; } = "";
+        public int? RoomCount { get; set; } = 0;
+        public string? AverageRating { get; set; } = "";
         public string? UserName { get; set; }
         public string? FullName { get; set; }
         public string? Email { get; set; }

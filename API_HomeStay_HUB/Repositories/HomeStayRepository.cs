@@ -33,12 +33,15 @@ namespace API_HomeStay_HUB.Repositories
             var data = await (from HomeStay in _dBContext.HomeStays
                               join DetailHomeStay in _dBContext.DetailHomeStays
                               on HomeStay.HomestayID equals DetailHomeStay.HomestayID
-                              where HomeStay.ApprovalStatus == 1
-                              orderby HomeStay.TotalView descending
+                              join Room in _dBContext.Rooms
+                                on HomeStay.HomestayID equals Room.HomestayId
+                              where HomeStay.StatusHomestay == 1
+                              orderby HomeStay.ViewCount descending
                               select new HomeStayResDTO
                               {
                                   HomeStay = HomeStay,
                                   DetailHomeStay = DetailHomeStay,
+                                  Rooms=_dBContext.Rooms.Where(s=>s.HomestayId==HomeStay.HomestayID).ToList(),
                               }).Take(20).ToListAsync();
             return data;
         }
@@ -54,12 +57,13 @@ namespace API_HomeStay_HUB.Repositories
             }
 
             // Lấy danh sách các homestay khả dụng trong khoảng thời gian tìm kiếm
-            var availableHomeStayIds = await GetAvailableHomeStays(search.DateIn, search.DateOut);
-
+            var availableHomeStayIds = await GetAvailableByDate(search);
+            
             // Truy vấn tổng hợp
             var query = from HomeStay in _dBContext.HomeStays
                         join DetailHomeStay in _dBContext.DetailHomeStays
                         on HomeStay.HomestayID equals DetailHomeStay.HomestayID
+
                         where availableHomeStayIds.Contains(HomeStay.HomestayID)
                         &&
                         (search.Location == null ||
@@ -70,24 +74,9 @@ namespace API_HomeStay_HUB.Repositories
                         )
                         && (search.Name == null ||
                             HomeStay.HomestayName!.Contains(search.Name!))
-                        && (search.NumberofGuest == null ||
-                            (search.NumberofGuest >= HomeStay.MinPerson && search.NumberofGuest <= HomeStay.MaxPerson)
-                        )
-                        && (string.IsNullOrEmpty(search.PriceRange) ||
-                            (HomeStay.PricePerNight >= PriceStart && HomeStay.PricePerNight <= PriceEnd)
-                        )
-                        && (search.NumberOfBathrooms == null ||
-                            DetailHomeStay.NumberOfBathrooms == search.NumberOfBathrooms
-                        )
-                        && (search.NumberOfLivingRooms == null ||
-                            DetailHomeStay.NumberOfLivingRooms == search.NumberOfLivingRooms
-                        )
-                        && (search.NumberOfBedrooms == null ||
-                            DetailHomeStay.NumberOfBedrooms == search.NumberOfBedrooms
-                        )
-                        && (search.NumberOfKitchens == null ||
-                            DetailHomeStay.NumberOfKitchens == search.NumberOfKitchens
-                        )
+                        //&& (search.NumberofGuest == null ||
+                        //    (search.NumberofGuest >= HomeStay.MinPerson && search.NumberofGuest <= HomeStay.MaxPerson)
+                        //)
                         // Lọc theo danh sách amenities
                         && (search.Amenties == null || search.Amenties.Count == 0 ||
                             (from amenity in _dBContext.HomeStayAmenities
@@ -101,6 +90,8 @@ namespace API_HomeStay_HUB.Repositories
                             HomeStay = HomeStay,
                             DetailHomeStay = DetailHomeStay,
                         };
+
+                        
 
             // Tính tổng số bản ghi
             int totalRecords = await query.CountAsync();
@@ -121,41 +112,40 @@ namespace API_HomeStay_HUB.Repositories
 
 
 
-        public async Task<IEnumerable<int?>> GetAvailableHomeStays(DateTime? dateIn, DateTime? dateOut)
+        public async Task<IEnumerable<int?>> GetAvailableByDate(SearchHomeStayDTO search)
         {
             // Trả về tất cả HomeStays nếu không có ngày vào hoặc ngày ra
-            if (dateIn == null || dateOut == null)
+            if (search.DateIn == null || search.DateOut == null)
             {
                 return await _dBContext.HomeStays.Select(h => h.HomestayID).ToListAsync();
             }
 
-            // Tạo một truy vấn cho các booking bị trùng lịch
             var homestayIdsQuery = _dBContext.HomeStays.AsQueryable();
 
-            // Truy vấn Bookings không bị hủy
+            // Lấy danh sách các phòng đã được đặt trong khoảng thời gian
             var filteredBookingsQuery = _dBContext.Bookings
-                .Where(bk => bk.IsCancel != 1);  // Không cần gọi ToList(), giữ lại IQueryable
+                .Where(bk => !bk.IsCancel && bk.IsConfirm && !bk.IsSuccess)
+                .Where(bk => search.DateIn.Value.Date < bk.CheckOutDate.Date &&
+                             search.DateOut.Value.Date > bk.CheckInDate.Date);
 
-            // Lọc các booking trùng lịch với dateIn và dateOut
-            filteredBookingsQuery = filteredBookingsQuery
-                .Where(bk => dateIn.Value.Date < bk.CheckOutDate.Date &&
-                             dateOut.Value.Date.AddDays(1) > bk.CheckInDate.Date);
+            var bookedRoomIDs = await filteredBookingsQuery
+                .Select(bk => bk.RoomID)
+                .Distinct()
+                .ToListAsync();
 
-            // Lọc HomeStays không bị trùng lịch
-            homestayIdsQuery = homestayIdsQuery
-                .Where(hs => !filteredBookingsQuery.Any(bk => bk.HomeStayID == hs.HomestayID));
-
-            // Lấy danh sách các HomeStayID có sẵn
-            var availableHomeStayIds = await homestayIdsQuery.Select(hs => hs.HomestayID).ToListAsync();
+            // Truy vấn các homestay có ít nhất một phòng không bị đặt
+            var availableHomeStayIds = await _dBContext.HomeStays
+                .Where(hs => _dBContext.Rooms
+                    .Any(r => r.HomestayId == hs.HomestayID && !bookedRoomIDs.Contains(r.RoomId)))
+                .Select(hs => hs.HomestayID)
+                .ToListAsync();
 
             return availableHomeStayIds;
         }
 
-
-
-
         public async Task<HomeStayDetailDTO?> getHomeStayByID(int ID)
         {
+            
             var data = await (from hs in _dBContext.HomeStays
                               join dtH in _dBContext.DetailHomeStays
                               on hs.HomestayID equals dtH.HomestayID
@@ -164,7 +154,7 @@ namespace API_HomeStay_HUB.Repositories
                               {
                                   HomeStay = hs,  // Thông tin Homestay
                                   DetailHomeStay = dtH,  // Thông tin chi tiết homestay
-
+                                  Rooms= _dBContext.Rooms.Where(r => r.HomestayId == hs.HomestayID).ToList(),
                                   // Lấy danh sách HomeStayAmenities (tối ưu: không cần check lại ID)
                                   HomeStayAmenities = (from hsA in _dBContext.HomeStayAmenities
                                                        where hsA.HomestayID == hs.HomestayID
@@ -183,6 +173,7 @@ namespace API_HomeStay_HUB.Repositories
                 var user =await _dBContext.Users.FirstOrDefaultAsync(s => s.UserID == owner.UserID);
                 data.idUserOwner = user.UserID;
                 data.UserNameOwner = user.Username;
+                data.Rooms = await _dBContext.Rooms.Where(s => s.HomestayId == ID).ToListAsync();
             }    
 
             return data;
@@ -191,39 +182,80 @@ namespace API_HomeStay_HUB.Repositories
 
         public async Task<bool> addHomeStay(HomeStayReqDTO req)
         {
-            req.HomeStay!.HomestayID = null;
-            req.HomeStay!.ApprovalStatus = 0;
-            req.HomeStay!.CreatedAt = TimeHelper.GetDateTimeVietnam();
-            req.HomeStay!.IsLocked = 0;
-            req.HomeStay.TotalView = 0;
-            //Tạo HomeStay và trả về HomeStay đó
-            var hsCreated = await _dBContext.HomeStays.AddAsync(req.HomeStay);
-            await _dBContext.SaveChangesAsync();
-
-            if (hsCreated.Entity != null)
+            using var transaction = await _dBContext.Database.BeginTransactionAsync();
+            try
             {
-                //Tạo chi tiết HomeStay đó
-                req.DetailHomeStay!.HomestayID = hsCreated.Entity.HomestayID;
+                // Chuẩn bị dữ liệu HomeStay
+                req.HomeStay!.HomestayID = null;
+                req.HomeStay!.StatusHomestay = 0;
+                req.HomeStay!.CreatedAt = TimeHelper.GetDateTimeVietnam();
+                req.HomeStay.ViewCount = 0;
+
+                // Thêm HomeStay
+                var hsCreated = await _dBContext.HomeStays.AddAsync(req.HomeStay);
+                await _dBContext.SaveChangesAsync(); // Lưu để có ID
+
+                if (hsCreated.Entity?.HomestayID == null)
+                {
+                    await transaction.RollbackAsync();
+                    return false;
+                }
+
+                var homestayId = hsCreated.Entity.HomestayID;
+
+                // Chuẩn bị DetailHomeStay
+                req.DetailHomeStay!.HomestayID = homestayId;
                 req.DetailHomeStay.ID = null;
                 await _dBContext.DetailHomeStays.AddAsync(req.DetailHomeStay);
 
-                //Tạo danh sách các tiện nghi liên Quan đến HomeStay đó 
-                foreach (var idAmen in req.ListAmenities!)
+                // Chuẩn bị danh sách Amenities (bulk insert)
+                if (req.ListAmenities?.Any() == true)
                 {
-                    var homeStayAmenity = new HomeStayAmenities
+                    var homeStayAmenities = req.ListAmenities.Select(idAmen => new HomeStayAmenities
                     {
                         id = GenerateRandomId(),
-                        HomestayID = hsCreated.Entity.HomestayID,
+                        HomestayID = homestayId,
                         AmenityID = idAmen
-                    };
+                    }).ToList();
 
-                    await _dBContext.HomeStayAmenities.AddAsync(homeStayAmenity);
+                    await _dBContext.HomeStayAmenities.AddRangeAsync(homeStayAmenities);
                 }
-                return await _dBContext.SaveChangesAsync() > 0;
 
+                // Chuẩn bị danh sách Rooms (bulk insert)
+                if (req.Rooms?.Any() == true)
+                {
+                    var currentTime = TimeHelper.GetDateTimeVietnam();
+                    foreach (var room in req.Rooms)
+                    {
+                        room.RoomId = null; // Đảm bảo ID là null để tự động tạo mới
+                        room.HomestayId = homestayId ?? 0;
+                        room.CreatedAt = currentTime;
+                        room.UpdatedAt = currentTime;
+                    }
+                    await _dBContext.Rooms.AddRangeAsync(req.Rooms);
+                }
+
+                // Lưu tất cả thay đổi một lần
+                var result = await _dBContext.SaveChangesAsync();
+
+                if (result > 0)
+                {
+                    await transaction.CommitAsync();
+                    return true;
+                }
+                else
+                {
+                    await transaction.RollbackAsync();
+                    return false;
+                }
             }
-            return false;
+            catch (Exception ex)
+            {
+                await transaction.RollbackAsync();
+                
 
+                throw; // Re-throw để caller có thể handle
+            }
         }
         private int GenerateRandomId()
         {
@@ -234,34 +266,45 @@ namespace API_HomeStay_HUB.Repositories
 
         public async Task<bool> updateHomeStay(HomeStayReqDTO req)
         {
+            using var transaction = await _dBContext.Database.BeginTransactionAsync();
             try
             {
                 // Tìm đối tượng HomeStay trong cơ sở dữ liệu
-
                 var existingHomeStay = await _dBContext.HomeStays.FindAsync(req.HomeStay!.HomestayID);
-                req.HomeStay.ApprovalStatus = 0;
-                _dBContext.Entry(existingHomeStay!).CurrentValues.SetValues(req.HomeStay);
+                if (existingHomeStay == null)
+                {
+                    await transaction.RollbackAsync();
+                    return false;
+                }
 
+                // Cập nhật HomeStay
+                req.HomeStay.StatusHomestay = 0;
+                _dBContext.Entry(existingHomeStay).CurrentValues.SetValues(req.HomeStay);
+
+                // Cập nhật chi tiết HomeStay
                 if (req.DetailHomeStay != null)
                 {
-                    //Cập nhật chi tiết Homestay
-                    var existingDetail = await _dBContext.DetailHomeStays.FirstOrDefaultAsync(d => d.HomestayID == req.HomeStay.HomestayID);
-                    req.DetailHomeStay.ID = existingDetail!.ID;
-                    req.DetailHomeStay.HomestayID = existingDetail.HomestayID;
-                    _dBContext.Entry(existingDetail!).CurrentValues.SetValues(req.DetailHomeStay);
+                    var existingDetail = await _dBContext.DetailHomeStays
+                        .FirstOrDefaultAsync(d => d.HomestayID == req.HomeStay.HomestayID);
 
+                    if (existingDetail != null)
+                    {
+                        req.DetailHomeStay.ID = existingDetail.ID;
+                        req.DetailHomeStay.HomestayID = existingDetail.HomestayID;
+                        _dBContext.Entry(existingDetail).CurrentValues.SetValues(req.DetailHomeStay);
+                    }
                 }
 
                 // Cập nhật các tiện nghi của HomeStay
                 if (req.ListAmenities != null && req.ListAmenities.Any())
                 {
-                    // Xóa tất cả tiện nghi cũ trước khi thêm mới
+                    // Xóa tất cả tiện nghi cũ
                     var existingAmenities = await _dBContext.HomeStayAmenities
-                                                             .Where(hsa => hsa.HomestayID == req.HomeStay.HomestayID)
-                                                             .ToListAsync();
+                        .Where(hsa => hsa.HomestayID == req.HomeStay.HomestayID)
+                        .ToListAsync();
 
                     _dBContext.HomeStayAmenities.RemoveRange(existingAmenities);
-                    await _dBContext.SaveChangesAsync();
+
                     // Thêm các tiện nghi mới
                     var newHomeStayAmenities = req.ListAmenities.Select(amenityID => new HomeStayAmenities
                     {
@@ -274,11 +317,22 @@ namespace API_HomeStay_HUB.Repositories
                 }
 
                 // Lưu thay đổi vào cơ sở dữ liệu
-                return await _dBContext.SaveChangesAsync() > 0;
-            }
-            catch (Exception ex)
-            {
+                var result = await _dBContext.SaveChangesAsync();
 
+                if (result > 0)
+                {
+                    await transaction.CommitAsync();
+                    return true;
+                }
+                else
+                {
+                    await transaction.RollbackAsync();
+                    return false;
+                }
+            }
+            catch
+            {
+                await transaction.RollbackAsync();
                 return false;
             }
         }
@@ -299,7 +353,7 @@ namespace API_HomeStay_HUB.Repositories
             var homestay = await _dBContext.HomeStays.FindAsync(ID);
             if (homestay != null)
             {
-                homestay.IsLocked = 1;
+                homestay.IsLocked = true;
                 _dBContext.HomeStays.Update(homestay);
                 return await _dBContext.SaveChangesAsync() > 0;
             }

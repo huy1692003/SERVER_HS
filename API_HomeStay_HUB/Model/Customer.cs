@@ -17,7 +17,7 @@ namespace API_HomeStay_HUB.Model
         public int? RentedRoomsTotal { get; set; }
 
         [Column("totalAmountPaID")]
-        public decimal? TotalAmountPaid { get; set; }
+        public double? TotalAmountPaid { get; set; }
 
         public  User? User { get; set; } // Mối quan hệ đến User
     }
