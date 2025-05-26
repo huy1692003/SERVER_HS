@@ -854,6 +854,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "idRoom",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
           }
         ],
         "responses": {
@@ -954,7 +962,21 @@
         ],
         "parameters": [
           {
-            "name": "cusID",
+            "name": "phoneCus",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "emailCus",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "customerID",
             "in": "query",
             "schema": {
               "type": "string"
@@ -1928,40 +1950,20 @@
         }
       }
     },
-    "/api/HomeStay/services": {
+    "/api/HomeStay/getAllService": {
       "get": {
         "tags": [
           "HomeStay"
         ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "HomeStay"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Service"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Service"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Service"
-              }
+        "parameters": [
+          {
+            "name": "idOwner",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
-        },
+        ],
         "responses": {
           "200": {
             "description": "Success"
@@ -2046,6 +2048,37 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/HomeStay/services": {
+      "post": {
+        "tags": [
+          "HomeStay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Service"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Service"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Service"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "Success"
@@ -3192,6 +3225,18 @@
               "type": "string"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Room/getListTypeRoom": {
+      "get": {
+        "tags": [
+          "Room"
         ],
         "responses": {
           "200": {
@@ -4968,11 +5013,11 @@
             "type": "string",
             "nullable": true
           },
-          "numberAdult": {
+          "numberAdults": {
             "type": "integer",
             "format": "int32"
           },
-          "numberChild": {
+          "numberChildren": {
             "type": "integer",
             "format": "int32"
           },
@@ -4980,8 +5025,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "amenties": {
-            "uniqueItems": true,
+          "amenities": {
             "type": "array",
             "items": {
               "type": "integer",
@@ -4997,6 +5041,93 @@
           "dateOut": {
             "type": "string",
             "format": "date-time",
+            "nullable": true
+          },
+          "hasBalcony": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasTv": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasAirConditioner": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasRefrigerator": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasWifi": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasHotWater": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "numberOfBeds": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "bathroomCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "roomSize": {
+            "type": "string",
+            "nullable": true
+          },
+          "rating": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "hasParking": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasPool": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasGarden": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "homeStayType": {
+            "type": "string",
+            "nullable": true
+          },
+          "hasLakeView": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasMountainView": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasSeaView": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasRiceFieldView": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasBilliardTable": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasManyActivities": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "hasSpaciousGarden": {
+            "type": "boolean",
             "nullable": true
           }
         },
@@ -5067,6 +5198,10 @@
             "type": "string"
           },
           "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "imagePreview": {
             "type": "string",
             "nullable": true
           },

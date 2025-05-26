@@ -56,9 +56,9 @@ namespace API_HomeStay_HUB.Services
             return await _homeStayRepository.deleteHomeStay(ID);
         }
         
-        public async Task<IEnumerable<Service>> GetAllServices()
+        public async Task<IEnumerable<Service>> GetAllServices(string idOwner)
         {
-            return await _homeStayRepository.GetAllServices();
+            return await _homeStayRepository.GetAllServices(idOwner);
         }
 
         public async Task<Service?> GetServiceById(int id)

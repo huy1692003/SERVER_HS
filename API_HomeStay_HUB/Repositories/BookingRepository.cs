@@ -23,7 +23,7 @@ namespace API_HomeStay_HUB.Repositories
         {
 
             
-            if (!await checkDateExitedBooking(booking.HomeStayID!, booking.CheckInDate!, booking.CheckOutDate!))
+            if (!await checkDateExitedBooking(booking.HomeStayID!,booking.RoomID, booking.CheckInDate!, booking.CheckOutDate!))
             {
                 booking.status = 1;
                 booking.BookingTime = TimeHelper.GetDateTimeVietnam();
@@ -36,10 +36,10 @@ namespace API_HomeStay_HUB.Repositories
             }
         }
 
-        public async Task<IEnumerable<dynamic>> getBookingDates(int idHomeStay)
+        public async Task<IEnumerable<dynamic>> getBookingDates(int idHomeStay, int idRoom)
         {
             return await _dbContext.Bookings.
-                Where(b => b.HomeStayID == idHomeStay && (!b.IsCancel || b.IsConfirm)).
+                Where(b => b.HomeStayID == idHomeStay && b.RoomID==idRoom && (!b.IsCancel || b.IsConfirm)).
                 Select(b => new { b.CheckInDate, b.CheckOutDate }).ToListAsync();
         }
 
@@ -207,11 +207,11 @@ namespace API_HomeStay_HUB.Repositories
             }
             return false;
         }
-        public async Task<bool> checkDateExitedBooking(int? idHomestay, DateTime? dateIn, DateTime? dateOut)
+        public async Task<bool> checkDateExitedBooking(int? idHomestay,int? idRoom, DateTime? dateIn, DateTime? dateOut)
         {
             var bookingByHomeStays = await _dbContext.Bookings
-                .Where(bk => bk.HomeStayID == idHomestay &&
-                             dateIn < bk.CheckOutDate && dateOut > bk.CheckInDate)
+                .Where(bk => bk.HomeStayID == idHomestay && bk.RoomID==idRoom&&
+                             dateIn <= bk.CheckOutDate && dateOut >= bk.CheckInDate)
                 .ToListAsync();
 
             return bookingByHomeStays.Any();

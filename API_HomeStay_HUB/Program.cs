@@ -15,21 +15,33 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Sử dụng file tĩnh từ thư mục wwwroot
+// Thêm dịch vụ
 builder.Services.Configure<MomoOptionModel>(builder.Configuration.GetSection("MomoAPI"));
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Cấu hình CORS cho Development - Cho phép tất cả
-builder.Services.AddCors();
+// Cấu hình CORS với chính sách đặt tên
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", builder_ =>
+    {
+        // Lấy danh sách nguồn gốc từ cấu hình
+        var allowedOrigins = builder.Configuration.GetSection("AllowedOrigins").Get<string[]>()
+            ?? new[] { "http://localhost:3000" };
+        builder_
+            .WithOrigins(allowedOrigins)
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials(); // Cần cho SignalR với credentials
+    });
+});
 
-var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
+// Cấu hình xác thực JWT
+var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]
+    ?? throw new InvalidOperationException("JWT Key is not configured."));
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -37,7 +49,7 @@ builder.Services.AddAuthentication(x =>
 })
 .AddJwtBearer(x =>
 {
-    x.RequireHttpsMetadata = false;
+    x.RequireHttpsMetadata = false; // Chỉ tắt trong phát triển
     x.SaveToken = true;
     x.TokenValidationParameters = new TokenValidationParameters
     {
@@ -46,8 +58,24 @@ builder.Services.AddAuthentication(x =>
         ValidateIssuer = false,
         ValidateAudience = false
     };
+    // Xử lý token cho SignalR
+    x.Events = new JwtBearerEvents
+    {
+        OnMessageReceived = context =>
+        {
+            var accessToken = context.Request.Query["access_token"];
+            var path = context.HttpContext.Request.Path;
+            if (!string.IsNullOrEmpty(accessToken) &&
+                (path.StartsWithSegments("/chathub") || path.StartsWithSegments("/realtime")))
+            {
+                context.Token = accessToken;
+            }
+            return Task.CompletedTask;
+        }
+    };
 });
 
+// Đăng ký dịch vụ
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IPromotionRepository, PromotionRepository>();
@@ -82,11 +110,10 @@ builder.Services.AddScoped<PaymentMomoService>();
 builder.Services.AddScoped<ExportExcel>();
 
 builder.Services.AddSignalR();
+
 var app = builder.Build();
 
-//Endpoint realtime
-
-// Configure the HTTP request pipeline.
+// Cấu hình pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -95,18 +122,20 @@ if (app.Environment.IsDevelopment())
 
 app.UseStaticFiles();
 
-app.UseHttpsRedirection();
+// Chỉ sử dụng HTTPS trong sản xuất
+if (!app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
 
-// Sử dụng CORS - Cho phép tất cả trong development
-app.UseCors(builder => builder
-    .AllowAnyOrigin()
-    .AllowAnyMethod()
-    .AllowAnyHeader());
+// Áp dụng chính sách CORS
+app.UseCors("AllowFrontend");
 
-app.UseAuthentication(); // THÊM DÒNG NÀY
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
 app.MapHub<MyHub>("/realtime");
 app.MapHub<ChatHub>("/chathub");
+
 app.Run();

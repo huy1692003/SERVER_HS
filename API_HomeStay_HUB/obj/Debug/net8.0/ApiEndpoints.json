@@ -590,7 +590,17 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cusID",
+        "Name": "phoneCus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "emailCus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "customerID",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -612,6 +622,11 @@
     "Parameters": [
       {
         "Name": "idHomeStay",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idRoom",
         "Type": "System.Int32",
         "IsRequired": false
       }
@@ -1015,6 +1030,22 @@
   },
   {
     "ContainingType": "API_HomeStay_HUB.Controllers.HomeStayController",
+    "Method": "GetAllServices",
+    "RelativePath": "api/HomeStay/getAllService",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idOwner",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_HomeStay_HUB.Controllers.HomeStayController",
     "Method": "getAutocompleteLocation",
     "RelativePath": "api/HomeStay/getAutocompleteLocation",
     "HttpMethod": "GET",
@@ -1131,16 +1162,6 @@
         "IsRequired": false
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_HomeStay_HUB.Controllers.HomeStayController",
-    "Method": "GetAllServices",
-    "RelativePath": "api/HomeStay/services",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -2034,6 +2055,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_HomeStay_HUB.Controllers.RoomController",
+    "Method": "getListTypeRoom",
+    "RelativePath": "api/Room/getListTypeRoom",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

@@ -22,9 +22,12 @@ namespace API_HomeStay_HUB.Model
         [Column("description")]
         public string? Description { get; set; }
 
+        [Column("imagePreview")]
+        public string? ImagePreview { get; set; }
+
         [Required]
         [Column("price")]
-        public double Price { get; set; }
+        public decimal Price { get; set; }
 
         [Required]
         [Column("unit")]

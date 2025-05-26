@@ -35,7 +35,7 @@ namespace API_HomeStay_HUB.Services
             var checkCreated = await _bookingRepository.createBooking(booking);
             if(checkCreated)
             {
-                await _hub.Clients.All.SendAsync("RefeshDateHomeStay", booking.HomeStayID); //Gửi tín hiểu reload lại những ngày đã đặt
+                await _hub.Clients.All.SendAsync("RefeshDateHomeStay", booking.HomeStayID,booking.RoomID); //Gửi tín hiểu reload lại những ngày đã đặt
                 var Owner = await _userRepository.GetDetailOwnerStay(booking.OwnerID!);
                 var notification = new Notification
                 {
@@ -65,9 +65,9 @@ namespace API_HomeStay_HUB.Services
         {
             return await _bookingRepository.cancelBooking(idBooking, reasonCancel);
         }
-        public async Task<IEnumerable<dynamic>> getBookingDates(int idHomeStay)
+        public async Task<IEnumerable<dynamic>> getBookingDates(int idHomeStay, int idRoom)
         {
-            return await _bookingRepository.getBookingDates(idHomeStay);
+            return await _bookingRepository.getBookingDates(idHomeStay, idRoom);
         }
 
         private async Task SendEmailToHomestayOwner(Booking booking, string EmailOwner)

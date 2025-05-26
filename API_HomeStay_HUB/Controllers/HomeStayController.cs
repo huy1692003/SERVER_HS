@@ -22,6 +22,7 @@ namespace API_HomeStay_HUB.Controllers
             _dBContext = dBContext;
         }
 
+        
 
 
         [HttpGet("getAutocompleteLocation")]
@@ -57,6 +58,7 @@ namespace API_HomeStay_HUB.Controllers
 
         public async Task<IActionResult> searchHomeStay([FromBody] SearchHomeStayDTO search, [FromQuery] PaginateDTO paginate)
         {
+            
             var result = await _homeStayService.searchHomeStayByCustomer(search, paginate);
             return Ok(new
             {
@@ -243,10 +245,10 @@ namespace API_HomeStay_HUB.Controllers
             return Ok(result);
         }
 
-        [HttpGet("services")]
-        public async Task<IActionResult> GetAllServices()
+        [HttpGet("getAllService")]
+        public async Task<IActionResult> GetAllServices(string idOwner)
         {
-            var services = await _homeStayService.GetAllServices();
+            var services = await _homeStayService.GetAllServices(idOwner);
             return Ok(services);
         }
 

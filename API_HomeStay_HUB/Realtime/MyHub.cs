@@ -5,10 +5,10 @@ namespace API_HomeStay_HUB.Realtime
 {
     public class MyHub:Hub  {
 
-        public async Task RefeshDateHomeStay(int idHomeStay)
+        public async Task RefeshDateHomeStay(int idHomeStay, int idRoom)
         {
             // Gửi yêu cầu cập nhật lại thông tin các ngày đã đặt 
-            await Clients.All.SendAsync("RefeshDateHomeStay", idHomeStay);
+            await Clients.All.SendAsync("RefeshDateHomeStay", idHomeStay,idRoom);
         }
 
         //Thông báo có đơn đặt phòng mới

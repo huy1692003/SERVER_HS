@@ -14,7 +14,7 @@ namespace API_HomeStay_HUB.Model
         public string? DiscountCode { get; set; }
 
         [Column("discountAmount")]
-        public double? DiscountAmount { get; set; }
+        public decimal? DiscountAmount { get; set; }
 
         [Column("description")]
         public string? Description { get; set; }

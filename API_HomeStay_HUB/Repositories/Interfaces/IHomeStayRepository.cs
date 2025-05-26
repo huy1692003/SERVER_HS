@@ -13,7 +13,7 @@ namespace API_HomeStay_HUB.Repositories.Intefaces
         Task<bool> deleteHomeStay(int ID);
         Task<bool> lockHomeStay(int ID);
         Task<IEnumerable<HomeStayResDTO?>> getHomeStayViewHight();
-        Task<IEnumerable<Service>> GetAllServices();
+        Task<IEnumerable<Service>> GetAllServices(string idOwner);
         Task<Service?> GetServiceById(int id);
         Task<bool> AddService(Service service);
         Task<bool> UpdateService(Service service);

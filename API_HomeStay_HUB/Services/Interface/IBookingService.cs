@@ -8,6 +8,6 @@ namespace API_HomeStay_HUB.Services.Interface
         Task<bool> confirmBooking(int idBooking);
         Task<bool> cancelBooking(int idBooking, string reasonCancel);
 
-        Task<IEnumerable<dynamic>> getBookingDates(int idHomeStay);
+        Task<IEnumerable<dynamic>> getBookingDates(int idHomeStay, int idRoom);
     }
 }

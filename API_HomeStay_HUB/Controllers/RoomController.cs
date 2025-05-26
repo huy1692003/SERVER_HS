@@ -4,6 +4,9 @@ using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Services.Interface;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using API_HomeStay_HUB.Services;
+using API_HomeStay_HUB.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace API_HomeStay_HUB.Controllers
 {
@@ -12,12 +15,25 @@ namespace API_HomeStay_HUB.Controllers
     public class RoomController : ControllerBase
     {
         private readonly IRoomService _roomService;
+        private readonly DBContext _dBContext;
 
-        public RoomController(IRoomService roomService)
+        public RoomController(IRoomService roomService,DBContext dBContext)
         {
             _roomService = roomService;
+            _dBContext = dBContext;
         }
 
+        [HttpGet("getListTypeRoom")]
+        public async Task<IActionResult> getListTypeRoom()
+        {
+            var roomTypes = await _dBContext.Rooms
+                .Where(r => r.RoomType != null)
+                .Select(s => s.RoomType)
+                .Distinct()
+                .ToListAsync();
+
+            return Ok(roomTypes);
+        }
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Room>>> GetAllRooms()
         {

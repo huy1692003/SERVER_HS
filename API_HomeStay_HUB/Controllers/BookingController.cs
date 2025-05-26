@@ -20,12 +20,12 @@ namespace API_HomeStay_HUB.Controllers
     {
         private readonly IBookingService _bookingService;
         private readonly DBContext _dbContext;
-  
-        public BookingController(IBookingService bookingService, DBContext dBContext )
+
+        public BookingController(IBookingService bookingService, DBContext dBContext)
         {
             _bookingService = bookingService;
             _dbContext = dBContext;
-        
+
         }
 
 
@@ -85,12 +85,12 @@ namespace API_HomeStay_HUB.Controllers
 
 
         [HttpGet("getBookingDateExisted")]
-        public async Task<IActionResult> getBookingDates(int idHomeStay)
+        public async Task<IActionResult> getBookingDates(int idHomeStay, int idRoom)
         {
 
-            return Ok(await _bookingService.getBookingDates(idHomeStay));
+            return Ok(await _bookingService.getBookingDates(idHomeStay, idRoom));
         }
-       
+
 
         [HttpPost("create")]
         public async Task<IActionResult> CreateBooking([FromBody] Booking booking)
@@ -144,14 +144,34 @@ namespace API_HomeStay_HUB.Controllers
 
 
         [HttpGet("getBooking_byCusID")]
-        public async Task<IActionResult> GetBooking(string cusID, int status = 1)
+        public async Task<IActionResult> GetBooking(string? phoneCus, string? emailCus, string? customerID, int status = 1)
         {
             refeshStatusBookingProcess();
+            // export const statusBooking = [
+            //{ index: 10, des: "Tất cả đơn",
+            //{ index: 1, des: "Đang chờ xác nhận",
+            //{ index: 2, des: "Đang chờ thanh toán",
+            //{ index: 3, des: "Đang chờ nhận phòng",
+            //{ index: 4, des: "Đang chờ CheckIn",
+            //{ index: 5, des: "Đang chờ CheckOut", ,
+            //{ index: 6, des: "Đã hoàn thành",,
+            //{ index: -1, des: "Đã bị hủy",]}
+            bool check1 = string.IsNullOrEmpty(phoneCus);
+            bool check2 = string.IsNullOrEmpty(emailCus);
+            bool check3 = string.IsNullOrEmpty(customerID);
 
-            var listBookinh = await _dbContext.Bookings.Where(s => s.CustomerID == cusID && (status == 10 || s.status == status)).OrderByDescending(s => s.BookingTime).ToListAsync();
-            if (listBookinh.Count > 0)
+            ICollection<Booking> listBooking = await _dbContext.Bookings
+                .Where(s => (status == 10 || s.status == status) &&
+                            (string.IsNullOrEmpty(customerID) ?
+                                (string.IsNullOrEmpty(phoneCus) || s.Phone == phoneCus) &&
+                                (string.IsNullOrEmpty(emailCus) || s.Email == emailCus) :
+                                s.CustomerID == customerID))
+                .OrderByDescending(s => s.BookingTime)
+                .ToListAsync();
+
+            if (listBooking.Count > 0)
             {
-                foreach (var book in listBookinh)
+                foreach (var book in listBooking)
                 {
                     book.bookingProcess = _dbContext.BookingProcesses.FirstOrDefault(s => s.BookingID == book.BookingID);
                     var user = _dbContext.OwnerStays.Join(
@@ -163,9 +183,8 @@ namespace API_HomeStay_HUB.Controllers
                     book.phoneOwner = user.inforOwner.PhoneNumber;
                     book.nameOwner = user.inforOwner.FullName;
                 }
-
             }
-            return Ok(listBookinh);
+            return Ok(listBooking);
         }
 
         [HttpGet("confirmCheckIn")]
@@ -222,7 +241,7 @@ namespace API_HomeStay_HUB.Controllers
         }
 
 
-    
+
         private int GenerateRandomId()
         {
             DateTime now = TimeHelper.GetDateTimeVietnam();
