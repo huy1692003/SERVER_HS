@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "25OzFLVEXDAYEWq70RRNV9SCoP0eiBMi3jglPxs5Igg=",
+  "Hash": "f8nnTYuRBXhZxDbBiGTaA1g1/AhL/CU0N9Smz4+IT2E=",
   "Source": "API_HomeStay_HUB",
   "BasePath": "_content/API_HomeStay_HUB",
   "Mode": "Default",
@@ -16,6 +16,216 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\files\\bill_1245057369_20250527_162150.pdf",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "files/bill_1245057369_20250527_162150#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5474f2td4m",
+      "Integrity": "+zutE39UfVi0OOi8vb8RcpeiN2O8ZkyULrtCVjw2a2I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\bill_1245057369_20250527_162150.pdf"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\files\\bill_1245057369_20250527_163436.pdf",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "files/bill_1245057369_20250527_163436#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hppyubxl2d",
+      "Integrity": "Ww8vlkT+sRimzl+8Vz9TUN0IRlZ/3lDyj6Bdd5vrbvc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\bill_1245057369_20250527_163436.pdf"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\files\\bill_1245057369_20250527_163835.pdf",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "files/bill_1245057369_20250527_163835#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uvtqd57irf",
+      "Integrity": "NpUp1y8Wn+OYHObn/x8AjM9rTrOsfOYn4OLdMDtSA/M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\bill_1245057369_20250527_163835.pdf"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\arial.ttf",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "fonts/arial#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rwptd9v2fh",
+      "Integrity": "lXZrWPfYabD6LPbm/rJsGyHN8mMfHFhj/JvSBtXG6O4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\arial.ttf"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\Arialn.ttf",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "fonts/Arialn#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3s3xor8ngv",
+      "Integrity": "YzU6/Fah7x4D920VN7nx/F9ylQtb7AKtPOpqHi1mdPw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\Arialn.ttf"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\ArialTh.ttf",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "fonts/ArialTh#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8n1nn14xx1",
+      "Integrity": "FAPwpzYUh1ZCBQLswGy4Et5ZctmPCPpkwv1fdnA+0Pk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\ArialTh.ttf"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\ARIBL0.ttf",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "fonts/ARIBL0#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5wmt5ys41m",
+      "Integrity": "JcZ2WybkPSIrjJjwuQW1q7OpWDmm/0ovr4DCAXSyfd4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\ARIBL0.ttf"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\G_ari_bd.TTF",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "fonts/G_ari_bd#[.{fingerprint}]?.TTF",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ds96v2viir",
+      "Integrity": "81Fquc2A30rt1+KAYwUf6T1AQqFOk82w7B6g/QF00Z4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\G_ari_bd.TTF"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\G_ari_i.TTF",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "fonts/G_ari_i#[.{fingerprint}]?.TTF",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oyl563kms9",
+      "Integrity": "cHDkVFQaKKMeKK1ccUfcXIa1hQvpdCVqPAXTiWXfZ78=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\G_ari_i.TTF"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\GEO_AI__.TTF",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "fonts/GEO_AI__#[.{fingerprint}]?.TTF",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qd7pequtyb",
+      "Integrity": "YnhTckcC4dCPTRsxfdaOI/A7h9mTk4kYL5eMXU7/8fc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\GEO_AI__.TTF"
+    },
     {
       "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241125_111003.jpg",
       "SourceId": "API_HomeStay_HUB",
@@ -8100,9 +8310,1165 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\20250526_221244_3663994_.webp"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_171448.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_171448#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "39xus1rtai",
+      "Integrity": "KcyL2Y2WClj0mCI0LBAEqcy5taI+FPvaEkbjDvQH44Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_171448.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_171454.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_171454#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "39xus1rtai",
+      "Integrity": "KcyL2Y2WClj0mCI0LBAEqcy5taI+FPvaEkbjDvQH44Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_171454.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_175708_3222809_.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_175708_3222809_#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "96xawz8slc",
+      "Integrity": "jy1TE4H63R6VKh+1pWKapH1YqnxNVIaxBGn8ZfhlUvQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_175708_3222809_.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_175708_3692586_.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_175708_3692586_#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cvcqsnoe4e",
+      "Integrity": "qBuCHJ0+HdoMm2MQbOL65aYcrl/uT3WIaLNk4oR4/Nc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_175708_3692586_.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_175708_6861491_.jpeg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_175708_6861491_#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3nhmmvwock",
+      "Integrity": "MUvOw7qVoMjdt5FSkKZ6EiQPdRLkBQvWZ1r9yur/AiI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_175708_6861491_.jpeg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_175708_7468913_.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_175708_7468913_#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2w33wgwg2w",
+      "Integrity": "cpZoLIwCwIwc1RTvi1wAYxOcUvkEGj0xhZxOe2hHxFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_175708_7468913_.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_222927.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_222927#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vuwjhgciof",
+      "Integrity": "F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_222927.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223018.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_223018#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vuwjhgciof",
+      "Integrity": "F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_223018.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223220.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_223220#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vuwjhgciof",
+      "Integrity": "F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_223220.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223237.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_223237#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vuwjhgciof",
+      "Integrity": "F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_223237.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223420.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_223420#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vuwjhgciof",
+      "Integrity": "F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_223420.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223432.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_223432#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vuwjhgciof",
+      "Integrity": "F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_223432.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223449.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_223449#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vuwjhgciof",
+      "Integrity": "F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_223449.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223655.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_223655#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vuwjhgciof",
+      "Integrity": "F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_223655.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_224858.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_224858#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cebyso9u4f",
+      "Integrity": "NHroogEg91tpBVOygie7aELeynnR85GegTiFZieDfIY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_224858.jpg"
+    },
+    {
+      "Identity": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_224929.jpg",
+      "SourceId": "API_HomeStay_HUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\",
+      "BasePath": "_content/API_HomeStay_HUB",
+      "RelativePath": "Images/20250527_224929#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vuwjhgciof",
+      "Integrity": "F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\20250527_224929.jpg"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "files/bill_1245057369_20250527_162150.5474f2td4m.pdf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\files\\bill_1245057369_20250527_162150.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3307"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+zutE39UfVi0OOi8vb8RcpeiN2O8ZkyULrtCVjw2a2I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 09:23:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5474f2td4m"
+        },
+        {
+          "Name": "label",
+          "Value": "files/bill_1245057369_20250527_162150.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+zutE39UfVi0OOi8vb8RcpeiN2O8ZkyULrtCVjw2a2I="
+        }
+      ]
+    },
+    {
+      "Route": "files/bill_1245057369_20250527_162150.pdf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\files\\bill_1245057369_20250527_162150.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3307"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+zutE39UfVi0OOi8vb8RcpeiN2O8ZkyULrtCVjw2a2I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 09:23:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+zutE39UfVi0OOi8vb8RcpeiN2O8ZkyULrtCVjw2a2I="
+        }
+      ]
+    },
+    {
+      "Route": "files/bill_1245057369_20250527_163436.hppyubxl2d.pdf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\files\\bill_1245057369_20250527_163436.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49254"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ww8vlkT+sRimzl+8Vz9TUN0IRlZ/3lDyj6Bdd5vrbvc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 09:34:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hppyubxl2d"
+        },
+        {
+          "Name": "label",
+          "Value": "files/bill_1245057369_20250527_163436.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ww8vlkT+sRimzl+8Vz9TUN0IRlZ/3lDyj6Bdd5vrbvc="
+        }
+      ]
+    },
+    {
+      "Route": "files/bill_1245057369_20250527_163436.pdf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\files\\bill_1245057369_20250527_163436.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49254"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ww8vlkT+sRimzl+8Vz9TUN0IRlZ/3lDyj6Bdd5vrbvc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 09:34:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ww8vlkT+sRimzl+8Vz9TUN0IRlZ/3lDyj6Bdd5vrbvc="
+        }
+      ]
+    },
+    {
+      "Route": "files/bill_1245057369_20250527_163835.pdf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\files\\bill_1245057369_20250527_163835.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NpUp1y8Wn+OYHObn/x8AjM9rTrOsfOYn4OLdMDtSA/M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 09:38:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NpUp1y8Wn+OYHObn/x8AjM9rTrOsfOYn4OLdMDtSA/M="
+        }
+      ]
+    },
+    {
+      "Route": "files/bill_1245057369_20250527_163835.uvtqd57irf.pdf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\files\\bill_1245057369_20250527_163835.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NpUp1y8Wn+OYHObn/x8AjM9rTrOsfOYn4OLdMDtSA/M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 09:38:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uvtqd57irf"
+        },
+        {
+          "Name": "label",
+          "Value": "files/bill_1245057369_20250527_163835.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NpUp1y8Wn+OYHObn/x8AjM9rTrOsfOYn4OLdMDtSA/M="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/arial.rwptd9v2fh.ttf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\arial.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "915212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lXZrWPfYabD6LPbm/rJsGyHN8mMfHFhj/JvSBtXG6O4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 Sep 2022 02:34:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rwptd9v2fh"
+        },
+        {
+          "Name": "label",
+          "Value": "fonts/arial.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lXZrWPfYabD6LPbm/rJsGyHN8mMfHFhj/JvSBtXG6O4="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/arial.ttf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\arial.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "915212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lXZrWPfYabD6LPbm/rJsGyHN8mMfHFhj/JvSBtXG6O4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 Sep 2022 02:34:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lXZrWPfYabD6LPbm/rJsGyHN8mMfHFhj/JvSBtXG6O4="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/Arialn.3s3xor8ngv.ttf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\Arialn.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YzU6/Fah7x4D920VN7nx/F9ylQtb7AKtPOpqHi1mdPw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 Oct 2015 18:06:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3s3xor8ngv"
+        },
+        {
+          "Name": "label",
+          "Value": "fonts/Arialn.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YzU6/Fah7x4D920VN7nx/F9ylQtb7AKtPOpqHi1mdPw="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/Arialn.ttf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\Arialn.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YzU6/Fah7x4D920VN7nx/F9ylQtb7AKtPOpqHi1mdPw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 Oct 2015 18:06:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YzU6/Fah7x4D920VN7nx/F9ylQtb7AKtPOpqHi1mdPw="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/ArialTh.8n1nn14xx1.ttf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\ArialTh.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40980"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FAPwpzYUh1ZCBQLswGy4Et5ZctmPCPpkwv1fdnA+0Pk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 Oct 2015 15:00:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8n1nn14xx1"
+        },
+        {
+          "Name": "label",
+          "Value": "fonts/ArialTh.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FAPwpzYUh1ZCBQLswGy4Et5ZctmPCPpkwv1fdnA+0Pk="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/ArialTh.ttf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\ArialTh.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40980"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FAPwpzYUh1ZCBQLswGy4Et5ZctmPCPpkwv1fdnA+0Pk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 Oct 2015 15:00:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FAPwpzYUh1ZCBQLswGy4Et5ZctmPCPpkwv1fdnA+0Pk="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/ARIBL0.5wmt5ys41m.ttf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\ARIBL0.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JcZ2WybkPSIrjJjwuQW1q7OpWDmm/0ovr4DCAXSyfd4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 Oct 2015 15:00:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5wmt5ys41m"
+        },
+        {
+          "Name": "label",
+          "Value": "fonts/ARIBL0.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JcZ2WybkPSIrjJjwuQW1q7OpWDmm/0ovr4DCAXSyfd4="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/ARIBL0.ttf",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\ARIBL0.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JcZ2WybkPSIrjJjwuQW1q7OpWDmm/0ovr4DCAXSyfd4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 Oct 2015 15:00:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JcZ2WybkPSIrjJjwuQW1q7OpWDmm/0ovr4DCAXSyfd4="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/G_ari_bd.ds96v2viir.TTF",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\G_ari_bd.TTF",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133220"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"81Fquc2A30rt1+KAYwUf6T1AQqFOk82w7B6g/QF00Z4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 Oct 2015 18:07:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ds96v2viir"
+        },
+        {
+          "Name": "label",
+          "Value": "fonts/G_ari_bd.TTF"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-81Fquc2A30rt1+KAYwUf6T1AQqFOk82w7B6g/QF00Z4="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/G_ari_bd.TTF",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\G_ari_bd.TTF",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133220"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"81Fquc2A30rt1+KAYwUf6T1AQqFOk82w7B6g/QF00Z4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 Oct 2015 18:07:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-81Fquc2A30rt1+KAYwUf6T1AQqFOk82w7B6g/QF00Z4="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/G_ari_i.oyl563kms9.TTF",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\G_ari_i.TTF",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144168"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cHDkVFQaKKMeKK1ccUfcXIa1hQvpdCVqPAXTiWXfZ78=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 Oct 2015 18:07:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oyl563kms9"
+        },
+        {
+          "Name": "label",
+          "Value": "fonts/G_ari_i.TTF"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cHDkVFQaKKMeKK1ccUfcXIa1hQvpdCVqPAXTiWXfZ78="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/G_ari_i.TTF",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\G_ari_i.TTF",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144168"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cHDkVFQaKKMeKK1ccUfcXIa1hQvpdCVqPAXTiWXfZ78=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 Oct 2015 18:07:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cHDkVFQaKKMeKK1ccUfcXIa1hQvpdCVqPAXTiWXfZ78="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/GEO_AI__.qd7pequtyb.TTF",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\GEO_AI__.TTF",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YnhTckcC4dCPTRsxfdaOI/A7h9mTk4kYL5eMXU7/8fc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 Oct 2015 18:07:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qd7pequtyb"
+        },
+        {
+          "Name": "label",
+          "Value": "fonts/GEO_AI__.TTF"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YnhTckcC4dCPTRsxfdaOI/A7h9mTk4kYL5eMXU7/8fc="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/GEO_AI__.TTF",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\GEO_AI__.TTF",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YnhTckcC4dCPTRsxfdaOI/A7h9mTk4kYL5eMXU7/8fc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 Oct 2015 18:07:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YnhTckcC4dCPTRsxfdaOI/A7h9mTk4kYL5eMXU7/8fc="
+        }
+      ]
+    },
     {
       "Route": "Images/20241125_111003.1q94dekjzh.jpg",
       "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241125_111003.jpg",
@@ -39670,6 +41036,1318 @@
         {
           "Name": "integrity",
           "Value": "sha256-BAyiL2rWDSP4MJaV8hgkHjMw06gCkP4SQmDd9DCoaAc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_171448.39xus1rtai.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_171448.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "754608"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KcyL2Y2WClj0mCI0LBAEqcy5taI+FPvaEkbjDvQH44Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 10:14:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "39xus1rtai"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_171448.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KcyL2Y2WClj0mCI0LBAEqcy5taI+FPvaEkbjDvQH44Y="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_171448.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_171448.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "754608"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KcyL2Y2WClj0mCI0LBAEqcy5taI+FPvaEkbjDvQH44Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 10:14:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KcyL2Y2WClj0mCI0LBAEqcy5taI+FPvaEkbjDvQH44Y="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_171454.39xus1rtai.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_171454.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "754608"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KcyL2Y2WClj0mCI0LBAEqcy5taI+FPvaEkbjDvQH44Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 10:14:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "39xus1rtai"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_171454.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KcyL2Y2WClj0mCI0LBAEqcy5taI+FPvaEkbjDvQH44Y="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_171454.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_171454.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "754608"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KcyL2Y2WClj0mCI0LBAEqcy5taI+FPvaEkbjDvQH44Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 10:14:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KcyL2Y2WClj0mCI0LBAEqcy5taI+FPvaEkbjDvQH44Y="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_175708_3222809_.96xawz8slc.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_175708_3222809_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "159347"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jy1TE4H63R6VKh+1pWKapH1YqnxNVIaxBGn8ZfhlUvQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 10:57:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "96xawz8slc"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_175708_3222809_.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jy1TE4H63R6VKh+1pWKapH1YqnxNVIaxBGn8ZfhlUvQ="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_175708_3222809_.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_175708_3222809_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "159347"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jy1TE4H63R6VKh+1pWKapH1YqnxNVIaxBGn8ZfhlUvQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 10:57:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jy1TE4H63R6VKh+1pWKapH1YqnxNVIaxBGn8ZfhlUvQ="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_175708_3692586_.cvcqsnoe4e.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_175708_3692586_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134450"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qBuCHJ0+HdoMm2MQbOL65aYcrl/uT3WIaLNk4oR4/Nc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 10:57:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cvcqsnoe4e"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_175708_3692586_.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qBuCHJ0+HdoMm2MQbOL65aYcrl/uT3WIaLNk4oR4/Nc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_175708_3692586_.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_175708_3692586_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134450"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qBuCHJ0+HdoMm2MQbOL65aYcrl/uT3WIaLNk4oR4/Nc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 10:57:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qBuCHJ0+HdoMm2MQbOL65aYcrl/uT3WIaLNk4oR4/Nc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_175708_6861491_.3nhmmvwock.jpeg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_175708_6861491_.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "478880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MUvOw7qVoMjdt5FSkKZ6EiQPdRLkBQvWZ1r9yur/AiI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 10:57:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3nhmmvwock"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_175708_6861491_.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MUvOw7qVoMjdt5FSkKZ6EiQPdRLkBQvWZ1r9yur/AiI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_175708_6861491_.jpeg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_175708_6861491_.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "478880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MUvOw7qVoMjdt5FSkKZ6EiQPdRLkBQvWZ1r9yur/AiI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 10:57:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MUvOw7qVoMjdt5FSkKZ6EiQPdRLkBQvWZ1r9yur/AiI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_175708_7468913_.2w33wgwg2w.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_175708_7468913_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cpZoLIwCwIwc1RTvi1wAYxOcUvkEGj0xhZxOe2hHxFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 10:57:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2w33wgwg2w"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_175708_7468913_.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cpZoLIwCwIwc1RTvi1wAYxOcUvkEGj0xhZxOe2hHxFU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_175708_7468913_.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_175708_7468913_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cpZoLIwCwIwc1RTvi1wAYxOcUvkEGj0xhZxOe2hHxFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 10:57:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cpZoLIwCwIwc1RTvi1wAYxOcUvkEGj0xhZxOe2hHxFU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_222927.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_222927.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:29:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_222927.vuwjhgciof.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_222927.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:29:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vuwjhgciof"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_222927.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223018.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223018.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:30:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223018.vuwjhgciof.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223018.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:30:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vuwjhgciof"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_223018.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223220.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223220.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223220.vuwjhgciof.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223220.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vuwjhgciof"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_223220.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223237.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223237.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:32:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223237.vuwjhgciof.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223237.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:32:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vuwjhgciof"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_223237.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223420.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223420.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:34:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223420.vuwjhgciof.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223420.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:34:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vuwjhgciof"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_223420.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223432.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223432.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:34:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223432.vuwjhgciof.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223432.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:34:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vuwjhgciof"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_223432.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223449.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223449.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223449.vuwjhgciof.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223449.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:34:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vuwjhgciof"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_223449.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223655.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223655.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:36:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_223655.vuwjhgciof.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223655.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:36:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vuwjhgciof"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_223655.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_224858.cebyso9u4f.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_224858.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "301305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NHroogEg91tpBVOygie7aELeynnR85GegTiFZieDfIY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:48:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cebyso9u4f"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_224858.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NHroogEg91tpBVOygie7aELeynnR85GegTiFZieDfIY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_224858.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_224858.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "301305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NHroogEg91tpBVOygie7aELeynnR85GegTiFZieDfIY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:48:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NHroogEg91tpBVOygie7aELeynnR85GegTiFZieDfIY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_224929.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_224929.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:49:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/20250527_224929.vuwjhgciof.jpg",
+      "AssetFile": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_224929.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 15:49:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vuwjhgciof"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/20250527_224929.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F161PIs1s89kEqFsstDjWsOoCT1YP4GpkVx3YTPaUlc="
         }
       ]
     }

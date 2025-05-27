@@ -24,6 +24,7 @@ namespace API_HomeStay_HUB.Repositories
             {
                 var cus=_context.Customers.FirstOrDefault(c=>c.UserID==user.UserID);
                 user.Customer = cus!;
+
                 if(user.TypeUser==1)
                 {
                     var ownerStay = _context.OwnerStays.FirstOrDefault(c => c.UserID == user.UserID);
@@ -163,7 +164,13 @@ namespace API_HomeStay_HUB.Repositories
             }
             else
             {
-                _context.Users.Update(user);
+                _user.FullName = user.FullName;
+                _user.Email = user.Email;
+                _user.PhoneNumber = user.PhoneNumber;
+                _user.Address = user.Address;
+                _user.Gender = user.Gender;
+                _user.DateOfBirth = user.DateOfBirth;
+                _user.ProfilePicture = user.ProfilePicture;
                 return _context.SaveChanges() > 0;
             }
         }

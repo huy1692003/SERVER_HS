@@ -1022,7 +1022,7 @@
       }
     },
     "/api/Booking/confirmCheckOut": {
-      "get": {
+      "post": {
         "tags": [
           "Booking"
         ],
@@ -1036,6 +1036,25 @@
             }
           }
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JsonDetailExtraCost"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JsonDetailExtraCost"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/JsonDetailExtraCost"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "Success"
@@ -2329,6 +2348,93 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Owner/getProfileOwnerStay": {
+      "get": {
+        "tags": [
+          "Owner"
+        ],
+        "parameters": [
+          {
+            "name": "idOwner",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Owner/updateProfile": {
+      "put": {
+        "tags": [
+          "Owner"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OwnerStay"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OwnerStay"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OwnerStay"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Owner/changePassword": {
+      "put": {
+        "tags": [
+          "Owner"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "oldPassword",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "newPassword",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -3893,11 +3999,24 @@
             "format": "double",
             "nullable": true
           },
+          "extraCost": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
           "guestList": {
             "type": "string",
             "nullable": true
           },
+          "cmnd": {
+            "type": "string",
+            "nullable": true
+          },
           "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "detailExtraCost": {
             "type": "string",
             "nullable": true
           },
@@ -3940,6 +4059,9 @@
           "nameOwner": {
             "type": "string",
             "nullable": true
+          },
+          "isOwnerCreated": {
+            "type": "boolean"
           },
           "phoneOwner": {
             "type": "string",
@@ -4140,6 +4262,39 @@
         },
         "additionalProperties": false
       },
+      "ExtraPerson": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fee": {
+            "type": "number",
+            "format": "double"
+          },
+          "total": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExtraPersonCost": {
+        "type": "object",
+        "properties": {
+          "extraAdult": {
+            "$ref": "#/components/schemas/ExtraPerson"
+          },
+          "extraChild": {
+            "$ref": "#/components/schemas/ExtraPerson"
+          },
+          "extraBaby": {
+            "$ref": "#/components/schemas/ExtraPerson"
+          }
+        },
+        "additionalProperties": false
+      },
       "FAQ": {
         "type": "object",
         "properties": {
@@ -4306,6 +4461,33 @@
         },
         "additionalProperties": false
       },
+      "JsonDetailExtraCost": {
+        "type": "object",
+        "properties": {
+          "extraPersonCost": {
+            "$ref": "#/components/schemas/ExtraPersonCost"
+          },
+          "serviceCost": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ServiceCost"
+            },
+            "nullable": true
+          },
+          "otherCost": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OtherCost"
+            },
+            "nullable": true
+          },
+          "totalExtraCost": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "Mail_Content": {
         "type": "object",
         "properties": {
@@ -4389,6 +4571,69 @@
             "type": "string",
             "format": "date-time",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OtherCost": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "OwnerStay": {
+        "type": "object",
+        "properties": {
+          "ownerID": {
+            "type": "string",
+            "nullable": true
+          },
+          "userID": {
+            "type": "string",
+            "nullable": true
+          },
+          "bannerImage": {
+            "type": "string",
+            "nullable": true
+          },
+          "defaultCheckinTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "defaultCheckoutTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "nameBank": {
+            "type": "string",
+            "nullable": true
+          },
+          "numberBank": {
+            "type": "string",
+            "nullable": true
+          },
+          "defaultRules": {
+            "type": "string",
+            "nullable": true
+          },
+          "defaultPolicies": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
           }
         },
         "additionalProperties": false
@@ -5225,6 +5470,104 @@
           "updatedAt": {
             "type": "string",
             "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ServiceCost": {
+        "type": "object",
+        "properties": {
+          "serviceId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "serviceName": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "total": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "userID": {
+            "type": "string",
+            "nullable": true
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "profilePicture": {
+            "type": "string",
+            "nullable": true
+          },
+          "dateOfBirth": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "accountStatus": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "typeUser": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "gender": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           }
         },

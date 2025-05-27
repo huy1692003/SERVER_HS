@@ -49,7 +49,7 @@ namespace API_HomeStay_HUB.Services
             {
                 var tokenUser = GenerateJwtToken(user);
 
-                return new LoginUserResDTO { Username = user.Username, idCus = user.Customer!.CusID, idOwner = user.OwnerStay !=null? user.OwnerStay.OwnerID:null, TokenUser = tokenUser , Fullname=user.FullName , idUser=user.UserID }; 
+                return new LoginUserResDTO { Username = user.Username, idCus = user.Customer!.CusID, idOwner = user.OwnerStay !=null? user.OwnerStay.OwnerID:null, TokenUser = tokenUser , Fullname=user.FullName , idUser=user.UserID , Avatar=user.ProfilePicture }; 
 
             }
             return null;

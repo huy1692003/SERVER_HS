@@ -11,6 +11,7 @@ namespace API_HomeStay_HUB.DTOs
         public string? idOwner { get; set; }
         public string? idAdmin { get; set; }
         public string? idUser { get; set; }
+        public string? Avatar { get; set; }
 
         public string? roleID { get; set; }
         public List<Menu>? menus { get; set; }

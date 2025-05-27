@@ -10,6 +10,7 @@ using API_HomeStay_HUB.Services.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace API_HomeStay_HUB.Controllers
@@ -20,12 +21,15 @@ namespace API_HomeStay_HUB.Controllers
     {
         private readonly IBookingService _bookingService;
         private readonly DBContext _dbContext;
+        private readonly IConfiguration _configuration;
+        private readonly IHomeStayService homeStayService;
 
-        public BookingController(IBookingService bookingService, DBContext dBContext)
+        public BookingController(IBookingService bookingService, DBContext dBContext, IConfiguration configuration, IHomeStayService hsService)
         {
             _bookingService = bookingService;
             _dbContext = dBContext;
-
+            _configuration = configuration;
+            homeStayService = hsService;
         }
 
 
@@ -202,21 +206,26 @@ namespace API_HomeStay_HUB.Controllers
             return Ok();
         }
 
-        [HttpGet("confirmCheckOut")]
-        public IActionResult ConfirmCheckOut(int bookingID)
+        [HttpPost("confirmCheckOut")]
+        public async Task<IActionResult> ConfirmCheckOut(int bookingID, [FromBody] JsonDetailExtraCost jsonDetailExtraCost)
         {
+            ExportPDF exportPDF = new ExportPDF(_configuration);
             var bookingPrs = _dbContext.BookingProcesses.FirstOrDefault(s => s.BookingID == bookingID);
             var booking = _dbContext.Bookings.FirstOrDefault(s => s.BookingID == bookingID);
+            var detailHomestay = await homeStayService.getHomeStayByID(booking.HomeStayID ?? 0);
             if (bookingPrs != null && booking != null)
             {
                 bookingPrs.CheckOutTime = TimeHelper.GetDateTimeVietnam();
                 bookingPrs.StepOrder = 4;
-                booking.IsSuccess = true;
-                booking.status = 6; //hoàn thành
 
+                booking.IsSuccess = true;
+                booking.ExtraCost = jsonDetailExtraCost.totalExtraCost;
+                booking.DetailExtraCost = JsonConvert.SerializeObject(jsonDetailExtraCost);
+                booking.status = 6; //hoàn thành
                 _dbContext.SaveChanges();
             }
-            return Ok();
+            var linkBill = await exportPDF.getDetaiBill(booking, detailHomestay);
+            return Ok(linkBill);
         }
 
         private void refeshStatusBookingProcess()

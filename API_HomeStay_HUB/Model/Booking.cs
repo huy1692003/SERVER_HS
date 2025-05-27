@@ -62,11 +62,20 @@ namespace API_HomeStay_HUB.Model
         [Column("originalPrice")]
         public double? OriginalPrice { get; set; }
 
+        [Column("extraCost")]
+        public double? ExtraCost { get; set; }
+
         [Column("guestList")]
         public string? GuestList { get; set; }
 
+        [Column("CMND")]
+        public string? CMND { get; set; }
+
         [Column("description")]
         public string? Description { get; set; }
+
+        [Column("detailExtraCost")]
+        public string? DetailExtraCost { get; set; }
 
         [Column("isConfirm")]
         public bool IsConfirm { get; set; } = false;
@@ -89,13 +98,17 @@ namespace API_HomeStay_HUB.Model
 
         [Column("timeReviewRating")]
         public DateTime? timeReviewRating { get; set; }
+
         [NotMapped]
         public BookingProcess? bookingProcess { get; set; }
-        [NotMapped]
 
+        [NotMapped]
         public string? nameOwner { get; set; }
-        [NotMapped]
 
+        [NotMapped]
+        public bool isOwnerCreated { get; set; } = false;
+
+        [NotMapped]
         public string? phoneOwner { get; set; }
     }
 }

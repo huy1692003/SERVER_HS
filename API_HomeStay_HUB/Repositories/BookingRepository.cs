@@ -16,19 +16,25 @@ namespace API_HomeStay_HUB.Repositories
         public BookingRepository(DBContext dBContext)
         {
             _dbContext = dBContext;
-          
+
         }
-        
+
         public async Task<bool> createBooking(Booking booking)
         {
 
-            
-            if (!await checkDateExitedBooking(booking.HomeStayID!,booking.RoomID, booking.CheckInDate!, booking.CheckOutDate!))
+
+            if (!await checkDateExitedBooking(booking.HomeStayID!, booking.RoomID, booking.CheckInDate!, booking.CheckOutDate!))
             {
                 booking.status = 1;
                 booking.BookingTime = TimeHelper.GetDateTimeVietnam();
+
                 var entity = await _dbContext.AddAsync(booking);
-                return await _dbContext.SaveChangesAsync() > 0;              
+                bool check = await _dbContext.SaveChangesAsync() > 0;
+                if (booking.isOwnerCreated)
+                {
+                    return await confirmBooking(entity.Entity.BookingID);
+                }
+                return check;
             }
             else
             {
@@ -39,7 +45,7 @@ namespace API_HomeStay_HUB.Repositories
         public async Task<IEnumerable<dynamic>> getBookingDates(int idHomeStay, int idRoom)
         {
             return await _dbContext.Bookings.
-                Where(b => b.HomeStayID == idHomeStay && b.RoomID==idRoom && (!b.IsCancel || b.IsConfirm)).
+                Where(b => b.HomeStayID == idHomeStay && b.RoomID == idRoom && (!b.IsCancel || b.IsConfirm)).
                 Select(b => new { b.CheckInDate, b.CheckOutDate }).ToListAsync();
         }
 
@@ -119,6 +125,11 @@ namespace API_HomeStay_HUB.Repositories
                         <li><b>Tổng giá trị:</b> {booking.TotalPrice:C}</li>
                         <li><b>Phương thức thanh toán:</b> {booking.PaymentMethod}</li>
                     </ul>
+                    <p>Đây là mã Đặt Phòng đưa ra khi đến check in</p>
+                    <div style='background-color: #f0f0f0; padding: 10px; border-radius: 5px;'>
+                        <p>{booking.BookingID}</p>
+                    </div>
+                    <p>Để đảm bảo trải nghiệm tốt nhất, vui lòng đến đúng giờ nhận phòng và liên hệ với gia chủ nếu có bất kỳ yêu cầu đặc biệt nào.</p>
                     <p>Địa chỉ Homestay trên bản đồ: <a href='{homeStay.LinkGoogleMap}'>Xem trên Google Maps</a></p>
                     <p>Đây là thông tin của gia chủ bạn hãy liên hệ khi cần thiết :<span>{inforOwner.User.FullName}</span> - Số điện thoại :<span>{inforOwner.User.PhoneNumber}</span> </p>
                     <p>Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi!</p>
@@ -130,7 +141,7 @@ namespace API_HomeStay_HUB.Repositories
             try
             {
                 var sendMailService = new SendMaillService();
-                _= sendMailService.SendMaill(emailUser!, titleSendMail, content);
+                _ = sendMailService.SendMaill(emailUser!, titleSendMail, content);
                 return true;
             }
             catch (Exception ex)
@@ -207,10 +218,10 @@ namespace API_HomeStay_HUB.Repositories
             }
             return false;
         }
-        public async Task<bool> checkDateExitedBooking(int? idHomestay,int? idRoom, DateTime? dateIn, DateTime? dateOut)
+        public async Task<bool> checkDateExitedBooking(int? idHomestay, int? idRoom, DateTime? dateIn, DateTime? dateOut)
         {
             var bookingByHomeStays = await _dbContext.Bookings
-                .Where(bk => bk.HomeStayID == idHomestay && bk.RoomID==idRoom&&
+                .Where(bk => bk.HomeStayID == idHomestay && bk.RoomID == idRoom &&
                              dateIn <= bk.CheckOutDate && dateOut >= bk.CheckInDate)
                 .ToListAsync();
 

@@ -517,7 +517,7 @@
     "ContainingType": "API_HomeStay_HUB.Controllers.BookingController",
     "Method": "ConfirmCheckOut",
     "RelativePath": "api/Booking/confirmCheckOut",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -525,6 +525,11 @@
         "Name": "bookingID",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "jsonDetailExtraCost",
+        "Type": "JsonDetailExtraCost",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -1438,6 +1443,64 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_HomeStay_HUB.Controllers.OwnerController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Owner/changePassword",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "oldPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "newPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_HomeStay_HUB.Controllers.OwnerController",
+    "Method": "GetOwnerStayByID",
+    "RelativePath": "api/Owner/getProfileOwnerStay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idOwner",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_HomeStay_HUB.Controllers.OwnerController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/Owner/updateProfile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ownerStay",
+        "Type": "API_HomeStay_HUB.Model.OwnerStay",
         "IsRequired": true
       }
     ],
