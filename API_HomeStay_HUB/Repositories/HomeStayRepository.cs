@@ -172,7 +172,7 @@ namespace API_HomeStay_HUB.Repositories
 
             // Lấy danh sách các phòng đã được đặt trong khoảng thời gian
             var filteredBookingsQuery = _dBContext.Bookings
-                .Where(bk => !bk.IsCancel && bk.IsConfirm && !bk.IsSuccess)
+                .Where(bk => !bk.IsCancel && bk.IsConfirm)
                 .Where(bk => search.DateIn.Value.Date <= bk.CheckOutDate.Date &&
                              search.DateOut.Value.Date >= bk.CheckInDate.Date);
 

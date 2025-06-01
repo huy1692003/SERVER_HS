@@ -13,10 +13,11 @@ namespace API_HomeStay_HUB.Repositories
     public class BookingRepository : IBookingRepository
     {
         private readonly DBContext _dbContext;
-        public BookingRepository(DBContext dBContext)
+        private readonly IHubContext<MyHub> _hub;
+        public BookingRepository(DBContext dBContext, IHubContext<MyHub> hub)
         {
             _dbContext = dBContext;
-
+            _hub = hub;
         }
 
         public async Task<bool> createBooking(Booking booking)
@@ -45,7 +46,7 @@ namespace API_HomeStay_HUB.Repositories
         public async Task<IEnumerable<dynamic>> getBookingDates(int idHomeStay, int idRoom)
         {
             return await _dbContext.Bookings.
-                Where(b => b.HomeStayID == idHomeStay && b.RoomID == idRoom && ((!b.IsCancel&&b.IsConfirm))).
+                Where(b => b.HomeStayID == idHomeStay && b.RoomID == idRoom && b.CheckInDate >= DateTime.Now && ((!b.IsCancel && b.IsConfirm)) ).
                 Select(b => new { b.CheckInDate, b.CheckOutDate }).ToListAsync();
         }
 
@@ -74,7 +75,10 @@ namespace API_HomeStay_HUB.Repositories
                     bool checkConfirm = await _dbContext.SaveChangesAsync() > 0;
                     if (checkConfirm)
                     {
+                        await _hub.Clients.All.SendAsync("RefeshDateRoomHomeStay", booking.HomeStayID, booking.RoomID);
                         return await sendMaill_ConfirmBK(booking);
+                        //Gửi tín hiệu cập nhật lịch phòng trống các homestay 
+
 
                     }
                 }
@@ -222,7 +226,7 @@ namespace API_HomeStay_HUB.Repositories
         {
             var bookingByHomeStays = await _dbContext.Bookings
                 .Where(bk => bk.HomeStayID == idHomestay && bk.RoomID == idRoom &&
-                             dateIn <= bk.CheckOutDate && dateOut >= bk.CheckInDate)
+                             dateIn <= bk.CheckOutDate && dateOut >= bk.CheckInDate && (!bk.IsCancel && bk.IsConfirm))
                 .ToListAsync();
 
             return bookingByHomeStays.Any();

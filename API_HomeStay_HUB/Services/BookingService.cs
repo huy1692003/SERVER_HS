@@ -35,7 +35,7 @@ namespace API_HomeStay_HUB.Services
             var checkCreated = await _bookingRepository.createBooking(booking);
             if(checkCreated)
             {
-                await _hub.Clients.All.SendAsync("RefeshDateHomeStay", booking.HomeStayID,booking.RoomID); //Gửi tín hiểu reload lại những ngày đã đặt
+                //Gửi tín hiểu reload lại những ngày đã đặt
                 var Owner = await _userRepository.GetDetailOwnerStay(booking.OwnerID!);
                 var notification = new Notification
                 {

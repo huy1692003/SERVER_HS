@@ -5,10 +5,12 @@ using API_HomeStay_HUB.Data;
 using API_HomeStay_HUB.DTOs;
 using API_HomeStay_HUB.Helpers;
 using API_HomeStay_HUB.Model;
+using API_HomeStay_HUB.Realtime;
 using API_HomeStay_HUB.Services;
 using API_HomeStay_HUB.Services.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -23,13 +25,15 @@ namespace API_HomeStay_HUB.Controllers
         private readonly DBContext _dbContext;
         private readonly IConfiguration _configuration;
         private readonly IHomeStayService homeStayService;
+        private readonly IHubContext<MyHub> _hub;
 
-        public BookingController(IBookingService bookingService, DBContext dBContext, IConfiguration configuration, IHomeStayService hsService)
+        public BookingController(IBookingService bookingService, IHubContext<MyHub> _hub, DBContext dBContext, IConfiguration configuration, IHomeStayService hsService)
         {
             _bookingService = bookingService;
             _dbContext = dBContext;
             _configuration = configuration;
             homeStayService = hsService;
+            this._hub = _hub;
         }
 
 
@@ -215,9 +219,10 @@ namespace API_HomeStay_HUB.Controllers
             var detailHomestay = await homeStayService.getHomeStayByID(booking.HomeStayID ?? 0);
             if (bookingPrs != null && booking != null)
             {
+                await _hub.Clients.All.SendAsync("RefeshDateRoomHomeStay", booking.HomeStayID, booking.RoomID);
                 bookingPrs.CheckOutTime = TimeHelper.GetDateTimeVietnam();
                 bookingPrs.StepOrder = 4;
-
+                booking.CheckOutDate=TimeHelper.GetDateTimeVietnam();
                 booking.IsSuccess = true;
                 booking.ExtraCost = jsonDetailExtraCost.totalExtraCost;
                 booking.DetailExtraCost = JsonConvert.SerializeObject(jsonDetailExtraCost);
