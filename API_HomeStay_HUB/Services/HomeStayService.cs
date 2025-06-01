@@ -38,6 +38,10 @@ namespace API_HomeStay_HUB.Services
         
         public async Task<bool> addHomeStay(HomeStayReqDTO homeStay)
         {
+            if(homeStay.HomeStay?.LinkGoogleMap != null)
+            {
+                homeStay.HomeStay.LinkGoogleMap = await GetGoogleMapsEmbedUrlAsync(homeStay.HomeStay.LinkGoogleMap);
+            }
             return await _homeStayRepository.addHomeStay(homeStay);
         }
         
@@ -79,6 +83,69 @@ namespace API_HomeStay_HUB.Services
         public async Task<bool> DeleteService(int id)
         {
             return await _homeStayRepository.DeleteService(id);
+        }
+
+        public static async Task<string> GetGoogleMapsEmbedUrlAsync(string inputUrl)
+        {
+            if (string.IsNullOrWhiteSpace(inputUrl))
+                return null;
+
+            // Nếu đã là link embed thì trả về luôn
+            if (inputUrl.StartsWith("https://www.google.com/maps/embed"))
+                return inputUrl;
+
+            // Nếu là link đầy đủ maps (chưa phải embed), thì convert
+            if (inputUrl.StartsWith("https://www.google.com/maps"))
+            {
+                return ConvertToEmbedUrl(inputUrl);
+            }
+
+            // Nếu là link rút gọn maps.app.goo.gl thì resolve redirect
+            if (inputUrl.StartsWith("https://maps.app.goo.gl"))
+            {
+                try
+                {
+                    using (var handler = new HttpClientHandler
+                    {
+                        AllowAutoRedirect = false
+                    })
+                    using (var client = new HttpClient(handler))
+                    {
+                        var response = await client.GetAsync(inputUrl);
+                        if (response.StatusCode == System.Net.HttpStatusCode.Redirect ||
+                            response.StatusCode == System.Net.HttpStatusCode.MovedPermanently ||
+                            response.StatusCode == System.Net.HttpStatusCode.Found)
+                        {
+                            var fullUrl = response.Headers.Location?.ToString();
+                            if (!string.IsNullOrWhiteSpace(fullUrl))
+                            {
+                                return ConvertToEmbedUrl(fullUrl);
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Lỗi khi truy cập URL rút gọn: " + ex.Message);
+                }
+            }
+
+            return null;
+        }
+
+
+        private static string ConvertToEmbedUrl(string fullUrl)
+        {
+            if (string.IsNullOrEmpty(fullUrl)) return null;
+
+            // Chuyển URL Google Maps gốc sang dạng embed
+            if (fullUrl.StartsWith("https://www.google.com/maps"))
+            {
+                string embedPath = fullUrl.Replace("https://www.google.com/maps", "");
+                return $"https://www.google.com/maps/embed{embedPath}";
+            }
+
+            return null;
         }
     }
 }

@@ -14,7 +14,7 @@ namespace API_HomeStay_HUB.Controllers
     {
         private readonly IReviewAndRatingService _reviewAndRatingService;
         private readonly DBContext dBContext;
-        public ReviewAndRatingController(IReviewAndRatingService reviewAndRatingService , DBContext db)
+        public ReviewAndRatingController(IReviewAndRatingService reviewAndRatingService, DBContext db)
         {
             _reviewAndRatingService = reviewAndRatingService;
             this.dBContext = db;
@@ -22,31 +22,43 @@ namespace API_HomeStay_HUB.Controllers
         [HttpGet("getReviewByHomeStay/{id}")]
         public async Task<IActionResult> getReviewByHomeStay(int id)
         {
-
             var result = await (from rv in dBContext.ReviewAndRatings
                                 join h in dBContext.HomeStays on rv.HomestayID equals h.HomestayID
-                                join c in dBContext.Customers on rv.CustomerID equals c.CusID
-                                join u in dBContext.Users on c.UserID equals u.UserID
+                                join bk in dBContext.Bookings on rv.BookingID equals bk.BookingID
+                                join room in dBContext.Rooms on bk.RoomID equals room.RoomId 
+                                // Left Join với Customer
+                                join cus in dBContext.Customers on rv.CustomerID equals cus.CusID into customerGroup
+                                from customer in customerGroup.DefaultIfEmpty()
+
+                                    // Left Join với User
+                                join u in dBContext.Users on customer.UserID equals u.UserID into userGroup
+                                from user in userGroup.DefaultIfEmpty()
+
                                 where rv.HomestayID == id
                                 orderby rv.ReviewDate descending
-                                select new { rv,u.FullName,u.Gender }
-                          ).ToListAsync();
-
+                                select new
+                                {
+                                    rv,
+                                    fullName = customer != null && user != null ? user.FullName : bk.Name,
+                                    gender = customer != null && user != null ? user.Gender : 1,
+                                    avatar = customer != null && user != null ? user.ProfilePicture : null,
+                                    roomName = room.RoomName,
+                                }
+               ).ToListAsync();
             return Ok(result);
-        } 
-
+        }
 
         [HttpGet("getReviewByOwner/{idOwner}")]
-        public async Task<IActionResult> getReviewByOwner(string idOwner  )
+        public async Task<IActionResult> getReviewByOwner(string idOwner)
         {
             var result = await (from rv in dBContext.ReviewAndRatings
-                          join h in dBContext.HomeStays
-                          on rv.HomestayID equals h.HomestayID
-                          join owner in dBContext.OwnerStays
-                          on h.OwnerID equals owner.OwnerID
-                          where owner.OwnerID == idOwner
-                          orderby rv.ReviewDate descending
-                          select rv                           
+                                join h in dBContext.HomeStays
+                                on rv.HomestayID equals h.HomestayID
+                                join owner in dBContext.OwnerStays
+                                on h.OwnerID equals owner.OwnerID
+                                where owner.OwnerID == idOwner
+                                orderby rv.ReviewDate descending
+                                select rv
                           ).ToListAsync();
 
             return Ok(result);

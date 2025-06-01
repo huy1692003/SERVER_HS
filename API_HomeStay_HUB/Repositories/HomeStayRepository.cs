@@ -263,7 +263,7 @@ namespace API_HomeStay_HUB.Repositories
                 {
                     var homeStayAmenities = req.ListAmenities.Select(idAmen => new HomeStayAmenities
                     {
-                        id = GenerateRandomId(),
+                        id = GenerateRandomId()+idAmen+homestayId,
                         HomestayID = homestayId,
                         AmenityID = idAmen
                     }).ToList();

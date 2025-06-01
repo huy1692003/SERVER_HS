@@ -14,7 +14,7 @@ namespace API_HomeStay_HUB.Controllers
     [Route("api/[controller]")]
     public class PaymentMomoController : Controller
     {
-        public string returnUrl_Owner = "http://localhost:3000/admin/advertisement-manager";
+        public string returnUrl_Owner = "http://localhost:3000/owner/advertisement-manager";
         public string returnUrl_Customer = "http://localhost:3000/history-booking";
 
 

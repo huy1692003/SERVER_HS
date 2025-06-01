@@ -85,6 +85,28 @@ namespace API_HomeStay_HUB.Controllers
             return Ok(result);
         }
 
+        [HttpPost("addList")]
+        public async Task<IActionResult> AddHomeStay([FromBody] List<HomeStayReqDTO> homeStayReqs)
+        {
+            foreach (var homeStayReq in homeStayReqs)
+            {
+                if (homeStayReq == null || homeStayReq.HomeStay == null)
+                {
+                    return BadRequest("Dữ liệu HomeStay không được trống");
+                }
+                else
+                {
+                    var isAdded = await _homeStayService.addHomeStay(homeStayReq);
+                    if (!isAdded)
+                    {
+                        return BadRequest("Dữ liệu HomeStay không hợp lệ");
+                    }
+                }
+            }
+
+           
+            return Ok("success add list");
+        }
 
         [HttpPost("add")]
         public async Task<IActionResult> AddHomeStay([FromBody] HomeStayReqDTO homeStayReq)

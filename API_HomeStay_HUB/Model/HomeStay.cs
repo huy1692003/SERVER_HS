@@ -49,14 +49,13 @@ namespace API_HomeStay_HUB.Model
         public string? TimeCheckOut { get; set; }
 
         [Column("totalScore")]
-        public int? TotalScore { get; set; }
+        public double? TotalScore { get; set; }
 
         [Column("viewCount")]
         public int? ViewCount { get; set; }
 
         [Column("reviewCount")]
         public int? ReviewCount { get; set; }
-
 
         [Column("averageRating")]
         public double? AverageRating { get; set; }

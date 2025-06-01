@@ -51,7 +51,8 @@ namespace API_HomeStay_HUB.Repositories
                                     cusID = f.CusID,
                                     favoriteID=f.FavID,
                                     homestay = h,
-                                    detailHomeStay = d
+                                    detailHomeStay = d,
+                                    rooms=_dBContext.Rooms.Where(s=>s.HomestayId==h.HomestayID).ToList(),
                                 }).ToListAsync();
             return result;
         }

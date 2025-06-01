@@ -45,7 +45,7 @@ namespace API_HomeStay_HUB.Repositories
         public async Task<IEnumerable<dynamic>> getBookingDates(int idHomeStay, int idRoom)
         {
             return await _dbContext.Bookings.
-                Where(b => b.HomeStayID == idHomeStay && b.RoomID == idRoom && (!b.IsCancel || b.IsConfirm)).
+                Where(b => b.HomeStayID == idHomeStay && b.RoomID == idRoom && ((!b.IsCancel&&b.IsConfirm))).
                 Select(b => new { b.CheckInDate, b.CheckOutDate }).ToListAsync();
         }
 

@@ -32,6 +32,7 @@ namespace API_HomeStay_HUB.Data
         public DbSet<Role> Roles { get; set; }
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Service> Services { get; set; }
+        public DbSet<Setting> Settings { get; set; }
         public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

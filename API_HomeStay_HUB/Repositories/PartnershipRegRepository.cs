@@ -64,7 +64,7 @@ namespace API_HomeStay_HUB.Repositories
                 <p>Đội ngũ HomeStay</p>";
 
                     // Gửi email
-                    await _sendM.SendMaill(PartnerShip.Email!, subject, content);
+                    _sendM.SendMaill(PartnerShip.Email!, subject, content);
                 }
                 // Hủy đơn đăng ký
                 else
@@ -86,7 +86,7 @@ namespace API_HomeStay_HUB.Repositories
                     <p>Đội ngũ HomeStay</p>";
 
                     // Gửi email
-                    await _sendM.SendMaill(PartnerShip.Email!, subject, content);
+                   _sendM.SendMaill(PartnerShip.Email!, subject, content);
 
                 }
 

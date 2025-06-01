@@ -24,10 +24,11 @@ namespace API_HomeStay_HUB.Controllers
         [HttpPost("GetAllRevenueByDate")]
         public async Task<IActionResult> GetAllRevenueByDate([FromQuery] PaginateDTO paginate, [FromBody] RevenueReqDTO request)
         {
+            
             // Lọc các hóa đơn theo khoảng thời gian
             var bookings = dBContext.Bookings
                 .Where(bk => (!request.Start.HasValue || bk.BookingTime >= request.Start.Value.Date) &&
-                             (!request.End.HasValue || bk.BookingTime <= request.End.Value.Date));
+                             (!request.End.HasValue || bk.BookingTime <= request.End.Value.Date)&&bk.IsSuccess);
 
             // Tính doanh thu theo OwnerID
             var data = (from bk in bookings
@@ -67,12 +68,18 @@ namespace API_HomeStay_HUB.Controllers
         [HttpPost("exportExcel")]
         public async Task<IActionResult> ExportPDF([FromBody] RevenueReqDTO request)
         {
+            var floorFeeSetting = await dBContext.Settings.FirstOrDefaultAsync(s => s.Key == "floorFee");
+            int floorFee = 10; // Mặc định phí sàn 10%
+            if (floorFeeSetting != null && int.TryParse(floorFeeSetting.Value, out int parsedValue))
+            {
+                floorFee = parsedValue;
+            }
             try
             {
                 // Lọc các hóa đơn theo khoảng thời gian
                 var bookings = dBContext.Bookings
                     .Where(bk => (!request.Start.HasValue || bk.BookingTime >= request.Start.Value.Date) &&
-                                 (!request.End.HasValue || bk.BookingTime <= request.End.Value.Date));
+                                 (!request.End.HasValue || bk.BookingTime <= request.End.Value.Date)&&bk.IsSuccess);
 
                 // Tính doanh thu theo OwnerID
                 var data = await (from bk in bookings
@@ -91,6 +98,8 @@ namespace API_HomeStay_HUB.Controllers
                                       user.FullName,
                                       user.PhoneNumber,
                                       user.Email,
+                                      owner.NameBank,
+                                      owner.NumberBank,
                                       user.Username,
                                       user.Address
                                   } into g
@@ -101,15 +110,18 @@ namespace API_HomeStay_HUB.Controllers
                                       email = g.Key.Email,
                                       username = g.Key.Username,
                                       address = g.Key.Address,
+                                      bankName = g.Key.NameBank,
+                                      bankAccount = g.Key.NumberBank,
                                       revenue_owner_origin = string.Format(new CultureInfo("vi-VN"), "{0:C0}", g.Sum(x => x.TotalPrice)), // Tổng tiền hóa đơn
-                                      revenue_owner = string.Format(new CultureInfo("vi-VN"), "{0:C0}", g.Sum(x => x.TotalPrice) * 0.9),   // Tổng tiền hóa đơn
-                                      revenueText = string.Format(new CultureInfo("vi-VN"), "{0:C0}", g.Sum(x => x.TotalPrice) * 0.1),        // Tổng tiền hóa đơn
-                                      revenue = g.Sum(x => x.TotalPrice) * 0.1,        // Tổng tiền hóa đơn
+                                      revenue_owner = string.Format(new CultureInfo("vi-VN"), "{0:C0}", g.Sum(x => x.TotalPrice) * (1 - floorFee / 100)),   // Tổng tiền hóa đơn
+                                      revenueText = string.Format(new CultureInfo("vi-VN"), "{0:C0}", g.Sum(x => x.TotalPrice) * (floorFee / 100)),        // Tổng tiền hóa đơn
+                                      revenue = g.Sum(x => x.TotalPrice) * (floorFee / 100),  
+                                      dateCurrent=TimeHelper.GetDateTimeVietnam().ToString(),      // Tổng tiền hóa đơn
                                   }).ToListAsync();
 
 
                 // Danh sách tên cột
-                var columnNames = new List<string> { "Tên đối tác", "Số điện thoại", "Email", "Tên đăng nhập", "Địa chỉ", "Thực lĩnh từ đối tác", "Phải trả đối tác", "Doanh thu " ,"" };
+                var columnNames = new List<string> { "Tên đối tác", "Số điện thoại", "Email", "Tên đăng nhập", "Địa chỉ","Tên ngân hàng", "Số tài khoản", "Thực lĩnh từ đối tác", "Phải trả đối tác", "Doanh thu ","Ngày chốt" };
 
                 // Sử dụng hàm ExportToExcel để tạo file Excel
                 var fileBytes = exportExcel.ExportToExcel(

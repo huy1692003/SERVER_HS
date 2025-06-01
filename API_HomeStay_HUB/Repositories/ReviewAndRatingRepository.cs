@@ -20,6 +20,15 @@ namespace API_HomeStay_HUB.Repositories
 
             var booking = await _dBContext.Bookings.FirstOrDefaultAsync(s => s.BookingID == reviewAndRating.BookingID);
             booking!.timeReviewRating = TimeHelper.GetDateTimeVietnam();
+            var homeStay = await _dBContext.HomeStays.FirstOrDefaultAsync(s => s.HomestayID == reviewAndRating.HomestayID);
+            if (homeStay != null)
+            {
+
+                homeStay!.TotalScore += reviewAndRating.Rating;
+                homeStay.ReviewCount += 1;
+                homeStay.AverageRating = homeStay.ReviewCount >= 1 ? Math.Round((double)homeStay.TotalScore! / (double)homeStay.ReviewCount!, 1) : reviewAndRating.Rating;
+            }
+
 
             return await _dBContext.SaveChangesAsync() > 0;
         }

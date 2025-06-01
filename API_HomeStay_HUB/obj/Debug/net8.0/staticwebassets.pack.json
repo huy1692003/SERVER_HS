@@ -1,838 +1,6 @@
 {
   "Files": [
     {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241125_111003.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241125_111003.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241125_111003.png",
-      "PackagePath": "staticwebassets\\Images\\20241125_111003.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241125_132356.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241125_132356.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241125_132356.png",
-      "PackagePath": "staticwebassets\\Images\\20241125_132356.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241126_105636.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241126_105636.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241202_142747.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241202_142747.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241202_142814.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241202_142814.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241202_143006.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241202_143006.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_101715.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241203_101715.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_102019.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_102019.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_102344.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_102344.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_105107.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_105107.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_105113.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_105113.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_105208.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_105208.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_105219.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_105219.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_105343.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_105343.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_110420.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_110420.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_110429.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_110429.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_110440.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_110440.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_110450.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_110450.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_110520.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241203_110520.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_110530.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_110530.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_111031.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_111031.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241203_111037.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241203_111037.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100907.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_100907.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100944.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_100944.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100944.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_100944.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100946.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_100946.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100946.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_100946.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100947.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_100947.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100947.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_100947.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100948.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_100948.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100948.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_100948.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100949.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_100949.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100949.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_100949.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100951.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_100951.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100951.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_100951.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100953.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_100953.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_100953.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_100953.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_102551.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_102551.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_103349.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_103349.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_103613.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_103613.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_103833.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_103833.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_103945.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_103945.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_104445_1844431_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_104445_1844431_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_104445_2416380_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_104445_2416380_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_104445_2783246_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_104445_2783246_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_104445_4110684_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_104445_4110684_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_104445_6704878_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_104445_6704878_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_104445_7607238_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_104445_7607238_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133620_2719241_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133620_2719241_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133620_4784329_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133620_4784329_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133620_527355_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133620_527355_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133620_6778730_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133620_6778730_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133624_1308391_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133624_1308391_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133624_4497575_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133624_4497575_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133624_4875500_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133624_4875500_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133624_5041112_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133624_5041112_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133624_5054806_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133624_5054806_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133624_5357602_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133624_5357602_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133624_8090847_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133624_8090847_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133624_9062658_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133624_9062658_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133625_1138301_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133625_1138301_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133625_1817792_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133625_1817792_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133625_5379212_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133625_5379212_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133625_5784377_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133625_5784377_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133625_6613380_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133625_6613380_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133625_7130765_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133625_7130765_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133625_9129662_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133625_9129662_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133625_9698782_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133625_9698782_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133626_2906433_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133626_2906433_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133626_3336684_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133626_3336684_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133626_5483651_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133626_5483651_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133626_5907944_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133626_5907944_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133626_7566879_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133626_7566879_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133626_8075764_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133626_8075764_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133626_816507_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133626_816507_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133626_8841363_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133626_8841363_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133627_5469242_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133627_5469242_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133627_5485606_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133627_5485606_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133627_7056103_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133627_7056103_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133627_9305300_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133627_9305300_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133628_1610733_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133628_1610733_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133628_2299488_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133628_2299488_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133628_3450041_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133628_3450041_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133628_5513740_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133628_5513740_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133628_7215100_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133628_7215100_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133628_7395560_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133628_7395560_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133628_8261359_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_133628_8261359_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_133628_9060534_.png",
-      "PackagePath": "staticwebassets\\Images\\20241204_133628_9060534_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_142927.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_142927.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_142937.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_142937.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_142957.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_142957.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_144407.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241204_144407.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_144420.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_144420.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241204_145001.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241204_145001.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241205_082247.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241205_082247.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241205_090858.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241205_090858.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241205_090907.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241205_090907.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241205_103436.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241205_103436.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241205_103451.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241205_103451.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241205_103553.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241205_103553.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_111146_7927462_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_111146_7927462_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_112040_2089507_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_112040_2089507_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_112040_4089608_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_112040_4089608_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_112150_6362092_.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241209_112150_6362092_.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_112448_4459189_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_112448_4459189_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_121339_8905573_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_121339_8905573_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_151938_1843772_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_151938_1843772_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_151938_4238546_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_151938_4238546_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_151938_5587450_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_151938_5587450_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_151938_6511074_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_151938_6511074_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_151938_7402021_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_151938_7402021_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_151938_7595911_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_151938_7595911_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152549_3482501_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152549_3482501_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152549_4873968_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152549_4873968_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152549_6868930_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152549_6868930_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152549_7335642_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152549_7335642_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152549_8299016_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152549_8299016_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152549_8744122_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152549_8744122_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152633_3729794_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152633_3729794_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152633_4426319_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152633_4426319_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152633_5536972_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152633_5536972_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152633_7799720_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152633_7799720_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152633_9491514_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152633_9491514_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152633_9724851_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152633_9724851_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152636_3736361_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152636_3736361_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152636_4679180_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152636_4679180_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152636_7973236_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152636_7973236_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152636_8752858_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152636_8752858_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152636_9187349_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152636_9187349_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_152636_942874_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_152636_942874_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_153503_1343563_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_153503_1343563_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_153503_2180750_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_153503_2180750_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_153503_3181982_.png",
-      "PackagePath": "staticwebassets\\Images\\20241209_153503_3181982_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_153503_5153390_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_153503_5153390_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_153855_286782_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_153855_286782_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_153855_2933520_.png",
-      "PackagePath": "staticwebassets\\Images\\20241209_153855_2933520_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_153855_5230475_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_153855_5230475_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_153855_9106578_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_153855_9106578_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_154326_2026947_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_154326_2026947_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_154326_2370198_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_154326_2370198_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_154326_9686518_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_154326_9686518_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_154326_9945359_.png",
-      "PackagePath": "staticwebassets\\Images\\20241209_154326_9945359_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_154331_1041243_.png",
-      "PackagePath": "staticwebassets\\Images\\20241209_154331_1041243_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_154331_2667990_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_154331_2667990_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_154331_5088204_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_154331_5088204_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_154331_7871898_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_154331_7871898_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_154608_3671431_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_154608_3671431_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_154608_5224861_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_154608_5224861_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_154608_5590258_.png",
-      "PackagePath": "staticwebassets\\Images\\20241209_154608_5590258_.png"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_154608_8386379_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_154608_8386379_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_194015_9421571_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_194015_9421571_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_212257_429508_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_212257_429508_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_212413_2929223_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_212413_2929223_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_212431_7429770_.jpeg",
-      "PackagePath": "staticwebassets\\Images\\20241209_212431_7429770_.jpeg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_212524_2744621_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_212524_2744621_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_212634_9953633_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_212634_9953633_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_214024_6478684_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_214024_6478684_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_214119_2224722_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_214119_2224722_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_214644_3326202_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_214644_3326202_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241209_214706_9560308_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241209_214706_9560308_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241210_081848_5442580_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241210_081848_5442580_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241210_092808_8088273_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241210_092808_8088273_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241210_092957_132994_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241210_092957_132994_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241210_100431_1153894_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241210_100431_1153894_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241210_100451_4808588_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241210_100451_4808588_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241210_100510_1222323_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241210_100510_1222323_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241210_100527_9615593_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241210_100527_9615593_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241210_100544_2623847_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241210_100544_2623847_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241210_100559_7660143_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241210_100559_7660143_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241210_100614_8718971_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241210_100614_8718971_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241210_100634_2819713_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241210_100634_2819713_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_103112_894539_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_103112_894539_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_103127_8643059_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_103127_8643059_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_103315_915263_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_103315_915263_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_103452_4910208_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_103452_4910208_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_103541_2842657_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_103541_2842657_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_103848_7826087_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_103848_7826087_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_103950_3134522_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_103950_3134522_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_104028_421356_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_104028_421356_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_104347_9152154_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_104347_9152154_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_104434_4706035_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_104434_4706035_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_104526_6242174_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_104526_6242174_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_104715_8692597_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_104715_8692597_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_104912_1395950_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_104912_1395950_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_105013_6583911_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_105013_6583911_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_105118_8792129_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_105118_8792129_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_105210_1156916_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_105210_1156916_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_105240_5248742_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_105240_5248742_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_105319_3206092_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_105319_3206092_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_105353_893207_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_105353_893207_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_105427_8395156_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_105427_8395156_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_105450_1549039_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_105450_1549039_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_105553_9351721_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_105553_9351721_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241212_105630_8423200_.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241212_105630_8423200_.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241216_131300.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241216_131300.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241216_131301.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241216_131301.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241216_131308.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241216_131308.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241216_131309.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241216_131309.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241216_131310.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241216_131310.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241216_131311.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241216_131311.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241216_131321.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241216_131321.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241216_131322.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241216_131322.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241216_131323.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241216_131323.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241216_131324.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241216_131324.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241216_131330.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241216_131330.jpg"
-    },
-    {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241216_131331.jpg",
-      "PackagePath": "staticwebassets\\Images\\20241216_131331.jpg"
-    },
-    {
       "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241216_131530.jpg",
       "PackagePath": "staticwebassets\\Images\\20241216_131530.jpg"
     },
@@ -1209,6 +377,10 @@
       "PackagePath": "staticwebassets\\Images\\20241221_170405_9568271_.webp"
     },
     {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241221_170615_1701074_ - Copy.webp",
+      "PackagePath": "staticwebassets\\Images\\20241221_170615_1701074_ - Copy.webp"
+    },
+    {
       "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241221_170615_1701074_.webp",
       "PackagePath": "staticwebassets\\Images\\20241221_170615_1701074_.webp"
     },
@@ -1231,6 +403,10 @@
     {
       "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241221_170615_5293415_.webp",
       "PackagePath": "staticwebassets\\Images\\20241221_170615_5293415_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241221_170615_8598778_ - Copy.webp",
+      "PackagePath": "staticwebassets\\Images\\20241221_170615_8598778_ - Copy.webp"
     },
     {
       "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20241221_170615_8598778_.webp",
@@ -1565,44 +741,864 @@
       "PackagePath": "staticwebassets\\Images\\20250527_175708_7468913_.jpg"
     },
     {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_222927.jpg",
-      "PackagePath": "staticwebassets\\Images\\20250527_222927.jpg"
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_232630.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250527_232630.jpg"
     },
     {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223018.jpg",
-      "PackagePath": "staticwebassets\\Images\\20250527_223018.jpg"
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_163435_1723068_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_163435_1723068_.webp"
     },
     {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223220.jpg",
-      "PackagePath": "staticwebassets\\Images\\20250527_223220.jpg"
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_163435_4058604_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_163435_4058604_.webp"
     },
     {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223237.jpg",
-      "PackagePath": "staticwebassets\\Images\\20250527_223237.jpg"
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_163435_5855940_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_163435_5855940_.webp"
     },
     {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223420.jpg",
-      "PackagePath": "staticwebassets\\Images\\20250527_223420.jpg"
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_163435_8192376_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_163435_8192376_.webp"
     },
     {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223432.jpg",
-      "PackagePath": "staticwebassets\\Images\\20250527_223432.jpg"
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_163435_9597299_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_163435_9597299_.webp"
     },
     {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223449.jpg",
-      "PackagePath": "staticwebassets\\Images\\20250527_223449.jpg"
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_163724_933602_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250528_163724_933602_.jpg"
     },
     {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_223655.jpg",
-      "PackagePath": "staticwebassets\\Images\\20250527_223655.jpg"
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215314_2450766_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215314_2450766_.webp"
     },
     {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_224858.jpg",
-      "PackagePath": "staticwebassets\\Images\\20250527_224858.jpg"
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215314_3341990_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215314_3341990_.webp"
     },
     {
-      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250527_224929.jpg",
-      "PackagePath": "staticwebassets\\Images\\20250527_224929.jpg"
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215314_3876515_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215314_3876515_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215314_4907824_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215314_4907824_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215314_6731473_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250528_215314_6731473_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215314_7945886_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215314_7945886_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215325_292927_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215325_292927_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215325_5528831_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215325_5528831_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215325_6014787_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215325_6014787_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215325_6882920_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215325_6882920_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215325_8538331_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215325_8538331_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215326_1077482_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215326_1077482_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215326_1262115_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215326_1262115_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215326_2133920_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215326_2133920_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215326_5519706_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215326_5519706_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215326_707205_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250528_215326_707205_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_215326_7207638_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_215326_7207638_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220209_2035262_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220209_2035262_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220209_4857681_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220209_4857681_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220209_624034_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220209_624034_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220209_6671913_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250528_220209_6671913_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220209_7132651_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220209_7132651_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220213_1769013_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220213_1769013_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220213_2358013_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220213_2358013_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220213_3662266_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220213_3662266_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220213_4531366_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220213_4531366_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220213_4538117_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220213_4538117_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220213_7532573_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250528_220213_7532573_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220213_7556435_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220213_7556435_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220213_8760652_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220213_8760652_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220213_8956285_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220213_8956285_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220213_9229923_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220213_9229923_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220213_9505072_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220213_9505072_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220409_2520320_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220409_2520320_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220409_5465546_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220409_5465546_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220409_7202000_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220409_7202000_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220409_8446883_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250528_220409_8446883_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220409_9826384_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220409_9826384_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220511_1202019_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220511_1202019_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220511_3119359_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220511_3119359_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220511_3454233_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250528_220511_3454233_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220511_361725_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220511_361725_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220511_5644144_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220511_5644144_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220618_3844026_.png",
+      "PackagePath": "staticwebassets\\Images\\20250528_220618_3844026_.png"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220618_6824778_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220618_6824778_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220618_9364906_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250528_220618_9364906_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220647_5145241_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220647_5145241_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220647_5150638_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220647_5150638_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220647_5250953_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220647_5250953_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220647_6036300_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220647_6036300_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_220647_9661108_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_220647_9661108_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_221525_5133465_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_221525_5133465_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_221610_4172562_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_221610_4172562_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_221645_7553237_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_221645_7553237_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_221711_8689014_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250528_221711_8689014_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_221746_7652207_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_221746_7652207_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_221821_4240722_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_221821_4240722_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_221844_3441328_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_221844_3441328_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_221904_6696142_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_221904_6696142_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234533_6285516_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_234533_6285516_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234553_2394251_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_234553_2394251_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234608_2570222_.png",
+      "PackagePath": "staticwebassets\\Images\\20250528_234608_2570222_.png"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234626_2378791_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_234626_2378791_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234631_3588040_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_234631_3588040_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234653_2382645_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250528_234653_2382645_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234709_2415939_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_234709_2415939_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234711_5326603_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_234711_5326603_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234738_9232134_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_234738_9232134_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234823_8891839_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_234823_8891839_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234844_4265337_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_234844_4265337_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234904_929796_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_234904_929796_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234925_5510173_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_234925_5510173_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234941_696278_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_234941_696278_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_234955_6979259_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250528_234955_6979259_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_235011_6304276_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_235011_6304276_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_235037_1926119_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_235037_1926119_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_235057_6171374_.png",
+      "PackagePath": "staticwebassets\\Images\\20250528_235057_6171374_.png"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_235139_4150133_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_235139_4150133_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250528_235219_3125495_.webp",
+      "PackagePath": "staticwebassets\\Images\\20250528_235219_3125495_.webp"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093319_2148965_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093319_2148965_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093321_5282398_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093321_5282398_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093344_765644_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093344_765644_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093406_7686609_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093406_7686609_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093509_8012540_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093509_8012540_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093523_3758848_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093523_3758848_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093542_9551267_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093542_9551267_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093544_7234486_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093544_7234486_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093631_3371250_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093631_3371250_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093644_9146325_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093644_9146325_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093701_6497182_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093701_6497182_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093716_3843524_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093716_3843524_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093734_9596800_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093734_9596800_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093755_4258646_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093755_4258646_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_093816_7821036_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_093816_7821036_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094153_8942643_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094153_8942643_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094155_2605533_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094155_2605533_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094157_1527242_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094157_1527242_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094251_6789362_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094251_6789362_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094305_8942898_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094305_8942898_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094307_4383355_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094307_4383355_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094309_4629272_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094309_4629272_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094310_4124029_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094310_4124029_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094330_2311481_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094330_2311481_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094354_8731771_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094354_8731771_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094358_3624515_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094358_3624515_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094400_3592779_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094400_3592779_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094418_189974_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094418_189974_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094419_1866176_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094419_1866176_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094420_5565594_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094420_5565594_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094423_1865586_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094423_1865586_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094449_3457228_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094449_3457228_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094451_4635398_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094451_4635398_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094542_1143172_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094542_1143172_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094736_1848937_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094736_1848937_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094812_9114917_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094812_9114917_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_094952_9712564_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_094952_9712564_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095008_1462539_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095008_1462539_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095022_815688_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095022_815688_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095056_567313_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095056_567313_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095119_167095_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095119_167095_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095141_1656538_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095141_1656538_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095207_6869844_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095207_6869844_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095237_1745026_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095237_1745026_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095253_1454858_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095253_1454858_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095315_4972788_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095315_4972788_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095335_2281690_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095335_2281690_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095357_3726674_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095357_3726674_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095416_2211331_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095416_2211331_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095441_6383000_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095441_6383000_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095506_7529332_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095506_7529332_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095633_8281753_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095633_8281753_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095655_157826_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095655_157826_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095719_9718262_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095719_9718262_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095735_5665261_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095735_5665261_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095749_1538865_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095749_1538865_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095804_56930_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095804_56930_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095818_6098224_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095818_6098224_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095837_4248353_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095837_4248353_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095903_1544870_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095903_1544870_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_095923_2659133_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_095923_2659133_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111613_304358_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111613_304358_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111613_544676_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111613_544676_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111613_6570655_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111613_6570655_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111613_6973170_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111613_6973170_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111650_3114283_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111650_3114283_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111650_3167238_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111650_3167238_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111650_3328873_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111650_3328873_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111650_7533504_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111650_7533504_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111735_2619598_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111735_2619598_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111735_6824892_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111735_6824892_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111735_8618248_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111735_8618248_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111735_873996_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111735_873996_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111811_5034188_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111811_5034188_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111811_7170280_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111811_7170280_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111811_7271198_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111811_7271198_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111811_8048463_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111811_8048463_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111848_1387446_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111848_1387446_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111848_5670559_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111848_5670559_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111848_6285493_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111848_6285493_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111848_6470558_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111848_6470558_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111921_1294368_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111921_1294368_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111921_351512_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111921_351512_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111921_5166101_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111921_5166101_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111921_7017574_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111921_7017574_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111954_3983769_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111954_3983769_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111954_5996002_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111954_5996002_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111954_841866_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111954_841866_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_111954_8465326_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_111954_8465326_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_112024_2252059_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_112024_2252059_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_112024_6624119_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_112024_6624119_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_112024_9549461_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_112024_9549461_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_112025_105262_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_112025_105262_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_112120_2482267_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_112120_2482267_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_112120_4140988_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_112120_4140988_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_112120_4848218_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_112120_4848218_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_112120_8333174_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_112120_8333174_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_112319_2369702_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_112319_2369702_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_112319_4917563_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_112319_4917563_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_112319_7634238_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_112319_7634238_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_112319_8718284_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_112319_8718284_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_144122_2794402_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_144122_2794402_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_144229_9994038_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_144229_9994038_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_144349_9754722_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_144349_9754722_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_144438_6547201_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_144438_6547201_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_144525_227868_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_144525_227868_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_144651_7962995_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_144651_7962995_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_145812_7644124_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_145812_7644124_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_150246_3006184_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_150246_3006184_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_150413_7682238_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_150413_7682238_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_150521_9163424_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_150521_9163424_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_152854_8945755_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_152854_8945755_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_152943_1773966_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_152943_1773966_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_153045_1650364_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_153045_1650364_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_153107_2781028_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_153107_2781028_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_153128_926777_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_153128_926777_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_153157_3889575_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_153157_3889575_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_153221_3205663_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_153221_3205663_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_153240_5777305_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_153240_5777305_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_153341_970278_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_153341_970278_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250529_153412_9000360_.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250529_153412_9000360_.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250530_120141.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250530_120141.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250530_120158.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250530_120158.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250530_120213.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250530_120213.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250530_120230.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250530_120230.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250530_120250.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250530_120250.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250530_120310.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250530_120310.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\20250530_120324.jpg",
+      "PackagePath": "staticwebassets\\Images\\20250530_120324.jpg"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\Images\\default_room.jpg",
+      "PackagePath": "staticwebassets\\Images\\default_room.jpg"
     },
     {
       "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\files\\bill_1245057369_20250527_162150.pdf",
@@ -1615,6 +1611,10 @@
     {
       "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\files\\bill_1245057369_20250527_163835.pdf",
       "PackagePath": "staticwebassets\\files\\bill_1245057369_20250527_163835.pdf"
+    },
+    {
+      "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\files\\bill_1652968812_20250530_122252.pdf",
+      "PackagePath": "staticwebassets\\files\\bill_1652968812_20250530_122252.pdf"
     },
     {
       "Id": "D:\\Danh sách bài tập lớn , đồ án\\Đồ Án 4\\Backend-HomeStay-HUB\\API_HomeStay_HUB\\API_HomeStay_HUB\\wwwroot\\fonts\\ARIBL0.ttf",
