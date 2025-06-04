@@ -16,7 +16,7 @@ namespace API_HomeStay_HUB.Controllers
         private readonly IPromotionService _promotionService;
         private readonly DBContext dB;
 
-        public PromotionController(IPromotionService promotionService, DBContext db )
+        public PromotionController(IPromotionService promotionService, DBContext db)
         {
             _promotionService = promotionService;
             dB = db;
@@ -43,8 +43,8 @@ namespace API_HomeStay_HUB.Controllers
         [HttpGet("getByCode/{code}")]
         public async Task<IActionResult> GetPromotionById(string code)
         {
-            var date= DateTime.Now;
-            var promotion = await dB.Promotions.FirstOrDefaultAsync(s=>s.DiscountCode ==code && s.StartDate<=date.Date && s.EndDate>=date );
+            var date = DateTime.Now;
+            var promotion = await dB.Promotions.FirstOrDefaultAsync(s => s.DiscountCode == code && s.StartDate <= date.Date && s.EndDate >= date);
             return promotion != null ? Ok(promotion) : NotFound();
         }
 
@@ -59,7 +59,7 @@ namespace API_HomeStay_HUB.Controllers
 
             bool state = await _promotionService.Add(promotion);
             return state ?
-                CreatedAtAction(nameof(GetPromotionById), new { id = promotion.PrmID }, promotion) :
+               Ok("Thêm thành công") :
                 BadRequest("Promotion không hợp lệ.");
         }
 

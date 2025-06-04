@@ -408,4 +408,9 @@ wwwroot\Images\20250530_120230.jpg
 wwwroot\Images\20250530_120250.jpg
 wwwroot\Images\20250530_120310.jpg
 wwwroot\Images\20250530_120324.jpg
+wwwroot\Images\20250602_093954_6166828_.jpg
+wwwroot\Images\20250602_093954_6964355_.jpg
+wwwroot\Images\20250602_093954_7304828_.jpg
+wwwroot\Images\20250602_093954_7410460_.jpg
+wwwroot\Images\20250602_093954_7448098_.jpg
 wwwroot\Images\default_room.jpg
