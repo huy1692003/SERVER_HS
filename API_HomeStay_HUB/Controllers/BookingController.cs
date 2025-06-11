@@ -26,14 +26,15 @@ namespace API_HomeStay_HUB.Controllers
         private readonly IConfiguration _configuration;
         private readonly IHomeStayService homeStayService;
         private readonly IHubContext<MyHub> _hub;
-
-        public BookingController(IBookingService bookingService, IHubContext<MyHub> _hub, DBContext dBContext, IConfiguration configuration, IHomeStayService hsService)
+        private readonly BookingQueueService _bookingQueueService;
+        public BookingController(IBookingService bookingService, IHubContext<MyHub> _hub, DBContext dBContext, IConfiguration configuration, BookingQueueService bkQueue, IHomeStayService hsService)
         {
             _bookingService = bookingService;
             _dbContext = dBContext;
             _configuration = configuration;
             homeStayService = hsService;
             this._hub = _hub;
+            _bookingQueueService = bkQueue;
         }
 
 
@@ -74,6 +75,7 @@ namespace API_HomeStay_HUB.Controllers
                 foreach (var book in bookings)
                 {
                     book.bookingProcess = _dbContext.BookingProcesses.FirstOrDefault(s => s.BookingID == book.BookingID);
+                    book.DetailBooking = JsonConvert.DeserializeObject<List<DetailBooking>>(book.DetailBookingString ?? "[]");
                 }
 
                 return Ok(new
@@ -92,29 +94,20 @@ namespace API_HomeStay_HUB.Controllers
         }
 
 
-        [HttpGet("getBookingDateExisted")]
-        public async Task<IActionResult> getBookingDates(int idHomeStay, int idRoom)
-        {
-
-            return Ok(await _bookingService.getBookingDates(idHomeStay, idRoom));
-        }
-
-
         [HttpPost("create")]
         public async Task<IActionResult> CreateBooking([FromBody] Booking booking)
         {
             booking.BookingID = GenerateRandomId();
-            if (booking == null)
+            if (booking.DetailBooking == null || booking.DetailBooking.Count < 1)
             {
                 return BadRequest("Dữ liệu đặt phòng là bắt buộc.");
             }
 
-            var result = await _bookingService.createBooking(booking);
-            if (result)
-            {
-                return Ok("Đặt phòng thành công.");
-            }
-            return BadRequest("Không thể tạo đặt phòng.");
+            // Đưa booking vào hàng đợi để xử lý
+            await _bookingQueueService.EnqueueAsync(booking);
+
+            // Trả về ngay, không cần đợi xử lý xong
+            return Ok(new { message = "Chúng tôi sẽ gửi thông báo đến email của quý khách sau khi xử lý !" });
         }
 
 
@@ -144,6 +137,7 @@ namespace API_HomeStay_HUB.Controllers
             var result = await _bookingService.cancelBooking(idBooking, reasonCancel);
             if (result)
             {
+
                 return Ok("Đặt phòng đã được hủy thành công.");
             }
             return BadRequest("Không thể hủy đặt phòng.");
@@ -170,9 +164,9 @@ namespace API_HomeStay_HUB.Controllers
 
             ICollection<Booking> listBooking = await _dbContext.Bookings
                 .Where(s => (status == 10 || s.status == status) &&
-                            (string.IsNullOrEmpty(customerID) ?
-                                (string.IsNullOrEmpty(phoneCus) || s.Phone == phoneCus) &&
-                                (string.IsNullOrEmpty(emailCus) || s.Email == emailCus) :
+                            (check3 ?
+                                (((string.IsNullOrEmpty(phoneCus) || s.Phone == phoneCus)) &&
+                                ((string.IsNullOrEmpty(emailCus) || s.Email == emailCus))) :
                                 s.CustomerID == customerID))
                 .OrderByDescending(s => s.BookingTime)
                 .ToListAsync();
@@ -213,24 +207,87 @@ namespace API_HomeStay_HUB.Controllers
         [HttpPost("confirmCheckOut")]
         public async Task<IActionResult> ConfirmCheckOut(int bookingID, [FromBody] JsonDetailExtraCost jsonDetailExtraCost)
         {
+            string linkBill = "";
             ExportPDF exportPDF = new ExportPDF(_configuration);
             var bookingPrs = _dbContext.BookingProcesses.FirstOrDefault(s => s.BookingID == bookingID);
             var booking = _dbContext.Bookings.FirstOrDefault(s => s.BookingID == bookingID);
             var detailHomestay = await homeStayService.getHomeStayByID(booking.HomeStayID ?? 0);
+
             if (bookingPrs != null && booking != null)
             {
-                await _hub.Clients.All.SendAsync("RefeshDateRoomHomeStay", booking.HomeStayID, booking.RoomID);
+                booking.DetailBooking = JsonConvert.DeserializeObject<List<DetailBooking>>(booking.DetailBookingString);
+                var roomIds = booking.DetailBooking.Select(r => r.RoomId).ToList();
+                var rooms = await _dbContext.Rooms
+                    .Where(s => s.HomestayId == booking.HomeStayID && roomIds.Contains(s.RoomId))
+                    .ToListAsync();
+
+                var dateOut_Old = booking.CheckOutDate.Date; // Chỉ lấy phần Date
+                var currentCheckOutDate = TimeHelper.GetDateTimeVietnam().Date; // Chỉ lấy phần Date
+
                 bookingPrs.CheckOutTime = TimeHelper.GetDateTimeVietnam();
                 bookingPrs.StepOrder = 4;
-                booking.CheckOutDate=TimeHelper.GetDateTimeVietnam();
+                booking.CheckOutDate = TimeHelper.GetDateTimeVietnam();
                 booking.IsSuccess = true;
                 booking.ExtraCost = jsonDetailExtraCost.totalExtraCost;
                 booking.DetailExtraCost = JsonConvert.SerializeObject(jsonDetailExtraCost);
                 booking.status = 6; //hoàn thành
+                linkBill = await exportPDF.getDetaiBill(booking, detailHomestay);
+                booking.LinkBill= linkBill;
+                // So sánh ngày checkout hiện tại với ngày checkout ban đầu
+                if (currentCheckOutDate < dateOut_Old)
+                {
+                    // Tạo danh sách các ngày cần xóa từ ngày checkout hiện tại đến ngày checkout ban đầu
+                    var datesToRemove = GetDateRange(currentCheckOutDate, dateOut_Old);
+
+                    foreach (var room in rooms)
+                    {
+                        await RemoveDateFromHidden(room, datesToRemove);
+                    }
+                    await _hub.Clients.All.SendAsync("RefeshDateHomeStay", booking.HomeStayID);
+                }
+
                 _dbContext.SaveChanges();
             }
-            var linkBill = await exportPDF.getDetaiBill(booking, detailHomestay);
+
             return Ok(linkBill);
+        }
+
+        // Phương thức tạo danh sách các ngày trong khoảng thời gian
+        private List<DateTime> GetDateRange(DateTime startDate, DateTime endDate)
+        {
+            var dates = new List<DateTime>();
+            var currentDate = startDate.AddDays(1);// cộng thêm 1 ngày để ẩn đi dọn rẹp
+
+            while (currentDate <= endDate)
+            {
+                dates.Add(currentDate);
+                currentDate = currentDate.AddDays(1);
+            }
+
+            return dates;
+        }
+
+        private async Task RemoveDateFromHidden(Room room, List<DateTime> dates)
+        {
+            foreach (var date in dates)
+            {
+                var yearData = room.RoomHiddenDates.FirstOrDefault(y => y.year == date.Year);
+                if (yearData != null)
+                {
+                    var monthData = yearData.months.FirstOrDefault(m => m.month == date.Month);
+                    if (monthData != null)
+                    {
+                        monthData.hiddenDays.Remove(date.Day);
+                        if (monthData.hiddenDays.Count == 0)
+                            yearData.months.Remove(monthData);
+                    }
+                    if (yearData.months.Count == 0)
+                        room.RoomHiddenDates.Remove(yearData);
+                }
+            }
+            room.DateHide = JsonConvert.SerializeObject(room.RoomHiddenDates);
+            // Lưu thay đổi vào database nếu cần
+            _dbContext.Update(room);
         }
 
         private void refeshStatusBookingProcess()
@@ -253,9 +310,6 @@ namespace API_HomeStay_HUB.Controllers
             _dbContext.SaveChanges();
 
         }
-
-
-
         private int GenerateRandomId()
         {
             DateTime now = TimeHelper.GetDateTimeVietnam();

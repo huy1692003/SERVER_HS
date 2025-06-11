@@ -12,12 +12,7 @@ namespace API_HomeStay_HUB.Model
 
         [Column("userID")]
         public string? UserID { get; set; }
-
-        [Column("rentedRoomsTotal")]
-        public int? RentedRoomsTotal { get; set; }
-
-        [Column("totalAmountPaID")]
-        public double? TotalAmountPaid { get; set; }
+    
 
         public  User? User { get; set; } // Mối quan hệ đến User
     }

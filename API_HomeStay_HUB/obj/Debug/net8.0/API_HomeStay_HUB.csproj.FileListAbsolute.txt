@@ -10,6 +10,11 @@ D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Azure.Core.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Azure.Identity.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\EPPlus.dll
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\EPPlus.Interfaces.dll
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\EPPlus.System.Drawing.dll
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\itextsharp.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
@@ -17,6 +22,8 @@ D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -25,6 +32,7 @@ D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
@@ -38,6 +46,7 @@ D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\System.Memory.Data.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\System.Security.Permissions.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\System.Windows.Extensions.dll
@@ -47,7 +56,9 @@ D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\obj\Debug\net8.0\API_HomeStay_HUB.csproj.AssemblyReference.cache
@@ -74,15 +85,4 @@ D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\obj\Debug\net8.0\API_HomeStay_HUB.pdb
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\obj\Debug\net8.0\API_HomeStay_HUB.genruntimeconfig.cache
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\obj\Debug\net8.0\ref\API_HomeStay_HUB.dll
-D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\EPPlus.dll
-D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\EPPlus.Interfaces.dll
-D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\EPPlus.System.Drawing.dll
-D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
-D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
-D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
-D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
-D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
-D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\bin\Debug\net8.0\itextsharp.dll
 D:\Danh sách bài tập lớn , đồ án\Đồ Án 4\Backend-HomeStay-HUB\API_HomeStay_HUB\API_HomeStay_HUB\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

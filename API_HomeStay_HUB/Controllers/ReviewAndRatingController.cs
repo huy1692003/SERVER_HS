@@ -1,10 +1,12 @@
 ﻿using API_HomeStay_HUB.Data;
 using API_HomeStay_HUB.DTOs;
+using API_HomeStay_HUB.Helpers;
 using API_HomeStay_HUB.Model;
 using API_HomeStay_HUB.Services.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace API_HomeStay_HUB.Controllers
 {
@@ -25,7 +27,7 @@ namespace API_HomeStay_HUB.Controllers
             var result = await (from rv in dBContext.ReviewAndRatings
                                 join h in dBContext.HomeStays on rv.HomestayID equals h.HomestayID
                                 join bk in dBContext.Bookings on rv.BookingID equals bk.BookingID
-                                join room in dBContext.Rooms on bk.RoomID equals room.RoomId 
+                               
                                 // Left Join với Customer
                                 join cus in dBContext.Customers on rv.CustomerID equals cus.CusID into customerGroup
                                 from customer in customerGroup.DefaultIfEmpty()
@@ -42,7 +44,7 @@ namespace API_HomeStay_HUB.Controllers
                                     fullName = customer != null && user != null ? user.FullName : bk.Name,
                                     gender = customer != null && user != null ? user.Gender : 1,
                                     avatar = customer != null && user != null ? user.ProfilePicture : null,
-                                    roomName = room.RoomName,
+                                    detailBooking = JsonConvert.DeserializeObject<List<DetailBooking>>(bk.DetailBookingString),
                                 }
                ).ToListAsync();
             return Ok(result);

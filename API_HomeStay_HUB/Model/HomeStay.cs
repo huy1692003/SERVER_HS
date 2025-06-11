@@ -64,7 +64,9 @@ namespace API_HomeStay_HUB.Model
         public int? StatusHomestay { get; set; }
 
         [Column("isLocked")]
-        public bool IsLocked { get; set; }
+        public bool? IsLocked { get; set; } = false;
+        [Column("isDeleted")]
+        public bool? IsDeleted { get; set; } = false;
 
         [Column("createdAt")]
         public DateTime? CreatedAt { get; set; }

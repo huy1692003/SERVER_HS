@@ -61,6 +61,8 @@ namespace API_HomeStay_HUB.Repositories
                 var categoryArticle = await _context.CategoryArticles.FindAsync(id);
                 if (categoryArticle != null)
                 {
+                    var articles = _context.Articles.Where(a => a.CateArtID == id).ToList();
+                    _context.Articles.RemoveRange(articles); // Xóa các bài viết liên quan
                     _context.CategoryArticles.Remove(categoryArticle);
                     return await _context.SaveChangesAsync() > 0; // Trả về true nếu có thay đổi
                 }

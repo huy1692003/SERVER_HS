@@ -63,7 +63,7 @@ namespace API_HomeStay_HUB.Controllers
                         bookprocess!.StepOrder = 1;
                         var cus = db.Customers.FirstOrDefault(s => s.CusID == book.CustomerID);
                         bookprocess!.PaymentTime = TimeHelper.GetDateTimeVietnam();
-                        createPayment(type, float.Parse(amount), int.Parse(code), book.CustomerID, "" ,cus.UserID);
+                        createPayment(type, float.Parse(amount), int.Parse(code), book?.CustomerID??null, "" ,cus?.UserID??null);
                         var notification = new Notification
                         {
                             UserID = db.OwnerStays.FirstOrDefault(s => s.OwnerID == book.OwnerID).UserID ?? "",
@@ -107,7 +107,7 @@ namespace API_HomeStay_HUB.Controllers
         }
 
 
-        private void createPayment(string type, float amount, int? code, string? cusID, string? OwnerID,string userID)
+        private void createPayment(string type, float amount, int? code, string? cusID, string? OwnerID,string? userID)
         {
             Payment payment;
             //Thanh toán tiền phòng 

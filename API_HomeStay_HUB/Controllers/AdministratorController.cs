@@ -106,12 +106,12 @@ namespace API_HomeStay_HUB.Controllers
             }
 
             // Lấy tất cả các menu mà role này có quyền
-            var allMenus = await _dbContext.Menus
+            var allMenus = await _dbContext.Menus.OrderBy(s => s.Sort??int.MaxValue)
                 .Where(m => menuIDs.Contains(m.MenuID.Value))
                 .ToListAsync();
 
             // Gộp nhóm menu con vào menu cha
-            var rootMenus = allMenus.Where(m => m.ParentMenuID == null).ToList();
+            var rootMenus = allMenus.Where(m => m.ParentMenuID == null).OrderBy(s=>s.Sort).ToList();
 
             foreach (var rootMenu in rootMenus)
             {

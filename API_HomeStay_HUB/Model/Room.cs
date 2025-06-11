@@ -1,12 +1,15 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using API_HomeStay_HUB.DTOs;
+using Newtonsoft.Json;
 
 namespace API_HomeStay_HUB.Model
 {
     [Table("Rooms")]
     public class Room
     {
+       
         [Key]
         [Column("roomId")]
         public int? RoomId { get; set; }
@@ -82,10 +85,27 @@ namespace API_HomeStay_HUB.Model
 
         [Column("createdAt")]
         public DateTime? CreatedAt { get; set; }
+        [Column("dateHide")]
+        public string? DateHide { get; set; } // JSON string for hidden dates
+
+        [NotMapped]
+        public List<YearDateHideForRoomDTO>? RoomHiddenDates { get; set; }
 
         [Column("updatedAt")]
         public DateTime? UpdatedAt { get; set; }
         //public HomeStay? HomeStay { get; set; }  // navigation property
+
+        public void convertStringToHiddenDates()
+        {
+            if (!string.IsNullOrEmpty(DateHide))
+            {
+                RoomHiddenDates = JsonConvert.DeserializeObject<List<YearDateHideForRoomDTO>>(DateHide) ?? new List<YearDateHideForRoomDTO>();
+            }
+            else
+            {
+                RoomHiddenDates = new List<YearDateHideForRoomDTO?>() ;
+            }
+        }
 
     }
 }

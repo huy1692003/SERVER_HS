@@ -16,35 +16,40 @@ namespace API_HomeStay_HUB.Repositories
             _dbContext = dbContext;
         }
 
-      
+
 
         public async Task<PagedResultDTO<dynamic>?> GetPayments(PaginateDTO paginate, int type, SearchPaymentDTO search)
         {
             var query = (from payment in _dbContext.Payments
                          join user in _dbContext.Users
-                         on payment.UserID equals user.UserID
+                         on payment.UserID equals user.UserID into userGroup
+                         from subUser in userGroup.DefaultIfEmpty()
+                         join bk in _dbContext.Bookings
+                         on payment.BookingID equals bk.BookingID into bkGroup
+                         from subBk in bkGroup.DefaultIfEmpty()
+
                          where (
-                              (type == 1 && !string.IsNullOrEmpty(payment.CusID)) ||
+                              (type == 1 && string.IsNullOrEmpty(payment.OwnerID)) ||
                               (type == 2 && !string.IsNullOrEmpty(payment.OwnerID))
                               ) &&
-                             (string.IsNullOrEmpty(search.UserName) || user.Username.Contains(search.UserName))
-                             && (string.IsNullOrEmpty(search.Email) || user.Email.Contains(search.Email))
+
+                             (string.IsNullOrEmpty(search.UserName) || (subUser != null ? subUser.FullName.Contains(search.UserName) : subBk.Name.Contains(search.UserName))
+                             && (string.IsNullOrEmpty(search.Email) || (subUser != null ? subUser.Email.Contains(search.Email) : subBk.Email.Contains(search.Email))
                              && (string.IsNullOrEmpty(search.contentPayment) || payment.NotePayment.Contains(search.contentPayment))
                              && (string.IsNullOrEmpty(search.PaymentMethod) || payment.PaymentMethod.Contains(search.PaymentMethod))
                              && (search.BookingID == null || payment.BookingID == search.BookingID)
-                             && (search.AdvertisementID == null || payment.AdvertisementID == search.AdvertisementID)
                              && (search.DateStart == null || payment.PaymentDate.Value.Date >= search.DateStart.Value.Date)
-                             && (search.DateEnd == null || payment.PaymentDate.Value.Date <= search.DateEnd.Value.Date)
+                             && (search.DateEnd == null || payment.PaymentDate.Value.Date <= search.DateEnd.Value.Date)))
                          orderby payment.PaymentDate descending
 
                          select new PaymentResDTO
                          {
                              UserID = payment.UserID,
-                             Username = user.Username,
-                             FullName = user.FullName,
-                             Email = user.Email,
-                             PhoneNumber = user.PhoneNumber,
-                             PaymentID = payment.PaymentID,
+                             Username = subUser != null ? subUser.Username : "",
+                             FullName = subUser != null ? subUser.Username : subBk.Name,
+                             IdHomeStay = subBk.HomeStayID + "",
+                             Email = subUser != null ? subUser.Email : subBk.Email,
+                             PhoneNumber = subUser != null ? subUser.PhoneNumber : subBk.Phone,
                              BookingID = payment.BookingID,
                              OwnerID = payment.OwnerID,
                              CusID = payment.CusID,
@@ -72,28 +77,29 @@ namespace API_HomeStay_HUB.Repositories
         {
             var query = (from payment in _dbContext.Payments
                          join user in _dbContext.Users
-                         on payment.UserID equals user.UserID
+                         on payment.UserID equals user.UserID into userGroup
+                         from subUser in userGroup.DefaultIfEmpty()
                          join booking in _dbContext.Bookings
                          on payment.BookingID equals booking.BookingID
-                         where booking.OwnerID == idOwner  && payment.BookingID!=null
+                         where booking.OwnerID == idOwner && payment.BookingID != null
                          &&
-                             (string.IsNullOrEmpty(search.UserName) || user.Username.Contains(search.UserName))
-                             && (string.IsNullOrEmpty(search.Email) || user.Email.Contains(search.Email))
+                             (string.IsNullOrEmpty(search.UserName) || (subUser != null ? subUser.FullName.Contains(search.UserName) : booking.Name.Contains(search.UserName))
+                             && (string.IsNullOrEmpty(search.Email) || (subUser != null ? subUser.Email.Contains(search.Email) : booking.Email.Contains(search.Email))
                              && (string.IsNullOrEmpty(search.contentPayment) || payment.NotePayment.Contains(search.contentPayment))
                              && (string.IsNullOrEmpty(search.PaymentMethod) || payment.PaymentMethod.Contains(search.PaymentMethod))
                              && (search.BookingID == null || payment.BookingID == search.BookingID)
                              && (search.DateStart == null || payment.PaymentDate.Value.Date >= search.DateStart.Value.Date)
-                             && (search.DateEnd == null || payment.PaymentDate.Value.Date <= search.DateEnd.Value.Date)
+                             && (search.DateEnd == null || payment.PaymentDate.Value.Date <= search.DateEnd.Value.Date)))
                          orderby payment.PaymentDate descending
 
                          select new PaymentResDTO
                          {
                              UserID = payment.UserID,
-                             Username = user.Username,
-                             FullName = user.FullName,
-                             IdHomeStay = booking.HomeStayID+"",
-                             Email = user.Email,
-                             PhoneNumber = user.PhoneNumber,
+                             Username = subUser != null ? subUser.Username : "",
+                             FullName = subUser != null ? subUser.Username : booking.Name,
+                             IdHomeStay = booking.HomeStayID + "",
+                             Email = subUser != null ? subUser.Email : booking.Email,
+                             PhoneNumber = subUser != null ? subUser.PhoneNumber : booking.Phone,
                              PaymentID = payment.PaymentID,
                              BookingID = payment.BookingID,
                              OwnerID = payment.OwnerID,

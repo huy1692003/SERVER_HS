@@ -17,7 +17,7 @@ namespace API_HomeStay_HUB.Repositories
 
         public async Task<IEnumerable<Article>> GetAllArticles()
         {
-            return await _context.Articles.ToListAsync();
+            return await _context.Articles.OrderByDescending(s=>s.CateArtID).ToListAsync();
         }
 
         public async Task<IEnumerable<Article>> GetArticles_ByCate(int idCate)

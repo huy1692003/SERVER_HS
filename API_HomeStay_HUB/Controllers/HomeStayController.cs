@@ -58,7 +58,17 @@ namespace API_HomeStay_HUB.Controllers
 
         public async Task<IActionResult> searchHomeStay([FromBody] SearchHomeStayDTO search, [FromQuery] PaginateDTO paginate)
         {
-            
+            if (search.NumberAdults == null)
+            {
+                search.NumberAdults = 1;
+            }
+            if (search.NumberBaby == null)
+            {
+                search.NumberBaby = 0;
+            }if (search.NumberChildren == null)
+            {
+                search.NumberChildren = 0;
+            }
             var result = await _homeStayService.searchHomeStayByCustomer(search, paginate);
             return Ok(new
             {
@@ -182,7 +192,7 @@ namespace API_HomeStay_HUB.Controllers
                         on HomeStay.OwnerID equals owner.OwnerID
                         join user in _dBContext.Users
                         on owner.UserID equals user.UserID
-                        where (string.IsNullOrEmpty(idOwner) || HomeStay.OwnerID == idOwner) && HomeStay.StatusHomestay == status
+                        where (string.IsNullOrEmpty(idOwner) || HomeStay.OwnerID == idOwner) && HomeStay.StatusHomestay == status && HomeStay.IsDeleted==false
                         &&
                         (string.IsNullOrEmpty(search.Location) ||
                             HomeStay.AddressDetail!.Contains(search.Location!) ||

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_HomeStay_HUB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66e5030c310ef61fa7d2f559e976b220bec6f0c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2de18ac2700e3c40fd0d09b1b8c9d88734f9b984")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_HomeStay_HUB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_HomeStay_HUB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

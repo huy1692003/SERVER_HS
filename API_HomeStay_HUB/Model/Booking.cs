@@ -27,26 +27,14 @@ namespace API_HomeStay_HUB.Model
         public string? Name { get; set; }
 
         [Column("homestayID")]
-        public int? HomeStayID { get; set; }
-
-        [Column("roomID")]
-        public int? RoomID { get; set; }
+        public int? HomeStayID { get; set; }       
 
         [Column("checkInDate")]
         public DateTime CheckInDate { get; set; }
 
         [Column("checkOutDate")]
         public DateTime CheckOutDate { get; set; }
-
-        [Column("numberAdults")]
-        public int? NumberAdults { get; set; }
-
-        [Column("numberChildren")]
-        public int? NumberChildren { get; set; }
-
-        [Column("numberBaby")]
-        public int? NumberBaby { get; set; }
-
+      
         [Column("totalPrice")]
         public double? TotalPrice { get; set; }
 
@@ -65,9 +53,6 @@ namespace API_HomeStay_HUB.Model
         [Column("extraCost")]
         public double? ExtraCost { get; set; }
 
-        [Column("guestList")]
-        public string? GuestList { get; set; }
-
         [Column("CMND")]
         public string? CMND { get; set; }
 
@@ -76,6 +61,10 @@ namespace API_HomeStay_HUB.Model
 
         [Column("detailExtraCost")]
         public string? DetailExtraCost { get; set; }
+        
+        [Column("detailBooking")]
+        public string? DetailBookingString { get; set; }  
+
 
         [Column("isConfirm")]
         public bool IsConfirm { get; set; } = false;
@@ -87,6 +76,7 @@ namespace API_HomeStay_HUB.Model
 
         [Column("statusBK")]
         public int? status { get; set; }
+
         [Column("reasonCancel")]
         public string? ReasonCancel { get; set; }
 
@@ -99,6 +89,9 @@ namespace API_HomeStay_HUB.Model
         [Column("timeReviewRating")]
         public DateTime? timeReviewRating { get; set; }
 
+        [Column("linkBill")]
+        public string? LinkBill { get; set; }
+
         [NotMapped]
         public BookingProcess? bookingProcess { get; set; }
 
@@ -110,5 +103,8 @@ namespace API_HomeStay_HUB.Model
 
         [NotMapped]
         public string? phoneOwner { get; set; }
+
+        [NotMapped]
+        public List<DetailBooking>? DetailBooking { get; set; }
     }
 }

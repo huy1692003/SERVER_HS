@@ -618,27 +618,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API_HomeStay_HUB.Controllers.BookingController",
-    "Method": "getBookingDates",
-    "RelativePath": "api/Booking/getBookingDateExisted",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "idHomeStay",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "idRoom",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "API_HomeStay_HUB.Controllers.CategoryArticleController",
     "Method": "AddCategoryArticle",
     "RelativePath": "api/CategoryArticle/add",
@@ -844,6 +823,27 @@
       {
         "Name": "idOwner",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_HomeStay_HUB.Controllers.DasboardController",
+    "Method": "GetBookingStatisticsByOwnerAndDate",
+    "RelativePath": "api/Dasboard/owner/getBookingStatistics",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "OwnerId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "request",
+        "Type": "API_HomeStay_HUB.Controllers.DasboardController\u002BBookingStatisticsRequestDTO",
         "IsRequired": true
       }
     ],
@@ -1787,7 +1787,7 @@
   {
     "ContainingType": "API_HomeStay_HUB.Controllers.PromotionController",
     "Method": "GetPromotionById",
-    "RelativePath": "api/Promotion/getByCode/{code}",
+    "RelativePath": "api/Promotion/getByCode",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1795,7 +1795,12 @@
       {
         "Name": "code",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
+      },
+      {
+        "Name": "idOwner",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -2131,6 +2136,27 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_HomeStay_HUB.Controllers.RoomController",
+    "Method": "AddHiddenDates",
+    "RelativePath": "api/Room/addHiddenDates/{idRoom}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRoom",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "hiddenDates",
+        "Type": "System.Collections.Generic.List\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": true
       }
     ],

@@ -17,7 +17,9 @@ namespace API_HomeStay_HUB.Model
         public string? Url { get; set; }          // Đường dẫn URL của menu
         [Column("ParentMenuID")]
         public int? ParentMenuID { get; set; }
+        [Column("Sort")]
+        public int? Sort { get; set; }          // Khóa chính của Menu
         [NotMapped]
-        public List<Menu>? children {  get; set; }
+        public List<Menu>? children { get; set; }
     }
 }

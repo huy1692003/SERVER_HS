@@ -144,9 +144,9 @@ namespace API_HomeStay_HUB.Helpers
                     PdfPCell logoCell = new PdfPCell();
                     Paragraph companyInfo = new Paragraph();
                     companyInfo.Add(new Chunk("HOMESTAY HUB\n", titleFont));
-                    companyInfo.Add(new Chunk("Địa chỉ: 123 Đường ABC, Quận XYZ\n", normalFont));
+                    companyInfo.Add(new Chunk("Địa chỉ: Việt Hòa, Huyện Khoái Châu\n", normalFont));
                     companyInfo.Add(new Chunk("Email: contact@homestayhub.com\n", normalFont));
-                    companyInfo.Add(new Chunk("Hotline: 1900 1234", normalFont));
+                    companyInfo.Add(new Chunk("Hotline: 0364174636", normalFont));
                     logoCell.AddElement(companyInfo);
                     logoCell.Border = Rectangle.NO_BORDER;
                     headerTable.AddCell(logoCell);
@@ -183,9 +183,6 @@ namespace API_HomeStay_HUB.Helpers
                     AddCustomerInfoRow(customerTable, "Email:", booking.Email, normalFont, boldFont);
                     AddCustomerInfoRow(customerTable, "Ngày nhận phòng:", booking.CheckInDate.ToString("dd/MM/yyyy"), normalFont, boldFont);
                     AddCustomerInfoRow(customerTable, "Ngày trả phòng:", booking.CheckOutDate.ToString("dd/MM/yyyy"), normalFont, boldFont);
-                    AddCustomerInfoRow(customerTable, "Số người lớn:", booking.NumberAdults.ToString(), normalFont, boldFont);
-                    AddCustomerInfoRow(customerTable, "Số trẻ em:", booking.NumberChildren.ToString(), normalFont, boldFont);
-                    AddCustomerInfoRow(customerTable, "Số em bé:", booking.NumberBaby.ToString(), normalFont, boldFont);
 
                     document.Add(customerTable);
                     document.Add(Chunk.NEWLINE);
@@ -194,6 +191,7 @@ namespace API_HomeStay_HUB.Helpers
                     Paragraph bookingTitle = new Paragraph("CHI TIẾT ĐẶT PHÒNG", subHeaderFont);
                     document.Add(bookingTitle);
                     document.Add(Chunk.NEWLINE);
+
                     // HomeStay Info
                     PdfPTable homeStayTable = new PdfPTable(2);
                     homeStayTable.WidthPercentage = 100;
@@ -214,87 +212,86 @@ namespace API_HomeStay_HUB.Helpers
                     document.Add(homeStayTable);
                     document.Add(Chunk.NEWLINE);
 
-                    // Room Info
-                    PdfPTable roomTable = new PdfPTable(4);
-                    roomTable.WidthPercentage = 100;
-                    roomTable.SetWidths(new float[] { 1f, 1f, 1f, 1f });
-
-                    PdfPCell roomHeaderCell = new PdfPCell(new Phrase("Thông tin phòng", boldFont));
-                    roomHeaderCell.BackgroundColor = new BaseColor(240, 240, 240);
-                    roomHeaderCell.Padding = 8f;
-                    roomHeaderCell.Colspan = 4;
-                    roomTable.AddCell(roomHeaderCell);
-
-                    AddTableHeader(roomTable, new string[] { "Mã phòng", "Tên phòng", "Số đêm", "Thành tiền" }, boldFont);
-
-                    int nights = (booking.CheckOutDate - booking.CheckInDate).Days;
-
-                    var room = hs.Rooms.FirstOrDefault(s => s.RoomId == booking.RoomID);
-                    // Lấy thông tin chi tiết về phòng từ booking
-                    string roomName = room.RoomName ?? "Phòng tiêu chuẩn";
-
-                    AddTableRow(roomTable, new string[] {
-                        booking.RoomID.ToString(),
-                        roomName,
-                        nights.ToString(),
-                        FormatCurrency(booking.OriginalPrice ?? 0)
-                    }, normalFont);
-
-                    document.Add(roomTable);
-                    document.Add(Chunk.NEWLINE);
-
                     // Parse Extra Costs if available
                     if (!string.IsNullOrEmpty(booking.DetailExtraCost))
                     {
-                        var extraCosts = JsonConvert.DeserializeObject<dynamic>(booking.DetailExtraCost);
+                        var extraCosts = JsonConvert.DeserializeObject<JsonDetailExtraCost>(booking.DetailExtraCost);
 
-                        // Extra Person Costs
-                        if (extraCosts.extraPersonCost != null)
+                        // Room Detail Charges - Thông tin chi tiết từng phòng
+                        if (extraCosts.roomDetailCharges != null && extraCosts.roomDetailCharges.Count > 0)
                         {
-                            PdfPTable extraPersonTable = new PdfPTable(4);
-                            extraPersonTable.WidthPercentage = 100;
-                            extraPersonTable.SetWidths(new float[] { 2f, 1f, 1f, 1f });
-
-                            PdfPCell extraPersonHeaderCell = new PdfPCell(new Phrase("Phụ thu người ở thêm", boldFont));
-                            extraPersonHeaderCell.BackgroundColor = new BaseColor(240, 240, 240);
-                            extraPersonHeaderCell.Padding = 8f;
-                            extraPersonHeaderCell.Colspan = 4;
-                            extraPersonTable.AddCell(extraPersonHeaderCell);
-
-                            AddTableHeader(extraPersonTable, new string[] { "Loại", "Số lượng", "Đơn giá", "Thành tiền" }, boldFont);
-
-                            if (extraCosts.extraPersonCost.extraAdult != null && extraCosts.extraPersonCost.extraAdult.count > 0)
+                            foreach (var roomCharge in extraCosts.roomDetailCharges)
                             {
-                                AddTableRow(extraPersonTable, new string[] {
+                                // Thông tin phòng
+                                PdfPTable roomTable = new PdfPTable(2);
+                                roomTable.WidthPercentage = 100;
+                                roomTable.SetWidths(new float[] { 1f, 1f });
+
+                                PdfPCell roomHeaderCell = new PdfPCell(new Phrase($"Phòng: {roomCharge.roomName} (ID: {roomCharge.roomId})", boldFont));
+                                roomHeaderCell.BackgroundColor = new BaseColor(240, 240, 240);
+                                roomHeaderCell.Padding = 8f;
+                                roomHeaderCell.Colspan = 2;
+                                roomTable.AddCell(roomHeaderCell);
+
+                                AddCustomerInfoRow(roomTable, "Giới hạn người lớn:", roomCharge.limits.maxAdults.ToString(), normalFont, boldFont);
+                                AddCustomerInfoRow(roomTable, "Giới hạn trẻ em:", roomCharge.limits.maxChildren.ToString(), normalFont, boldFont);
+                                AddCustomerInfoRow(roomTable, "Giới hạn em bé:", roomCharge.limits.maxBaby.ToString(), normalFont, boldFont);
+                                AddCustomerInfoRow(roomTable, "Số người lớn thực tế:", roomCharge.actual.numberAdults.ToString(), normalFont, boldFont);
+                                AddCustomerInfoRow(roomTable, "Số trẻ em thực tế:", roomCharge.actual.numberChildren.ToString(), normalFont, boldFont);
+                                AddCustomerInfoRow(roomTable, "Số em bé thực tế:", roomCharge.actual.numberBaby.ToString(), normalFont, boldFont);
+
+                                document.Add(roomTable);
+                                document.Add(Chunk.NEWLINE);
+
+                                // Phụ thu khách thêm của phòng này
+                                if (roomCharge.extraPeople != null)
+                                {
+                                    PdfPTable extraPersonTable = new PdfPTable(4);
+                                    extraPersonTable.WidthPercentage = 100;
+                                    extraPersonTable.SetWidths(new float[] { 2f, 1f, 1f, 1f });
+
+                                    PdfPCell extraPersonHeaderCell = new PdfPCell(new Phrase("Phụ thu người ở thêm - " + roomCharge.roomName, boldFont));
+                                    extraPersonHeaderCell.BackgroundColor = new BaseColor(250, 250, 250);
+                                    extraPersonHeaderCell.Padding = 8f;
+                                    extraPersonHeaderCell.Colspan = 4;
+                                    extraPersonTable.AddCell(extraPersonHeaderCell);
+
+                                    AddTableHeader(extraPersonTable, new string[] { "Loại", "Số lượng", "Đơn giá", "Thành tiền" }, boldFont);
+
+                                    if (roomCharge.extraPeople.adults != null && roomCharge.extraPeople.adults.count > 0)
+                                    {
+                                        AddTableRow(extraPersonTable, new string[] {
                                     "Người lớn thêm",
-                                    extraCosts.extraPersonCost.extraAdult.count.ToString(),
-                                    FormatCurrency((double)extraCosts.extraPersonCost.extraAdult.fee),
-                                    FormatCurrency((double)extraCosts.extraPersonCost.extraAdult.total)
+                                    roomCharge.extraPeople.adults.count.ToString(),
+                                    FormatCurrency(roomCharge.extraPeople.adults.fee),
+                                    FormatCurrency(roomCharge.extraPeople.adults.total)
                                 }, normalFont);
-                            }
+                                    }
 
-                            if (extraCosts.extraPersonCost.extraChild != null && extraCosts.extraPersonCost.extraChild.count > 0)
-                            {
-                                AddTableRow(extraPersonTable, new string[] {
+                                    if (roomCharge.extraPeople.children != null && roomCharge.extraPeople.children.count > 0)
+                                    {
+                                        AddTableRow(extraPersonTable, new string[] {
                                     "Trẻ em thêm",
-                                    extraCosts.extraPersonCost.extraChild.count.ToString(),
-                                    FormatCurrency((double)extraCosts.extraPersonCost.extraChild.fee),
-                                    FormatCurrency((double)extraCosts.extraPersonCost.extraChild.total)
+                                    roomCharge.extraPeople.children.count.ToString(),
+                                    FormatCurrency(roomCharge.extraPeople.children.fee),
+                                    FormatCurrency(roomCharge.extraPeople.children.total)
                                 }, normalFont);
-                            }
+                                    }
 
-                            if (extraCosts.extraPersonCost.extraBaby != null && extraCosts.extraPersonCost.extraBaby.count > 0)
-                            {
-                                AddTableRow(extraPersonTable, new string[] {
+                                    if (roomCharge.extraPeople.babies != null && roomCharge.extraPeople.babies.count > 0)
+                                    {
+                                        AddTableRow(extraPersonTable, new string[] {
                                     "Em bé thêm",
-                                    extraCosts.extraPersonCost.extraBaby.count.ToString(),
-                                    FormatCurrency((double)extraCosts.extraPersonCost.extraBaby.fee),
-                                    FormatCurrency((double)extraCosts.extraPersonCost.extraBaby.total)
+                                    roomCharge.extraPeople.babies.count.ToString(),
+                                    FormatCurrency(roomCharge.extraPeople.babies.fee),
+                                    FormatCurrency(roomCharge.extraPeople.babies.total)
                                 }, normalFont);
-                            }
+                                    }
 
-                            document.Add(extraPersonTable);
-                            document.Add(Chunk.NEWLINE);
+                                    document.Add(extraPersonTable);
+                                    document.Add(Chunk.NEWLINE);
+                                }
+                            }
                         }
 
                         // Service Costs
@@ -315,11 +312,11 @@ namespace API_HomeStay_HUB.Helpers
                             foreach (var service in extraCosts.serviceCost)
                             {
                                 AddTableRow(serviceTable, new string[] {
-                                    service.serviceName.ToString(),
-                                    service.quantity.ToString(),
-                                    FormatCurrency((double)service.price),
-                                    FormatCurrency((double)service.total)
-                                }, normalFont);
+                            service.serviceName,
+                            service.quantity.ToString(),
+                            FormatCurrency(service.price),
+                            FormatCurrency(service.total)
+                        }, normalFont);
                             }
 
                             document.Add(serviceTable);
@@ -344,9 +341,9 @@ namespace API_HomeStay_HUB.Helpers
                             foreach (var other in extraCosts.otherCost)
                             {
                                 AddTableRow(otherTable, new string[] {
-                                    other.name.ToString(),
-                                    FormatCurrency((double)other.amount)
-                                }, normalFont);
+                            other.name,
+                            FormatCurrency(other.amount)
+                        }, normalFont);
                             }
 
                             document.Add(otherTable);
@@ -360,7 +357,7 @@ namespace API_HomeStay_HUB.Helpers
                     summaryTable.SetWidths(new float[] { 3f, 1f });
 
                     // Original Price
-                    PdfPCell originalPriceCell1 = new PdfPCell(new Phrase("Tổng tiền phòng:", boldFont));
+                    PdfPCell originalPriceCell1 = new PdfPCell(new Phrase("Giá phòng gốc:", boldFont));
                     originalPriceCell1.Border = Rectangle.NO_BORDER;
                     originalPriceCell1.HorizontalAlignment = Element.ALIGN_RIGHT;
                     summaryTable.AddCell(originalPriceCell1);
@@ -388,10 +385,10 @@ namespace API_HomeStay_HUB.Helpers
                     double extraCostTotal = 0;
                     if (!string.IsNullOrEmpty(booking.DetailExtraCost))
                     {
-                        var extraCosts = JsonConvert.DeserializeObject<dynamic>(booking.DetailExtraCost);
-                        if (extraCosts.totalExtraCost != null)
+                        var extraCosts = JsonConvert.DeserializeObject<JsonDetailExtraCost>(booking.DetailExtraCost);
+                        if (extraCosts != null)
                         {
-                            extraCostTotal = (double)extraCosts.totalExtraCost;
+                            extraCostTotal = extraCosts.totalExtraCost;
 
                             PdfPCell extraCostCell1 = new PdfPCell(new Phrase("Tổng chi phí phát sinh:", boldFont));
                             extraCostCell1.Border = Rectangle.NO_BORDER;

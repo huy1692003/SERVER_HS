@@ -40,11 +40,11 @@ namespace API_HomeStay_HUB.Controllers
         //GET: api/promotion/getByID/{id}
 
         //checked voucher hợp lệ 
-        [HttpGet("getByCode/{code}")]
-        public async Task<IActionResult> GetPromotionById(string code)
+        [HttpGet("getByCode")]
+        public async Task<IActionResult> GetPromotionById(string code, string idOwner)
         {
             var date = DateTime.Now;
-            var promotion = await dB.Promotions.FirstOrDefaultAsync(s => s.DiscountCode == code && s.StartDate <= date.Date && s.EndDate >= date);
+            var promotion = await dB.Promotions.FirstOrDefaultAsync(s => s.DiscountCode == code && s.OwnerID == idOwner && s.StartDate <= date.Date && s.EndDate >= date);
             return promotion != null ? Ok(promotion) : NotFound();
         }
 

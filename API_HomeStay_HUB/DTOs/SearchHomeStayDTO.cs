@@ -9,9 +9,9 @@ namespace API_HomeStay_HUB.DTOs
         public string? Location { get; set; } = ""; // Vị trí
         public string? PriceRange { get; set; } = ""; // Khoảng giá
         public string? Name { get; set; } = ""; // Tên
-        public int NumberAdults { get; set; } // Số lượng người lớn
-        public int NumberChildren { get; set; } // Số lượng trẻ em
-        public int NumberBaby { get; set; } // Số lượng em bé
+        public int? NumberAdults { get; set; } = 1;// Số lượng người lớn
+        public int? NumberChildren { get; set; } // Số lượng trẻ em
+        public int? NumberBaby { get; set; } // Số lượng em bé
         public List<int>? Amenities { get; set; } 
         public DateTime? DateIn { get; set; } // Ngày nhận phòng
         public DateTime? DateOut { get; set; } // Ngày trả phòng
@@ -44,5 +44,9 @@ namespace API_HomeStay_HUB.DTOs
         public bool? HasBilliardTable { get; set; } // Có bàn bi-a
         public bool? HasManyActivities { get; set; } // Có nhiều hoạt động
         public bool? HasSpaciousGarden { get; set; } // Có vườn rộng rãi
+
+        //-1:Thấp dần, 0:Không sắp xếp, 1:Tăng dần
+        public int? SortByPrice { get; set; } = 0; // Sắp xếp theo giá
+        public int? SortByRating { get; set; } = 0; // Sắp xếp theo đánh giá
     }
 }

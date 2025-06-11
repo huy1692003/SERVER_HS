@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using API_HomeStay_HUB.Services;
 using API_HomeStay_HUB.Data;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using API_HomeStay_HUB.DTOs;
 
 namespace API_HomeStay_HUB.Controllers
 {
@@ -17,7 +19,7 @@ namespace API_HomeStay_HUB.Controllers
         private readonly IRoomService _roomService;
         private readonly DBContext _dBContext;
 
-        public RoomController(IRoomService roomService,DBContext dBContext)
+        public RoomController(IRoomService roomService, DBContext dBContext)
         {
             _roomService = roomService;
             _dBContext = dBContext;
@@ -97,5 +99,54 @@ namespace API_HomeStay_HUB.Controllers
             }
             return Ok("success");
         }
+
+        [HttpPut("addHiddenDates/{idRoom}")]
+        public async Task<IActionResult> AddHiddenDates(int idRoom, [FromBody] List<DateTime> hiddenDates)
+        {
+            var room = await _dBContext.Rooms.FindAsync(idRoom);
+            if (room == null)
+            {
+                return NotFound();
+            }
+            else if (hiddenDates == null || hiddenDates.Count == 0)
+            {
+                return BadRequest("No dates provided to hide.");
+            }
+            else
+            {
+                room.RoomHiddenDates=JsonConvert.DeserializeObject<List<YearDateHideForRoomDTO>>(room.DateHide) ?? new List<YearDateHideForRoomDTO>();
+                AddDateFromHidden(room, hiddenDates).Wait();
+                _dBContext.SaveChanges();
+            }
+            return Ok("Hidden dates added successfully.");
+        }
+
+        private Task AddDateFromHidden(Room room, List<DateTime> dates)
+        {
+            foreach (var date in dates)
+            {
+                var yearData = room.RoomHiddenDates.FirstOrDefault(y => y.year == date.Year);
+                if (yearData == null)
+                {
+                    yearData = new YearDateHideForRoomDTO { year = date.Year, months = new List<MonthsDTO>() };
+                    room.RoomHiddenDates.Add(yearData);
+                }
+
+                var monthData = yearData.months.FirstOrDefault(m => m.month == date.Month);
+                if (monthData == null)
+                {
+                    monthData = new MonthsDTO { month = date.Month, hiddenDays = new List<int>() };
+                    yearData.months.Add(monthData);
+                }
+
+                if (!monthData.hiddenDays.Contains(date.Day))
+                    monthData.hiddenDays.Add(date.Day);
+            }
+            room.DateHide = JsonConvert.SerializeObject(room.RoomHiddenDates);
+            // Lưu thay đổi vào database nếu cần
+            _dBContext.Update(room);
+            return Task.CompletedTask;
+        }
     }
+
 }

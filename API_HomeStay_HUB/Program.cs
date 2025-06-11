@@ -108,6 +108,8 @@ builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddScoped<ISendMaillService, SendMaillService>();
 builder.Services.AddScoped<PaymentMomoService>();
 builder.Services.AddScoped<ExportExcel>();
+builder.Services.AddSingleton<BookingQueueService>();
+builder.Services.AddScoped<IBookingHandler, BookingHandler>();
 
 builder.Services.AddSignalR();
 

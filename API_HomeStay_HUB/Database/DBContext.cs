@@ -37,38 +37,9 @@ namespace API_HomeStay_HUB.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // modelBuilder.Entity<Role>()
-            //     .HasKey(r => r.RoleID);
+           
+  
 
-            // modelBuilder.Entity<User>()
-            //     .HasKey(r => r.UserID);
-
-            // modelBuilder.Entity<HomeStay>()
-            //.Property(h => h.HomestayID)
-            //.ValueGeneratedOnAdd();
-
-
-            // modelBuilder.Entity<HomeStayAmenities>()
-            //    .HasKey(h => new { h.AmenityID, h.HomestayID });
-
-            // modelBuilder.Entity<Customer>()
-            // .HasOne(c => c.User)
-            // .WithOne(u => u.Customer)
-            // .HasForeignKey<Customer>(c => c.UserID);
-
-            // modelBuilder.Entity<OwnerStay>()
-            //     .HasOne(o => o.User)
-            //     .WithOne(u => u.OwnerStay)
-            //     .HasForeignKey<OwnerStay>(o => o.UserID);
-
-            // modelBuilder.Entity<Administrator>()
-            //     .HasOne(a => a.User)
-            //     .WithOne(u => u.Administrator)
-            // .HasForeignKey<Administrator>(a => a.UserID);
-             //   modelBuilder.Entity<Room>()
-             //.HasOne(r => r.HomeStay)
-             //.WithMany(h => h.Rooms)
-             //.HasForeignKey(r => r.HomestayId);
 
         }
 

@@ -841,36 +841,6 @@
         }
       }
     },
-    "/api/Booking/getBookingDateExisted": {
-      "get": {
-        "tags": [
-          "Booking"
-        ],
-        "parameters": [
-          {
-            "name": "idHomeStay",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "idRoom",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
     "/api/Booking/create": {
       "post": {
         "tags": [
@@ -1394,6 +1364,46 @@
         "tags": [
           "Dasboard"
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Dasboard/owner/getBookingStatistics": {
+      "post": {
+        "tags": [
+          "Dasboard"
+        ],
+        "parameters": [
+          {
+            "name": "OwnerId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookingStatisticsRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookingStatisticsRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookingStatisticsRequestDTO"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "Success"
@@ -2919,7 +2929,7 @@
         }
       }
     },
-    "/api/Promotion/getByCode/{code}": {
+    "/api/Promotion/getByCode": {
       "get": {
         "tags": [
           "Promotion"
@@ -2927,8 +2937,14 @@
         "parameters": [
           {
             "name": "code",
-            "in": "path",
-            "required": true,
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "idOwner",
+            "in": "query",
             "schema": {
               "type": "string"
             }
@@ -3608,6 +3624,60 @@
         }
       }
     },
+    "/api/Room/addHiddenDates/{idRoom}": {
+      "put": {
+        "tags": [
+          "Room"
+        ],
+        "parameters": [
+          {
+            "name": "idRoom",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Setting": {
       "get": {
         "tags": [
@@ -4042,6 +4112,24 @@
   },
   "components": {
     "schemas": {
+      "ActualGuests": {
+        "type": "object",
+        "properties": {
+          "numberAdults": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numberChildren": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numberBaby": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "Advertisement": {
         "type": "object",
         "properties": {
@@ -4212,11 +4300,6 @@
             "format": "int32",
             "nullable": true
           },
-          "roomID": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
           "checkInDate": {
             "type": "string",
             "format": "date-time"
@@ -4224,21 +4307,6 @@
           "checkOutDate": {
             "type": "string",
             "format": "date-time"
-          },
-          "numberAdults": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "numberChildren": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "numberBaby": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
           },
           "totalPrice": {
             "type": "number",
@@ -4268,10 +4336,6 @@
             "format": "double",
             "nullable": true
           },
-          "guestList": {
-            "type": "string",
-            "nullable": true
-          },
           "cmnd": {
             "type": "string",
             "nullable": true
@@ -4281,6 +4345,10 @@
             "nullable": true
           },
           "detailExtraCost": {
+            "type": "string",
+            "nullable": true
+          },
+          "detailBookingString": {
             "type": "string",
             "nullable": true
           },
@@ -4317,6 +4385,10 @@
             "format": "date-time",
             "nullable": true
           },
+          "linkBill": {
+            "type": "string",
+            "nullable": true
+          },
           "bookingProcess": {
             "$ref": "#/components/schemas/BookingProcess"
           },
@@ -4329,6 +4401,13 @@
           },
           "phoneOwner": {
             "type": "string",
+            "nullable": true
+          },
+          "detailBooking": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetailBooking"
+            },
             "nullable": true
           }
         },
@@ -4405,6 +4484,20 @@
         },
         "additionalProperties": false
       },
+      "BookingStatisticsRequestDTO": {
+        "type": "object",
+        "properties": {
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
       "CategoryArticle": {
         "type": "object",
         "properties": {
@@ -4461,6 +4554,95 @@
             "items": {
               "$ref": "#/components/schemas/Message"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DetailBooking": {
+        "type": "object",
+        "properties": {
+          "roomId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "roomName": {
+            "type": "string",
+            "nullable": true
+          },
+          "roomType": {
+            "type": "string",
+            "nullable": true
+          },
+          "maxAdults": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "maxChildren": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "maxBaby": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberAdults": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberChildren": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberBaby": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "pricePerNight": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "priceFromSecondNight": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "extraFeePerAdult": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "extraFeePerChild": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "extraFeePerBaby": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dateStart": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dateEnd": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "totalPriceRoom": {
+            "type": "number",
+            "format": "double",
             "nullable": true
           }
         },
@@ -4526,6 +4708,39 @@
         },
         "additionalProperties": false
       },
+      "ExtraFees": {
+        "type": "object",
+        "properties": {
+          "extraFeePerAdult": {
+            "type": "number",
+            "format": "double"
+          },
+          "extraFeePerChild": {
+            "type": "number",
+            "format": "double"
+          },
+          "extraFeePerBaby": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExtraPeopleCharges": {
+        "type": "object",
+        "properties": {
+          "adults": {
+            "$ref": "#/components/schemas/ExtraPerson"
+          },
+          "children": {
+            "$ref": "#/components/schemas/ExtraPerson"
+          },
+          "babies": {
+            "$ref": "#/components/schemas/ExtraPerson"
+          }
+        },
+        "additionalProperties": false
+      },
       "ExtraPerson": {
         "type": "object",
         "properties": {
@@ -4540,21 +4755,6 @@
           "total": {
             "type": "number",
             "format": "double"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ExtraPersonCost": {
-        "type": "object",
-        "properties": {
-          "extraAdult": {
-            "$ref": "#/components/schemas/ExtraPerson"
-          },
-          "extraChild": {
-            "$ref": "#/components/schemas/ExtraPerson"
-          },
-          "extraBaby": {
-            "$ref": "#/components/schemas/ExtraPerson"
           }
         },
         "additionalProperties": false
@@ -4676,7 +4876,12 @@
             "nullable": true
           },
           "isLocked": {
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean",
+            "nullable": true
           },
           "createdAt": {
             "type": "string",
@@ -4728,9 +4933,6 @@
       "JsonDetailExtraCost": {
         "type": "object",
         "properties": {
-          "extraPersonCost": {
-            "$ref": "#/components/schemas/ExtraPersonCost"
-          },
           "serviceCost": {
             "type": "array",
             "items": {
@@ -4742,6 +4944,13 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/OtherCost"
+            },
+            "nullable": true
+          },
+          "roomDetailCharges": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RoomDetailCharge"
             },
             "nullable": true
           },
@@ -4795,6 +5004,11 @@
             "format": "int32",
             "nullable": true
           },
+          "sort": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
           "children": {
             "type": "array",
             "items": {
@@ -4834,6 +5048,24 @@
           "timestamp": {
             "type": "string",
             "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MonthsDTO": {
+        "type": "object",
+        "properties": {
+          "month": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hiddenDays": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
             "nullable": true
           }
         },
@@ -4953,10 +5185,6 @@
             "nullable": true
           },
           "note": {
-            "type": "string",
-            "nullable": true
-          },
-          "bankAccount": {
             "type": "string",
             "nullable": true
           },
@@ -5399,10 +5627,65 @@
             "format": "date-time",
             "nullable": true
           },
+          "dateHide": {
+            "type": "string",
+            "nullable": true
+          },
+          "roomHiddenDates": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/YearDateHideForRoomDTO"
+            },
+            "nullable": true
+          },
           "updatedAt": {
             "type": "string",
             "format": "date-time",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RoomDetailCharge": {
+        "type": "object",
+        "properties": {
+          "roomId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roomName": {
+            "type": "string",
+            "nullable": true
+          },
+          "limits": {
+            "$ref": "#/components/schemas/RoomLimits"
+          },
+          "actual": {
+            "$ref": "#/components/schemas/ActualGuests"
+          },
+          "fees": {
+            "$ref": "#/components/schemas/ExtraFees"
+          },
+          "extraPeople": {
+            "$ref": "#/components/schemas/ExtraPeopleCharges"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RoomLimits": {
+        "type": "object",
+        "properties": {
+          "maxAdults": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maxChildren": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maxBaby": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -5524,15 +5807,18 @@
           },
           "numberAdults": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "numberChildren": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "numberBaby": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "amenities": {
             "type": "array",
@@ -5637,6 +5923,16 @@
           },
           "hasSpaciousGarden": {
             "type": "boolean",
+            "nullable": true
+          },
+          "sortByPrice": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sortByRating": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           }
         },
@@ -5877,6 +6173,23 @@
           "gender": {
             "type": "integer",
             "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "YearDateHideForRoomDTO": {
+        "type": "object",
+        "properties": {
+          "year": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "months": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MonthsDTO"
+            },
             "nullable": true
           }
         },

@@ -43,8 +43,7 @@ namespace API_HomeStay_HUB.Model
         [Column("note")] // Tên cột trong bảng
         public string? Note { get; set; } // Số giấy phép kinh doanh (nếu có)
 
-        [Column("bankAccount")] // Tên cột trong bảng
-        public string? BankAccount { get; set; } // Thông tin tài khoản ngân hàng để thanh toán
+      
 
         [Column("status")] // Tên cột trong bảng
         public int Status { get; set; } // Trạng thái đơn đăng ký
